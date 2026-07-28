@@ -1,0 +1,79 @@
+- name: Breakfast Actions
+  domain: daily activities
+  modality: RGB
+  number_of_videos: 1712
+  number_of_actions: 48
+  average_video_length: "about 2.3 minutes; protocol-dependent after feature sampling"
+  view: multi-view exocentric
+  annotation_type: frame-level fine-grained actions
+  official_url: https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/
+  commonly_used_splits: four-fold cross-validation
+  common_metrics: [MoF, Edit, F1@10, F1@25, F1@50]
+  representative_papers: [2014-cvpr-breakfast, 2019-cvpr-ms-tcn]
+  notes: "1712 videos and 48 fine-grained classes are reported by the dataset paper; some works exclude silence/background differently."
+- name: 50Salads
+  domain: food preparation
+  modality: RGB, depth, accelerometer
+  number_of_videos: 50
+  number_of_actions: 17
+  average_video_length: "5–10 minutes"
+  view: exocentric
+  annotation_type: frame-level actions at multiple granularities
+  official_url: https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/
+  commonly_used_splits: five-fold cross-validation
+  common_metrics: [MoF, Edit, F1@10, F1@25, F1@50]
+  representative_papers: [2013-icmr-50salads, 2019-cvpr-ms-tcn]
+  notes: "The widely used mid-level protocol has 17 action classes; counts differ for coarse/fine granularity."
+- name: GTEA
+  domain: egocentric kitchen activities
+  modality: RGB
+  number_of_videos: 28
+  number_of_actions: 11
+  average_video_length: "about 1 minute"
+  view: egocentric
+  annotation_type: frame-level actions
+  official_url: https://cbs.ic.gatech.edu/fpv/
+  commonly_used_splits: four-fold cross-validation
+  common_metrics: [MoF, Edit, F1@10, F1@25, F1@50]
+  representative_papers: [2019-cvpr-ms-tcn]
+  notes: "The 28-video/11-class TAS protocol is the common processed subset, not every GTEA annotation variant."
+- name: Assembly101
+  domain: toy assembly and disassembly
+  modality: RGB
+  number_of_videos: 4321
+  number_of_actions: 202
+  average_video_length: "multi-minute procedures"
+  view: multi-view egocentric and exocentric
+  annotation_type: coarse and fine-grained temporal actions
+  official_url: https://assembly-101.github.io/
+  commonly_used_splits: official train/validation/test split
+  common_metrics: [frame_accuracy, Edit, F1@10, F1@25, F1@50]
+  representative_papers: [2022-cvpr-assembly101]
+  notes: "The dataset paper reports 4,321 videos, 1,380 hours, and 202 fine-grained action classes."
+- name: COIN
+  domain: instructional procedures
+  modality: RGB
+  number_of_videos: 11827
+  number_of_actions: 778
+  average_video_length: "about 2.36 minutes"
+  view: web video
+  annotation_type: temporal step segments
+  official_url: https://coin-dataset.github.io/
+  commonly_used_splits: official split
+  common_metrics: [frame_accuracy, segment_recall, mIoU]
+  representative_papers: [2019-cvpr-coin]
+  notes: "The paper reports 11,827 videos, 180 tasks and 778 step labels."
+- name: Cholec80
+  domain: laparoscopic cholecystectomy
+  modality: RGB
+  number_of_videos: 80
+  number_of_actions: 7
+  average_video_length: "about 39 minutes"
+  view: endoscopic
+  annotation_type: surgical phase labels
+  official_url: http://camma.u-strasbg.fr/datasets
+  commonly_used_splits: 40 train / 40 test
+  common_metrics: [accuracy, precision, recall, Jaccard]
+  representative_papers: [2016-tmi-endonet, 2020-miccai-tecno]
+  notes: "Seven phases are standard; workflow papers may additionally report tool presence."
+

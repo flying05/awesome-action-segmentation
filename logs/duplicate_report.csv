@@ -1,0 +1,8 @@
+kept_id,merged_id,rule,details
+2023-iccv-diffusion,2023-iccv-diffusion,identity-key,same normalized identity
+2023-iccv-contextually-refined-keypoints,2023-iccv-contextually-refined-keypoints,identity-key,same normalized identity
+2024-cvpr-fact-frame-cross-attention-modeling,2024-cvpr-fact-frame-cross-attention-modeling,identity-key,same normalized identity
+2024-cvpr-temporally-consistent-unbalanced-optimal-transport,2024-cvpr-temporally-consistent-unbalanced-optimal-transport,identity-key,same normalized identity
+2024-cvpr-progress-aware-online-egocentric-procedural,2024-cvpr-progress-aware-online-egocentric-procedural,identity-key,same normalized identity
+2024-cvpr-efficient-effective-weakly-supervised-transition,2024-cvpr-efficient-effective-weakly-supervised-transition,identity-key,same normalized identity
+2024-cvpr-coherent-synthesis-incremental,2024-cvpr-coherent-synthesis-incremental,identity-key,same normalized identity

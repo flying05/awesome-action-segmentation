@@ -1,0 +1,13 @@
+cutoff_date: 2026-07-28
+core:
+  CCF-A: [CVPR, ICCV, NeurIPS, NIPS, ICML, AAAI, IJCAI, ACM MM]
+  Top-Vision: [ECCV, WACV, BMVC]
+extended:
+  Extended-Vision: [ACCV, ICPR, ICME, ACM ICMR, FG, 3DV]
+  Medical: [MICCAI]
+  Robotics-Embodied: [ICRA, IROS, CoRL]
+searched_no_assumption_of_hits: [AISTATS, UAI]
+aliases:
+  NIPS: NeurIPS
+  ACM Multimedia: ACM MM
+

@@ -1,0 +1,64 @@
+cutoff_date: 2026-07-28
+keyword_queries:
+  - temporal action segmentation
+  - action segmentation
+  - fine-grained action segmentation
+  - long video action segmentation
+  - procedural action segmentation
+  - procedure segmentation
+  - video step segmentation
+  - instructional video segmentation
+  - weakly supervised action segmentation
+  - unsupervised action segmentation
+  - semi-supervised action segmentation
+  - self-supervised action segmentation
+  - online action segmentation
+  - streaming action segmentation
+  - egocentric action segmentation
+  - multi-view action segmentation
+  - open-vocabulary action segmentation
+  - zero-shot action segmentation
+  - few-shot action segmentation
+  - skeleton-based temporal action segmentation
+  - surgical phase segmentation
+  - surgical workflow segmentation
+  - action boundary detection
+  - frame-wise action classification
+  - action step discovery
+  - unsupervised action discovery
+  - temporal action clustering
+  - action tokenization
+  - procedural workflow learning
+dataset_queries:
+  - Breakfast Actions
+  - 50Salads
+  - GTEA
+  - GTEA Gaze
+  - Assembly101
+  - Desktop Assembly
+  - IKEA ASM
+  - EPIC-KITCHENS
+  - COIN
+  - CrossTask
+  - YouCook2
+  - FineGym
+  - Cholec80
+  - JIGSAWS
+  - Hollywood Extended
+  - MPII Cooking
+strategies:
+  - keyword
+  - official-proceedings-year-scan
+  - backward-forward-author-snowballing
+  - dataset-snowballing
+primary_sources:
+  - CVF Open Access
+  - ECVA
+  - OpenReview
+  - NeurIPS Proceedings
+  - PMLR
+  - AAAI Digital Library
+  - IJCAI Proceedings
+  - BMVC proceedings
+  - Springer proceedings
+

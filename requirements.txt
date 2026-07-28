@@ -1,0 +1,7 @@
+beautifulsoup4>=4.12
+jsonschema>=4.22
+pypdf>=4.2
+pytest>=8.2
+PyYAML>=6.0
+requests>=2.32
+

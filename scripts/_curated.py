@@ -181,6 +181,115 @@ FORMAL = [
         "https://arxiv.org/pdf/2206.15031",
         "timestamp-supervised", "graphical-model,TCN",
     ),
+    _paper(
+        "Efficient Temporal Action Segmentation via Boundary-aware Query Voting",
+        "Peiyao Wang; Yuewei Lin; Erik Blasch; Jie Wei; Haibin Ling",
+        2024, "NeurIPS",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/42770daf4a3384b712ea9c36e9279998-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/42770daf4a3384b712ea9c36e9279998-Paper-Conference.pdf",
+        "fully-supervised", "Transformer,boundary-modeling",
+        "https://github.com/peiyao-w/BaFormer",
+    ),
+    _paper(
+        "ActFusion: a Unified Diffusion Model for Action Segmentation and Anticipation",
+        "Dayoung Gong; Suha Kwak; Minsu Cho", 2024, "NeurIPS",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/a3a661eb3308d0bb686f6a4bac521032-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/a3a661eb3308d0bb686f6a4bac521032-Paper-Conference.pdf",
+        "fully-supervised", "diffusion",
+    ),
+    _paper(
+        "Hierarchical Vector Quantization for Unsupervised Action Segmentation",
+        "Federico Spurio; Emad Bahrami; Gianpiero Francesca; Juergen Gall",
+        2025, "AAAI",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/32751",
+        "https://ojs.aaai.org/index.php/AAAI/article/download/32751/34906",
+        "unsupervised", "VQ-tokenization,clustering",
+    ),
+    _paper(
+        "Language-Assisted Skeleton Action Understanding for Skeleton-Based Temporal Action Segmentation",
+        "Haoyu Ji; Bowen Chen; Xinglong Xu; Weihong Ren; Zhiyong Wang; Honghai Liu",
+        2024, "ECCV",
+        "https://eccv.ecva.net/virtual/2024/poster/1462",
+        "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07145.pdf",
+        "fully-supervised", "language-model,contrastive-learning",
+    ),
+    _paper(
+        "Long-Tail Temporal Action Segmentation with Group-wise Temporal Logit Adjustment",
+        "Zhanzhong Pang; Fadime Sener; Shrinivas Ramasubramanian; Angela Yao",
+        2024, "ECCV",
+        "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4389_ECCV_2024_paper.php",
+        "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04389.pdf",
+        "fully-supervised", "structured-decoding",
+        "https://github.com/pangzhan27/GTLA",
+    ),
+    _paper(
+        "Cost-Sensitive Learning for Long-Tailed Temporal Action Segmentation",
+        "Zhanzhong Pang; Fadime Sener; Shrinivas Ramasubramanian; Angela Yao",
+        2024, "BMVC",
+        "https://bmvc2024.org/proceedings/227/",
+        "https://bmva-archive.org.uk/bmvc/2024/papers/Paper_227/paper.pdf",
+        "fully-supervised", "structured-decoding",
+    ),
+    _paper(
+        "Learning Action Hierarchies via Hybrid Geometric Diffusion",
+        "Arjun Ramesh Kaushik; Nalini K. Ratha; Venu Govindaraju",
+        2026, "WACV",
+        "https://openaccess.thecvf.com/content/WACV2026/html/Kaushik_Learning_Action_Hierarchies_via_Hybrid_Geometric_Diffusion_WACV_2026_paper.html",
+        "https://openaccess.thecvf.com/content/WACV2026/papers/Kaushik_Learning_Action_Hierarchies_via_Hybrid_Geometric_Diffusion_WACV_2026_paper.pdf",
+        "fully-supervised", "diffusion,prototype-learning",
+    ),
+    _paper(
+        "M2R2: MultiModal Robotic Representation for Temporal Action Segmentation",
+        "Daniel Sliwowski; Dongheui Lee", 2026, "ICRA",
+        "https://dsliwowski1.github.io/",
+        "https://arxiv.org/pdf/2504.18662",
+        "fully-supervised", "multimodal,prototype-learning",
+    ),
+    _paper(
+        "3D Pose-Based Temporal Action Segmentation for Figure Skating: A Fine-Grained and Jump Procedure-Aware Annotation Approach",
+        "Ryota Tanaka; Tomohiro Suzuki; Keisuke Fujii", 2024, "ACM MM Workshop",
+        "https://dl.acm.org/doi/10.1145/3689061.3689077",
+        "https://arxiv.org/pdf/2408.16638",
+        "fully-supervised", "prototype-learning",
+    ),
+    _paper(
+        "How Much Temporal Long-Term Context is Needed for Action Segmentation?",
+        "Emad Bahrami; Gianpiero Francesca; Juergen Gall", 2023, "ICCV",
+        "https://openaccess.thecvf.com/content/ICCV2023/html/Bahrami_How_Much_Temporal_Long-Term_Context_is_Needed_for_Action_Segmentation_ICCV_2023_paper.html",
+        "https://openaccess.thecvf.com/content/ICCV2023/papers/Bahrami_How_Much_Temporal_Long-Term_Context_is_Needed_for_Action_Segmentation_ICCV_2023_paper.pdf",
+        "fully-supervised", "TCN",
+    ),
+    _paper(
+        "End-to-End Action Segmentation Transformer",
+        "Tieqiao Wang; Sinisa Todorovic", 2025, "ICCV Workshop",
+        "https://openaccess.thecvf.com/content/ICCV2025W/SVU/html/Wang_End-to-End_Action_Segmentation_Transformer_ICCVW_2025_paper.html",
+        "https://openaccess.thecvf.com/content/ICCV2025W/SVU/papers/Wang_End-to-End_Action_Segmentation_Transformer_ICCVW_2025_paper.pdf",
+        "fully-supervised", "Transformer,boundary-modeling",
+        "https://github.com/tqosu/EAST",
+    ),
+    _paper(
+        "Pose-Aware Weakly-Supervised Action Segmentation",
+        "Zhihao Zhao; Reza Ghoddoosian; Isht Dwivedi; Nakul Agarwal; Behzad Dariush",
+        2025, "CVPR Workshop",
+        "https://openaccess.thecvf.com/content/CVPR2025W/MULA2025/html/Zhao_Pose-Aware_Weakly-Supervised_Action_Segmentation_CVPRW_2025_paper.html",
+        "https://openaccess.thecvf.com/content/CVPR2025W/MULA2025/papers/Zhao_Pose-Aware_Weakly-Supervised_Action_Segmentation_CVPRW_2025_paper.pdf",
+        "weakly-supervised", "contrastive-learning,boundary-modeling",
+    ),
+    _paper(
+        "Leveraging Triplet Loss for Unsupervised Action Segmentation",
+        "Elena Belen Bueno-Benito; Biel Tura Vecino; Mariella Dimiccoli",
+        2023, "CVPR Workshop",
+        "https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/html/Bueno-Benito_Leveraging_Triplet_Loss_for_Unsupervised_Action_Segmentation_CVPRW_2023_paper.html",
+        "https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/papers/Bueno-Benito_Leveraging_Triplet_Loss_for_Unsupervised_Action_Segmentation_CVPRW_2023_paper.pdf",
+        "unsupervised", "contrastive-learning,clustering",
+    ),
+    _paper(
+        "Combining Boundary Supervision and Segment-Level Regularization for Fine-Grained Action Segmentation",
+        "Hinako Mitsuoka; Kazuhiro Hotta", 2026, "CVPR Workshop",
+        "https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/html/Mitsuoka_Combining_Boundary_Supervision_and_Segment-Level_Regularization_for_Fine-Grained_Action_Segmentation_CVPRW_2026_paper.html",
+        "https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/papers/Mitsuoka_Combining_Boundary_Supervision_and_Segment-Level_Regularization_for_Fine-Grained_Action_Segmentation_CVPRW_2026_paper.pdf",
+        "fully-supervised", "boundary-modeling",
+    ),
 ]
 
 for record in FORMAL:
@@ -193,9 +302,12 @@ for record in FORMAL:
             "The method assigns a surgical workflow phase to every video frame; "
             "it is included in the separate medical extension."
         )
-    elif record["venue"] == "IROS":
+    elif record["venue"] in {"IROS", "ICRA"}:
         record["venue_tier"] = "Robotics-Embodied"
         record["setting"] = ["offline", "embodied", "long-video"]
+    elif "Workshop" in record["venue"]:
+        record["venue_tier"] = "Extended-Vision"
+        record["notes"] = "Official workshop paper; kept in the extended list, not the main-conference core count."
 
 
 def _preprint(
@@ -245,4 +357,3 @@ PREPRINTS = [
         "optimal-transport,vision-language-model",
     ),
 ]
-

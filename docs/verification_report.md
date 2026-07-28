@@ -2,20 +2,24 @@
 
 | Item | Count |
 |---|---:|
-| Candidate records | 83 |
-| Verified formal core + extension | 77 |
-| Extended venue papers | 2 |
-| Preprints / pending verification | 3 |
+| Candidate records | 172 |
+| Verified formal core + extension | 91 |
+| Extended venue papers | 8 |
+| Preprints / pending verification | 78 |
 | Related-but-not-core / excluded from core count | 3 |
-| Duplicate records merged in last report | 7 |
-| PDFs downloaded and parsed | 69 |
-| PDF download failures in manifest | 13 |
-| Papers requiring manual review | 3 |
+| Duplicate records merged in last report | 93 |
+| PDFs downloaded and parsed | 166 |
+| PDF download failures in manifest | 5 |
+| Papers requiring manual review | 78 |
+
+| arXiv API unique candidates audited | 166 |
+| arXiv direct TAS hits before deduplication | 134 |
+| arXiv ambiguous/excluded candidates retained in audit | 32 |
 
 ## Venue and year statistics
 
-- Venues: AAAI: 1; BMVC: 2; CVPR: 36; ECCV: 8; ICCV: 14; IJCAI: 2; IROS: 1; MICCAI: 1; NeurIPS: 3; WACV: 9
-- Years: 2014: 1; 2015: 1; 2016: 2; 2017: 2; 2018: 4; 2019: 5; 2020: 10; 2021: 10; 2022: 16; 2023: 6; 2024: 9; 2025: 6; 2026: 5
+- Venues: AAAI: 2; ACM MM Workshop: 1; BMVC: 3; CVPR: 36; CVPR Workshop: 3; ECCV: 10; ICCV: 15; ICCV Workshop: 1; ICRA: 1; IJCAI: 2; IROS: 1; MICCAI: 1; NeurIPS: 5; WACV: 10
+- Years: 2014: 1; 2015: 1; 2016: 2; 2017: 2; 2018: 4; 2019: 5; 2020: 10; 2021: 10; 2022: 16; 2023: 8; 2024: 15; 2025: 9; 2026: 8
 
 ## Verification rules
 

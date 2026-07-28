@@ -15,6 +15,11 @@ keyword_queries:
   - online action segmentation
   - streaming action segmentation
   - egocentric action segmentation
+  - energy-efficient temporal action segmentation
+  - multimodal temporal action segmentation
+  - interactive temporal action segmentation
+  - active learning temporal action segmentation
+  - constraint-aware temporal action segmentation
   - multi-view action segmentation
   - open-vocabulary action segmentation
   - zero-shot action segmentation
@@ -61,4 +66,3 @@ primary_sources:
   - IJCAI Proceedings
   - BMVC proceedings
   - Springer proceedings
-

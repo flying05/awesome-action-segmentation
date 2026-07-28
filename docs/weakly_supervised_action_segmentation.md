@@ -14,8 +14,12 @@
 
 ## 代表论文索引
 
+- [HOI-aware Adaptive Network for Weakly-supervised Action Segmentation](https://arxiv.org/abs/2604.26227) — Preprint 2026; `unknown`
 - [Hierarchical Action Learning for Weakly-Supervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Hierarchical_Action_Learning_for_Weakly-Supervised_Action_Segmentation_CVPR_2026_paper.html) — CVPR 2026; `Transformer, causal-model`
 - [Timestamp Query Transformer for Temporal Action Segmentation](https://openaccess.thecvf.com/content/WACV2026/html/Wang_Timestamp_Query_Transformer_for_Temporal_Action_Segmentation_WACV_2026_paper.html) — WACV 2026; `Transformer, cross-attention, VQ-tokenization`
+- [Unsupervised Skeleton-Based Action Segmentation via Hierarchical Spatiotemporal Vector Quantization](https://arxiv.org/abs/2604.15196) — Preprint 2026; `clustering`
+- [Pose-Aware Weakly-Supervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2025W/MULA2025/html/Zhao_Pose-Aware_Weakly-Supervised_Action_Segmentation_CVPRW_2025_paper.html) — CVPR Workshop 2025; `contrastive-learning, boundary-modeling`
+- [2by2: Weakly-Supervised Learning for Global Action Segmentation](https://arxiv.org/abs/2412.12829) — Preprint 2024; `Transformer`
 - [Efficient and Effective Weakly-Supervised Action Segmentation via Action-Transition-Aware Boundary Alignment](https://openaccess.thecvf.com/content/CVPR2024/html/Xu_Efficient_and_Effective_Weakly-Supervised_Action_Segmentation_via_Action-Transition-Aware_Boundary_Alignment_CVPR_2024_paper.html) — CVPR 2024; `boundary-modeling`
 - [Random Walks for Temporal Action Segmentation With Timestamp Supervision](https://openaccess.thecvf.com/content/WACV2024/html/Hirsch_Random_Walks_for_Temporal_Action_Segmentation_With_Timestamp_Supervision_WACV_2024_paper.html) — WACV 2024; `unknown`
 - [Timestamp-Supervised Action Segmentation in the Perspective of Clustering](https://www.ijcai.org/proceedings/2023/77) — IJCAI 2023; `clustering`
@@ -26,14 +30,19 @@
 - [SSCAP: Self-Supervised Co-Occurrence Action Parsing for Unsupervised Temporal Action Segmentation](https://openaccess.thecvf.com/content/WACV2022/html/Wang_SSCAP_Self-Supervised_Co-Occurrence_Action_Parsing_for_Unsupervised_Temporal_Action_Segmentation_WACV_2022_paper.html) — WACV 2022; `unknown`
 - [Semi-Weakly-Supervised Learning of Complex Actions From Instructional Task Videos](https://openaccess.thecvf.com/content/CVPR2022/html/Shen_Semi-Weakly-Supervised_Learning_of_Complex_Actions_From_Instructional_Task_Videos_CVPR_2022_paper.html) — CVPR 2022; `unknown`
 - [Timestamp-Supervised Action Segmentation with Graph Convolutional Networks](https://doi.org/10.1109/IROS47612.2022.9981176) — IROS 2022; `graphical-model, TCN`
+- [Transformers in Action: Weakly Supervised Action Segmentation](https://arxiv.org/abs/2201.05675) — Preprint 2022; `Transformer`
+- [Turning to a Teacher for Timestamp Supervised Temporal Action Segmentation](https://arxiv.org/abs/2207.00712) — Preprint 2022; `unknown`
 - [Unified Fully and Timestamp Supervised Temporal Action Segmentation via Sequence to Sequence Translation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/3672_ECCV_2022_paper.php) — ECCV 2022; `Transformer, structured-decoding, duration-modeling`
 - [Weakly-Supervised Online Action Segmentation in Multi-View Instructional Videos](https://openaccess.thecvf.com/content/CVPR2022/html/Ghoddoosian_Weakly-Supervised_Online_Action_Segmentation_in_Multi-View_Instructional_Videos_CVPR_2022_paper.html) — CVPR 2022; `unknown`
+- [FIFA: Fast Inference Approximation for Action Segmentation](https://arxiv.org/abs/2108.03894) — Preprint 2021; `unknown`
 - [Learning Discriminative Prototypes With Dynamic Time Warping](https://openaccess.thecvf.com/content/CVPR2021/html/Chang_Learning_Discriminative_Prototypes_With_Dynamic_Time_Warping_CVPR_2021_paper.html) — CVPR 2021; `prototype-learning`
 - [Temporal Action Segmentation From Timestamp Supervision](https://openaccess.thecvf.com/content/CVPR2021/html/Li_Temporal_Action_Segmentation_From_Timestamp_Supervision_CVPR_2021_paper.html) — CVPR 2021; `unknown`
 - [Weakly-Supervised Action Segmentation and Alignment via Transcript-Aware Union-of-Subspaces Learning](https://openaccess.thecvf.com/content/ICCV2021/html/Lu_Weakly-Supervised_Action_Segmentation_and_Alignment_via_Transcript-Aware_Union-of-Subspaces_Learning_ICCV_2021_paper.html) — ICCV 2021; `duration-modeling`
 - [Fast Weakly Supervised Action Segmentation Using Mutual Consistency](https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/1061_ECCV_2020_paper.php) — ECCV 2020; `TCN, structured-decoding`
+- [On Evaluating Weakly Supervised Action Segmentation Methods](https://arxiv.org/abs/2005.09743) — Preprint 2020; `unknown`
 - [SCT: Set Constrained Temporal Transformer for Set Supervised Action Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/html/Fayyaz_SCT_Set_Constrained_Temporal_Transformer_for_Set_Supervised_Action_Segmentation_CVPR_2020_paper.html) — CVPR 2020; `Transformer`
 - [Set-Constrained Viterbi for Set-Supervised Action Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/html/Li_Set-Constrained_Viterbi_for_Set-Supervised_Action_Segmentation_CVPR_2020_paper.html) — CVPR 2020; `structured-decoding`
+- [A Hybrid RNN-HMM Approach for Weakly Supervised Temporal Action Segmentation](https://arxiv.org/abs/1906.01028) — Preprint 2019; `unknown`
 - [D3TW: Discriminative Differentiable Dynamic Time Warping for Weakly Supervised Action Alignment and Segmentation](https://openaccess.thecvf.com/content_CVPR_2019/html/Chang_D3TW_Discriminative_Differentiable_Dynamic_Time_Warping_for_Weakly_Supervised_Action_CVPR_2019_paper.html) — CVPR 2019; `unknown`
 - [Weakly Supervised Energy-Based Learning for Action Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/html/Li_Weakly_Supervised_Energy-Based_Learning_for_Action_Segmentation_ICCV_2019_paper.html) — ICCV 2019; `unknown`
 - [Action Sets: Weakly Supervised Action Segmentation Without Ordering Constraints](https://openaccess.thecvf.com/content_cvpr_2018/html/Richard_Action_Sets_Weakly_CVPR_2018_paper.html) — CVPR 2018; `unknown`

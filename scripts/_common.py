@@ -127,7 +127,7 @@ def default_record(
         "keywords": ["temporal action segmentation"],
         "task_categories": ["Temporal Action Segmentation"],
         "supervision": ["fully-supervised"],
-        "modality": ["I3D-features"],
+        "modality": ["unknown"],
         "setting": ["offline", "long-video"],
         "method_family": ["unknown"],
         "backbone": "unknown",
@@ -194,17 +194,33 @@ def infer_fields(record: dict[str, Any]) -> dict[str, Any]:
             families.append(family)
     record["method_family"] = families or record.get("method_family") or ["unknown"]
 
+    modalities = list(record.get("modality", []))
     if "skeleton" in text:
-        record["modality"] = ["skeleton"]
+        modalities = ["skeleton"]
         record["task_categories"] = ["Skeleton-based Temporal Action Segmentation"]
     if "egocentric" in text:
         record["setting"] = sorted(set(record["setting"] + ["egocentric"]))
     if "online" in text:
+        record["setting"] = [
+            value for value in record["setting"] if value != "offline"
+        ]
         record["setting"] = sorted(set(record["setting"] + ["online", "streaming"]))
     if "few-shot" in text or "zero-shot" in text or "open-set" in text:
         record["setting"] = sorted(set(record["setting"] + ["open-vocabulary"]))
-    if "multi-modal" in text or "multimodal" in text or "vision-language" in text:
-        record["modality"] = ["video-language", "multimodal"]
+    if "multi-modal" in text or "multimodal" in text:
+        modalities.append("multimodal")
+    if "vision-language" in text or "vision language" in text or "language model" in text:
+        modalities.append("video-language")
+    for needle, label in [
+        ("rgb", "RGB"), ("i3d", "I3D-features"),
+        ("audio", "audio"), ("gaze", "gaze"), ("imu", "IMU"),
+        ("depth", "depth"), ("optical flow", "optical-flow"),
+    ]:
+        if needle in text:
+            modalities.append(label)
+    if len(modalities) > 1 and "unknown" in modalities:
+        modalities.remove("unknown")
+    record["modality"] = list(dict.fromkeys(modalities))
     return record
 
 
@@ -316,4 +332,3 @@ def save_serializations(records: list[dict[str, Any]]) -> None:
 def load_papers() -> list[dict[str, Any]]:
     value = load_yaml(DATA / "papers.yaml")
     return value or []
-

@@ -14,23 +14,36 @@
 
 ## 代表论文索引
 
+- [Data-Efficient Surgical Phase Segmentation in Small-Incision Cataract Surgery: A Controlled Study of Vision Foundation Models](https://arxiv.org/abs/2604.10514) — Preprint 2026; `unknown`
+- [Deep kernel video approximation for unsupervised action segmentation](https://arxiv.org/abs/2604.21572) — Preprint 2026; `optimal-transport`
+- [Learning Probabilistic Embeddings for Unsupervised Action Segmentation](https://arxiv.org/abs/2607.05263) — Preprint 2026; `optimal-transport, clustering`
 - [Text-Augmented Action Segmentation Optimal Transport for Unsupervised Surgical Phase Recognition](https://arxiv.org/abs/2602.24138) — Preprint 2026; `optimal-transport`
 - [CLOT: Closed Loop Optimal Transport for Unsupervised Action Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Bueno-Benito_CLOT_Closed_Loop_Optimal_Transport_for_Unsupervised_Action_Segmentation_ICCV_2025_paper.html) — ICCV 2025; `cross-attention, optimal-transport, clustering`
+- [Hierarchical Vector Quantization for Unsupervised Action Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/32751) — AAAI 2025; `VQ-tokenization, clustering`
+- [Improving action segmentation via explicit similarity measurement](https://arxiv.org/abs/2502.10713) — Preprint 2025; `Transformer, boundary-modeling, TCN`
 - [Joint Self-Supervised Video Alignment and Action Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Ali_Joint_Self-Supervised_Video_Alignment_and_Action_Segmentation_ICCV_2025_paper.html) — ICCV 2025; `optimal-transport`
 - [Skeleton Motion Words for Unsupervised Skeleton-Based Temporal Action Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Gokay_Skeleton_Motion_Words_for_Unsupervised_Skeleton-Based_Temporal_Action_Segmentation_ICCV_2025_paper.html) — ICCV 2025; `unknown`
 - [OTAS: Unsupervised Boundary Detection for Object-Centric Temporal Action Segmentation](https://openaccess.thecvf.com/content/WACV2024/html/Li_OTAS_Unsupervised_Boundary_Detection_for_Object-Centric_Temporal_Action_Segmentation_WACV_2024_paper.html) — WACV 2024; `boundary-modeling`
 - [Temporally Consistent Unbalanced Optimal Transport for Unsupervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2024/html/Xu_Temporally_Consistent_Unbalanced_Optimal_Transport_for_Unsupervised_Action_Segmentation_CVPR_2024_paper.html) — CVPR 2024; `optimal-transport`
 - [United We Stand, Divided We Fall: UnityGraph for Unsupervised Procedure Learning From Videos](https://openaccess.thecvf.com/content/WACV2024/html/Bansal_United_We_Stand_Divided_We_Fall_UnityGraph_for_Unsupervised_Procedure_WACV_2024_paper.html) — WACV 2024; `unknown`
 - [LAC - Latent Action Composition for Skeleton-based Action Segmentation](https://openaccess.thecvf.com/content/ICCV2023/html/Yang_LAC_-_Latent_Action_Composition_for_Skeleton-based_Action_Segmentation_ICCV_2023_paper.html) — ICCV 2023; `unknown`
+- [Leveraging Triplet Loss for Unsupervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/html/Bueno-Benito_Leveraging_Triplet_Loss_for_Unsupervised_Action_Segmentation_CVPRW_2023_paper.html) — CVPR Workshop 2023; `contrastive-learning, clustering`
+- [Permutation-Aware Action Segmentation via Unsupervised Frame-to-Segment Alignment](https://arxiv.org/abs/2305.19478) — Preprint 2023; `Transformer, optimal-transport, causal-model`
+- [SFGANS Self-supervised Future Generator for human ActioN Segmentation](https://arxiv.org/abs/2401.00438) — Preprint 2023; `unknown`
+- [Synchronization is All You Need: Exocentric-to-Egocentric Transfer for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs](https://arxiv.org/abs/2312.02638) — Preprint 2023; `unknown`
+- [TAEC: Unsupervised Action Segmentation with Temporal-Aware Embedding and Clustering](https://arxiv.org/abs/2303.05166) — Preprint 2023; `clustering`
 - [Fast and Unsupervised Action Boundary Detection for Action Segmentation](https://openaccess.thecvf.com/content/CVPR2022/html/Du_Fast_and_Unsupervised_Action_Boundary_Detection_for_Action_Segmentation_CVPR_2022_paper.html) — CVPR 2022; `clustering, boundary-modeling`
 - [My View Is the Best View: Procedure Learning from Egocentric Videos](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/1910_ECCV_2022_paper.php) — ECCV 2022; `clustering, contrastive-learning`
 - [Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering](https://openaccess.thecvf.com/content/CVPR2022/html/Kumar_Unsupervised_Action_Segmentation_by_Joint_Representation_Learning_and_Online_Clustering_CVPR_2022_paper.html) — CVPR 2022; `optimal-transport, clustering`
 - [Action Shuffle Alternating Learning for Unsupervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2021/html/Li_Action_Shuffle_Alternating_Learning_for_Unsupervised_Action_Segmentation_CVPR_2021_paper.html) — CVPR 2021; `structured-decoding`
 - [Joint Visual-Temporal Embedding for Unsupervised Learning of Actions in Untrimmed Sequences](https://openaccess.thecvf.com/content/WACV2021/html/VidalMata_Joint_Visual-Temporal_Embedding_for_Unsupervised_Learning_of_Actions_in_Untrimmed_WACV_2021_paper.html) — WACV 2021; `unknown`
 - [Temporally-Weighted Hierarchical Clustering for Unsupervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2021/html/Sarfraz_Temporally-Weighted_Hierarchical_Clustering_for_Unsupervised_Action_Segmentation_CVPR_2021_paper.html) — CVPR 2021; `clustering`
+- [Unsupervised Action Segmentation for Instructional Videos](https://arxiv.org/abs/2106.03738) — Preprint 2021; `unknown`
 - [Action Segmentation With Joint Self-Supervised Temporal Domain Adaptation](https://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Action_Segmentation_With_Joint_Self-Supervised_Temporal_Domain_Adaptation_CVPR_2020_paper.html) — CVPR 2020; `unknown`
+- [Temporal Relational Modeling with Self-Supervision for Action Segmentation](https://arxiv.org/abs/2012.07508) — Preprint 2020; `unknown`
 - [Unsupervised Learning of Action Classes With Continuous Temporal Embedding](https://openaccess.thecvf.com/content_CVPR_2019/html/Kukleva_Unsupervised_Learning_of_Action_Classes_With_Continuous_Temporal_Embedding_CVPR_2019_paper.html) — CVPR 2019; `unknown`
 - [Unsupervised Procedure Learning via Joint Dynamic Summarization](https://openaccess.thecvf.com/content_ICCV_2019/html/Elhamifar_Unsupervised_Procedure_Learning_via_Joint_Dynamic_Summarization_ICCV_2019_paper.html) — ICCV 2019; `unknown`
+- [Temporal Human Action Segmentation via Dynamic Clustering](https://arxiv.org/abs/1803.05790) — Preprint 2018; `clustering`
 - [Unsupervised Learning From Narrated Instruction Videos](https://openaccess.thecvf.com/content_cvpr_2016/html/Alayrac_Unsupervised_Learning_From_CVPR_2016_paper.html) — CVPR 2016; `clustering`
 - [Unsupervised Semantic Parsing of Video Collections](https://openaccess.thecvf.com/content_iccv_2015/html/Sener_Unsupervised_Semantic_Parsing_ICCV_2015_paper.html) — ICCV 2015; `unknown`
 

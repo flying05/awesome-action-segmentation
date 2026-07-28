@@ -33,7 +33,7 @@ def main() -> int:
     common = ["--dry-run"] if args.dry_run else []
     run("search_candidates.py", [
         "--start-year", str(args.start_year), "--end-year", str(args.end_year),
-        "--venues", args.venues, *common,
+        "--venues", args.venues, "--cutoff-date", args.cutoff_date, *common,
     ])
     metadata_args = [*common]
     if args.only_unverified:
@@ -61,4 +61,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

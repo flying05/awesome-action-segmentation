@@ -8,8 +8,9 @@ import json
 import logging
 import re
 import time
+import xml.etree.ElementTree as ET
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urlencode, urljoin
 
 from bs4 import BeautifulSoup
 
@@ -29,6 +30,11 @@ from _common import (
 from _curated import FORMAL, PREPRINTS
 
 CVF = "https://openaccess.thecvf.com/"
+ARXIV_API = "https://export.arxiv.org/api/query"
+ATOM_NS = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "arxiv": "http://arxiv.org/schemas/atom",
+}
 
 EXACT_FRAGMENTS = [
     "temporal convolutional networks for action segmentation",
@@ -85,6 +91,31 @@ EXCLUSIONS = [
     "semantic segmentation",
 ]
 
+ARXIV_QUERIES = [
+    'all:"temporal action segmentation"',
+    'ti:"action segmentation"',
+    'ti:"action parsing"',
+    'all:"skeleton-based action segmentation"',
+    'all:"surgical phase segmentation"',
+]
+
+ARXIV_DIRECT_TITLE_PATTERNS = [
+    r"\btemporal action segmentation\b",
+    r"\baction segmentation\b",
+    r"\baction parsing\b",
+    r"\bsurgical (?:workflow|phase|step) segmentation\b",
+]
+
+ARXIV_TITLE_EXCLUSIONS = [
+    r"\bspatio-?temporal action (?:detection|localization)\b",
+    r"\bactor-action segmentation\b",
+    r"\baction instance segmentation\b",
+    r"\bfrom a single image\b",
+    r"\bpart-level action parsing\b",
+    r"\breferring human action segmentation\b",
+    r"\bpeer-aware student behavioral engagement\b",
+]
+
 CODE_URLS = {
     "ms-tcn: multi-stage temporal convolutional network for action segmentation":
         "https://github.com/yabufarha/ms-tcn",
@@ -100,6 +131,37 @@ CODE_URLS = {
     "multi-modal few-shot temporal action segmentation":
         "https://github.com/ZijiaLewisLu/ICCV2025-MMF-TAS",
     "end-to-end action segmentation transformer": "https://github.com/tqosu/EAST",
+}
+
+FORMAL_ARXIV_IDS = {
+    "Temporal Convolutional Networks for Action Segmentation and Detection": "1611.05267",
+    "MS-TCN: Multi-Stage Temporal Convolutional Network for Action Segmentation": "1903.01945",
+    "Alleviating Over-Segmentation Errors by Detecting Action Boundaries": "2007.06866",
+    "SCT: Set Constrained Temporal Transformer for Set Supervised Action Segmentation": "2003.14266",
+    "Temporal Action Segmentation From Timestamp Supervision": "2103.06669",
+    "SSCAP: Self-Supervised Co-Occurrence Action Parsing for Unsupervised Temporal Action Segmentation": "2105.14158",
+    "ASFormer: Transformer for Action Segmentation": "2110.08568",
+    "Timestamp-Supervised Action Segmentation in the Perspective of Clustering": "2212.11694",
+    "Diffusion Action Segmentation": "2303.17959",
+    "How Much Temporal Long-Term Context is Needed for Action Segmentation?": "2308.11358",
+    "Activity Grammars for Temporal Action Segmentation": "2312.04266",
+    "OnlineTAS: An Online Baseline for Temporal Action Segmentation": "2411.01122",
+    "Efficient Temporal Action Segmentation via Boundary-aware Query Voting": "2405.15995",
+    "ActFusion: a Unified Diffusion Model for Action Segmentation and Anticipation": "2412.04353",
+    "Hierarchical Vector Quantization for Unsupervised Action Segmentation": "2412.17640",
+    "Long-Tail Temporal Action Segmentation with Group-wise Temporal Logit Adjustment": "2408.09919",
+    "Cost-Sensitive Learning for Long-Tailed Temporal Action Segmentation": "2503.18358",
+    "3D Pose-Based Temporal Action Segmentation for Figure Skating: A Fine-Grained and Jump Procedure-Aware Annotation Approach": "2408.16638",
+    "M2R2: MultiModal Robotic Representation for Temporal Action Segmentation": "2504.18662",
+    "Learning Action Hierarchies via Hybrid Geometric Diffusion": "2601.01914",
+    "Combining Boundary Supervision and Segment-Level Regularization for Fine-Grained Action Segmentation": "2604.01859",
+}
+
+ARXIV_SUPERSEDED_BY_FORMAL = {
+    "1608.08242": (
+        "Earlier TCN manuscript/version represented by the verified CVPR 2017 "
+        "conference record."
+    ),
 }
 
 # Old CVF indexes use several incompatible layouts, and transient index failures
@@ -165,12 +227,14 @@ def parse_detail(page_url: str, venue: str, year: int) -> dict:
     abstract_node = soup.find(id="abstract")
     abstract = abstract_node.get_text(" ", strip=True) if abstract_node else ""
     pdf_url = ""
+    arxiv_url = ""
     for link in soup.select("a[href]"):
         label = link.get_text(" ", strip=True).casefold()
         href = link.get("href", "")
         if label == "pdf" and href.casefold().endswith(".pdf"):
             pdf_url = urljoin(page_url, href)
-            break
+        if label == "arxiv" or "arxiv.org/abs/" in href:
+            arxiv_url = urljoin(page_url, href)
     record = default_record(
         title=title,
         authors=authors,
@@ -181,11 +245,17 @@ def parse_detail(page_url: str, venue: str, year: int) -> dict:
         abstract=abstract,
     )
     infer_fields(record)
-    record["code_url"] = CODE_URLS.get(title.casefold(), "")
-    record["verification_sources"] = [page_url]
-    for dataset in ["Breakfast", "50Salads", "GTEA", "Assembly101", "COIN", "CrossTask"]:
+    for dataset in [
+        "Breakfast", "50Salads", "GTEA", "Assembly101", "IKEA ASM",
+        "COIN", "CrossTask", "Cholec80", "EgoExo4D", "CMU-MMAC",
+        "CaptainCook4D", "PKU-MMD", "LARa",
+    ]:
         if dataset.casefold() in abstract.casefold():
             record["datasets"].append(dataset)
+    record["datasets"] = list(dict.fromkeys(record["datasets"]))
+    record["arxiv_url"] = arxiv_url
+    record["code_url"] = CODE_URLS.get(title.casefold(), "")
+    record["verification_sources"] = [page_url]
     if title.casefold() in DATASET_TITLES:
         record.update({
             "venue_tier": "Related-but-not-core",
@@ -242,11 +312,162 @@ def scan_cvf(
     return records
 
 
+def _atom_text(entry: ET.Element, path: str) -> str:
+    node = entry.find(path, ATOM_NS)
+    return " ".join(node.text.split()) if node is not None and node.text else ""
+
+
+def _arxiv_id(entry: ET.Element) -> str:
+    value = _atom_text(entry, "atom:id").rsplit("/", 1)[-1]
+    return re.sub(r"v\d+$", "", value)
+
+
+def arxiv_is_direct(title: str) -> tuple[bool, str]:
+    folded = title.casefold()
+    if any(re.search(pattern, folded) for pattern in ARXIV_TITLE_EXCLUSIONS):
+        return False, "excluded neighboring spatial/localization task"
+    if any(re.search(pattern, folded) for pattern in ARXIV_DIRECT_TITLE_PATTERNS):
+        return True, "title explicitly names temporal/action segmentation"
+    return False, "query hit but title does not explicitly define a TAS task"
+
+
+def parse_arxiv_entry(entry: ET.Element, cutoff_date: str) -> tuple[dict, dict]:
+    title = _atom_text(entry, "atom:title")
+    abstract = _atom_text(entry, "atom:summary")
+    submitted = _atom_text(entry, "atom:published")[:10]
+    updated = _atom_text(entry, "atom:updated")[:10]
+    arxiv_id = _arxiv_id(entry)
+    authors = [
+        _atom_text(author, "atom:name")
+        for author in entry.findall("atom:author", ATOM_NS)
+    ]
+    authors = [author for author in authors if author]
+    direct, reason = arxiv_is_direct(title)
+    in_cutoff = bool(submitted and submitted <= cutoff_date)
+    decision = "include-pending-verification" if direct and in_cutoff else "candidate-only"
+    if not in_cutoff:
+        reason = f"first submitted after cutoff {cutoff_date}"
+    if arxiv_id in ARXIV_SUPERSEDED_BY_FORMAL:
+        decision = "candidate-only"
+        reason = ARXIV_SUPERSEDED_BY_FORMAL[arxiv_id]
+    comment = _atom_text(entry, "arxiv:comment")
+    journal_ref = _atom_text(entry, "arxiv:journal_ref")
+    doi = _atom_text(entry, "arxiv:doi")
+    candidate = {
+        "arxiv_id": arxiv_id,
+        "title": title,
+        "authors": authors,
+        "first_submitted": submitted,
+        "last_updated": updated,
+        "comment": comment,
+        "journal_ref": journal_ref,
+        "doi": doi,
+        "decision": decision,
+        "decision_reason": reason,
+        "verification_date": cutoff_date,
+    }
+    record = default_record(
+        title=title,
+        authors=authors,
+        year=int(submitted[:4]),
+        venue="Preprint",
+        official_publication_url="",
+        official_pdf_url=f"https://arxiv.org/pdf/{arxiv_id}",
+        abstract=abstract,
+    )
+    record.update({
+        "venue_tier": "Preprint",
+        "publication_type": "preprint",
+        "arxiv_url": f"https://arxiv.org/abs/{arxiv_id}",
+        "doi": doi,
+        "metadata_verified": False,
+        "verification_sources": [f"https://arxiv.org/abs/{arxiv_id}"],
+        "verification_date": cutoff_date,
+        "notes": (
+            f"arXiv {arxiv_id}; first submitted {submitted}; last updated "
+            f"{updated}; comment={comment or 'none'}; journal_ref="
+            f"{journal_ref or 'none'}. No formal conference proceedings "
+            f"placement has been verified."
+        ),
+        "needs_manual_review": True,
+        "review_reason": (
+            "Direct TAS arXiv hit; formal publication status requires "
+            "first-party proceedings verification."
+        ),
+    })
+    infer_fields(record)
+    for dataset in [
+        "Breakfast", "50Salads", "GTEA", "Assembly101", "IKEA ASM",
+        "COIN", "CrossTask", "Cholec80", "EgoExo4D", "CMU-MMAC",
+        "CaptainCook4D", "PKU-MMD", "LARa",
+    ]:
+        if dataset.casefold() in abstract.casefold():
+            record["datasets"].append(dataset)
+    record["datasets"] = list(dict.fromkeys(record["datasets"]))
+    # infer_fields does not alter publication/provenance status.
+    record["venue"] = "Preprint"
+    record["venue_tier"] = "Preprint"
+    record["publication_type"] = "preprint"
+    record["metadata_verified"] = False
+    return record, candidate
+
+
+def scan_arxiv(
+    *, cutoff_date: str, dry_run: bool, cache_dir: Path,
+    refresh: bool = False,
+) -> tuple[list[dict], list[dict]]:
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    entries_by_id: dict[str, ET.Element] = {}
+    for index, query in enumerate(ARXIV_QUERIES):
+        params = {
+            "search_query": query,
+            "start": 0,
+            "max_results": 300,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+        }
+        url = f"{ARXIV_API}?{urlencode(params)}"
+        cache_file = cache_dir / f"query_{index}.xml"
+        try:
+            if cache_file.exists() and not refresh:
+                payload = cache_file.read_bytes()
+            else:
+                payload = request(url, timeout=45, retries=4, delay=2.0).content
+                if not dry_run:
+                    cache_file.write_bytes(payload)
+                time.sleep(3.0)
+            root = ET.fromstring(payload)
+            entries = root.findall("atom:entry", ATOM_NS)
+            for entry in entries:
+                entries_by_id[_arxiv_id(entry)] = entry
+            logging.info("[arXiv] query=%s returned=%s", query, len(entries))
+        except Exception as exc:
+            logging.warning("arXiv query failed %s: %s", query, exc)
+    records: list[dict] = []
+    candidates: list[dict] = []
+    for arxiv_id, entry in entries_by_id.items():
+        try:
+            record, candidate = parse_arxiv_entry(entry, cutoff_date)
+            candidates.append(candidate)
+            if candidate["decision"] == "include-pending-verification":
+                records.append(record)
+        except Exception as exc:
+            logging.warning("arXiv entry failed %s: %s", arxiv_id, exc)
+    logging.info(
+        "[arXiv] unique-candidates=%s direct-pending=%s",
+        len(candidates), len(records),
+    )
+    return records, candidates
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--start-year", type=int, default=2010)
     parser.add_argument("--end-year", type=int, default=2026)
     parser.add_argument("--venues", default="CVPR,ICCV,WACV")
+    parser.add_argument("--cutoff-date", default=CUTOFF_DATE)
+    parser.add_argument("--skip-arxiv", action="store_true")
+    parser.add_argument("--refresh-arxiv", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args()
@@ -267,11 +488,37 @@ def main() -> int:
             time.sleep(0.15)
         except Exception as exc:
             logging.warning("known detail failed %s: %s", page_url, exc)
+    arxiv_records: list[dict] = []
+    arxiv_candidates: list[dict] = []
+    if not args.skip_arxiv:
+        arxiv_records, arxiv_candidates = scan_arxiv(
+            cutoff_date=args.cutoff_date,
+            dry_run=args.dry_run,
+            cache_dir=DATA.parent / ".cache" / "arxiv",
+            refresh=args.refresh_arxiv,
+        )
     existing = []
     papers_path = DATA / "papers.yaml"
     if papers_path.exists():
         existing = load_yaml(papers_path) or []
-    records, duplicates = deduplicate([*cvf_records, *FORMAL, *PREPRINTS, *existing])
+    # Rebuild API-managed preprints from the current auditable candidate set.
+    # This lets rule fixes remove false positives without deleting hand-curated
+    # or formally verified records.
+    api_arxiv_ids = {item["arxiv_id"] for item in arxiv_candidates}
+    if api_arxiv_ids:
+        def is_api_preprint(paper: dict) -> bool:
+            if paper.get("venue_tier") != "Preprint":
+                return False
+            match = re.search(r"(\d{4}\.\d{4,5})", paper.get("arxiv_url", ""))
+            return bool(match and match.group(1) in api_arxiv_ids)
+        existing = [paper for paper in existing if not is_api_preprint(paper)]
+    for paper in [*cvf_records, *FORMAL, *existing]:
+        arxiv_id = FORMAL_ARXIV_IDS.get(paper.get("title", ""))
+        if arxiv_id:
+            paper["arxiv_url"] = f"https://arxiv.org/abs/{arxiv_id}"
+    records, duplicates = deduplicate([
+        *cvf_records, *FORMAL, *PREPRINTS, *arxiv_records, *existing,
+    ])
     logging.info(
         "[Search] discovered=%s official-CVF=%s curated-first-party=%s preprints=%s",
         len(records), len(cvf_records), len(FORMAL), len(PREPRINTS),
@@ -279,6 +526,14 @@ def main() -> int:
     logging.info("[Deduplicate] merged=%s", len(duplicates))
     if not args.dry_run:
         dump_yaml(records, DATA / "candidates.yaml")
+        dump_yaml(
+            sorted(
+                arxiv_candidates,
+                key=lambda item: (item["first_submitted"], item["title"]),
+                reverse=True,
+            ),
+            DATA / "arxiv_candidates.yaml",
+        )
         save_serializations(records)
         with (LOGS / "duplicate_report.csv").open("w", encoding="utf-8", newline="") as handle:
             handle.write("kept_id,merged_id,rule,details\n")

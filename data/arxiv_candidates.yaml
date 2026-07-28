@@ -1,0 +1,2618 @@
+- arxiv_id: '2607.14183'
+  title: 'Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning'
+  authors:
+  - Zishuo Li
+  - Bowen Yang
+  - Changtao Miao
+  - Kai Zhu
+  - Hao Chen
+  - Qingze Guan
+  - Zhengxing Wu
+  - Wanke Zhan
+  - Yang Sun
+  - Zhiyi Huang
+  - Zitong Shan
+  - Zhenchao Jin
+  - Jiadong Hong
+  - Taowen Wang
+  - Yushi Feng
+  - You Liu
+  - Yibo Wang
+  - Yifan Yang
+  - Zhaowen Zhou
+  - Man Luo
+  - Hao Cheng
+  - Bo Zhang
+  - Jianshu Li
+  - Jiansheng Cai
+  - Guocai Yao
+  - Jize Zhang
+  - Chenhao Lin
+  - Renjing Xu
+  - Lequan Yu
+  - Chao Shen
+  - Chunhua Shen
+  - Zhe Li
+  first_submitted: '2026-07-15'
+  last_updated: '2026-07-18'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2607.09081'
+  title: Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation
+  authors:
+  - Artheme Gauthier-Villar
+  - Guodong Ding
+  - Angela Yao
+  first_submitted: '2026-07-10'
+  last_updated: '2026-07-10'
+  comment: 16 pages, 5 figures, accepted to ECCV 2026
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2607.05263'
+  title: Learning Probabilistic Embeddings for Unsupervised Action Segmentation
+  authors:
+  - Shuai Li
+  - Duc Manh Vu
+  - Juergen Gall
+  first_submitted: '2026-07-06'
+  last_updated: '2026-07-06'
+  comment: ECCV2026
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2606.23256'
+  title: 'P-JEPA: Procedural Video Representation Learning via Joint Embedding Predictive Architecture'
+  authors:
+  - Felix Tristram
+  - Stefano Gasperini
+  - Benjamin Killeen
+  - Marcel Walch
+  - Christian Benz
+  - Nassir Navab
+  - Ghazal Ghazaei
+  first_submitted: '2026-06-22'
+  last_updated: '2026-06-22'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2606.21579'
+  title: The Unreasonable Effectiveness of VLMs for Zero-shot Procedural Mistake Detection
+  authors:
+  - Serdar Ozsoy
+  - Lars Doorenbos
+  - Federico Spurio
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2026-06-19'
+  last_updated: '2026-06-19'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2605.31115'
+  title: 'Polyphony: Diffusion-based Dual-Hand Action Segmentation with Alternating Vision Transformer and Semantic Conditioning'
+  authors:
+  - Hao Zheng
+  - Hu Wang
+  - Tiantian Zheng
+  - Prajjwal Bhattarai
+  - Tuka Alhanai
+  first_submitted: '2026-05-29'
+  last_updated: '2026-05-29'
+  comment: CVPR 2026
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2606.02246'
+  title: 'Ego-METAS: Egocentric online Multimodal Energy-efficient Temporal Action Segmentation benchmark'
+  authors:
+  - Maria Santos-Villafranca
+  - Jesus Bermudez-cameo
+  - Alejandro Perez-Yus
+  - Giovanni Maria Farinella
+  - Antonino Furnari
+  first_submitted: '2026-05-29'
+  last_updated: '2026-05-29'
+  comment: 'Project Page: https://maria-sanvil.github.io/Ego-METAS-website/'
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2605.18214'
+  title: 'EgoInteract: Synthetic Egocentric Videos Generation for Interaction Understanding and Anticipation'
+  authors:
+  - Rosario Leonardi
+  - Francesco Ragusa
+  - Daniele Materia
+  - Alessandro Passanisi
+  - James Fort
+  - Jakob Engel
+  - Giovanni Maria Farinella
+  first_submitted: '2026-05-18'
+  last_updated: '2026-05-22'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2605.10149'
+  title: Improving Temporal Action Segmentation via Constraint-Aware Decoding
+  authors:
+  - Yeo Keat Ee
+  - Debaditya Roy
+  - Chen Li
+  - Hao Zhang
+  - Basura Fernando
+  first_submitted: '2026-05-11'
+  last_updated: '2026-05-11'
+  comment: accepted to ICPR 2026
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2605.01668'
+  title: 'IMPACT-Scribe: Interactive Temporal Action Segmentation with Boundary Scribbles and Query Planning'
+  authors:
+  - Qian Yin
+  - Di Wen
+  - Kunyu Peng
+  - David Schneider
+  - Zeyun Zhong
+  - Alexander Jaus
+  - Zdravko Marinov
+  - Jiale Wei
+  - Ruiping Liu
+  - Junwei Zheng
+  - Yufan Chen
+  - Chen Zhang
+  - Lei Qi
+  - Rainer Stiefelhagen
+  first_submitted: '2026-05-03'
+  last_updated: '2026-05-03'
+  comment: 7 pages, 4 figures. Code is available at https://github.com/BanzQians/IMPACT_AS
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.26227'
+  title: HOI-aware Adaptive Network for Weakly-supervised Action Segmentation
+  authors:
+  - Runzhong Zhang
+  - Suchen Wang
+  - Yueqi Duan
+  - Yansong Tang
+  - Yue Zhang
+  - Yap-Peng Tan
+  first_submitted: '2026-04-29'
+  last_updated: '2026-04-29'
+  comment: Accepted to IJCAI 2023
+  journal_ref: ''
+  doi: 10.24963/ijcai.2023/191
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.26637'
+  title: 'ATLAS: An Annotation Tool for Long-horizon Robotic Action Segmentation'
+  authors:
+  - Sergej Stanovcic
+  - Daniel Sliwowski
+  - Dongheui Lee
+  first_submitted: '2026-04-29'
+  last_updated: '2026-04-29'
+  comment: 7 pages, 2 figures, 2 tables
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.21572'
+  title: Deep kernel video approximation for unsupervised action segmentation
+  authors:
+  - Silvia L. Pintea
+  - Jouke Dijkstra
+  first_submitted: '2026-04-23'
+  last_updated: '2026-04-23'
+  comment: Accepted at ICPR 2026
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.15196'
+  title: Unsupervised Skeleton-Based Action Segmentation via Hierarchical Spatiotemporal Vector Quantization
+  authors:
+  - Umer Ahmed
+  - Syed Ahmed Mahmood
+  - Fawad Javed Fateh
+  - M. Shaheer Luqman
+  - M. Zeeshan Zia
+  - Quoc-Huy Tran
+  first_submitted: '2026-04-16'
+  last_updated: '2026-04-16'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.15173'
+  title: Boundary-Centric Clip-Budgeted Active Learning for Temporal Action Segmentation
+  authors:
+  - Halil Ismail Helvaci
+  - Sen-ching Samson Cheung
+  first_submitted: '2026-04-16'
+  last_updated: '2026-06-12'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.10514'
+  title: 'Data-Efficient Surgical Phase Segmentation in Small-Incision Cataract Surgery: A Controlled Study of Vision Foundation
+    Models'
+  authors:
+  - Lincoln Spencer
+  - Song Wang
+  - Chen Chen
+  first_submitted: '2026-04-12'
+  last_updated: '2026-04-12'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.09051'
+  title: Fine-Grained Action Segmentation for Renorrhaphy in Robot-Assisted Partial Nephrectomy
+  authors:
+  - Jiaheng Dai
+  - Huanrong Liu
+  - Tailai Zhou
+  - Tongyu Jia
+  - Qin Liu
+  - Yutong Ban
+  - Zeju Li
+  - Yu Gao
+  - Xin Ma
+  - Qingbiao Li
+  first_submitted: '2026-04-10'
+  last_updated: '2026-04-10'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2604.01859'
+  title: Combining Boundary Supervision and Segment-Level Regularization for Fine-Grained Action Segmentation
+  authors:
+  - Hinako Mitsuoka
+  - Kazuhiro Hotta
+  first_submitted: '2026-04-02'
+  last_updated: '2026-04-02'
+  comment: Accepted by CVPR2026 Workshop "AI-driven Skilled Activity Understanding, Assessment & Feedback Generation (SAUAFG)"
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2603.24134'
+  title: 'Spectral Scalpel: Amplifying Adjacent Action Discrepancy via Frequency-Selective Filtering for Skeleton-Based Action
+    Segmentation'
+  authors:
+  - Haoyu Ji
+  - Bowen Chen
+  - Zhihao Yang
+  - Wenze Huang
+  - Yu Gao
+  - Xueting Liu
+  - Weihong Ren
+  - Zhiyong Wang
+  - Honghai Liu
+  first_submitted: '2026-03-25'
+  last_updated: '2026-03-25'
+  comment: CVPR Conference
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2603.24097'
+  title: 'LaDy: Lagrangian-Dynamic Informed Network for Skeleton-based Action Segmentation via Spatial-Temporal Modulation'
+  authors:
+  - Haoyu Ji
+  - Xueting Liu
+  - Yu Gao
+  - Wenze Huang
+  - Zhihao Yang
+  - Weihong Ren
+  - Zhiyong Wang
+  - Honghai Liu
+  first_submitted: '2026-03-25'
+  last_updated: '2026-03-25'
+  comment: CVPR Conference
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2603.09741'
+  title: 'ENIGMA-360: An Ego-Exo Dataset for Human Behavior Understanding in Industrial Scenarios'
+  authors:
+  - Francesco Ragusa
+  - Rosario Leonardi
+  - Michele Mazzamuto
+  - Daniele Di Mauro
+  - Camillo Quattrocchi
+  - Alessandro Passanisi
+  - Irene D'Ambra
+  - Antonino Furnari
+  - Giovanni Maria Farinella
+  first_submitted: '2026-03-10'
+  last_updated: '2026-03-11'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2603.06201'
+  title: Point-Supervised Skeleton-Based Human Action Segmentation
+  authors:
+  - Hongsong Wang
+  - Yiqin Shen
+  - Pengbo Yan
+  - Jie Gui
+  first_submitted: '2026-03-06'
+  last_updated: '2026-03-06'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2603.00878'
+  title: 'MMTA: Multi Membership Temporal Attention for Fine-Grained Stroke Rehabilitation Assessment'
+  authors:
+  - Halil Ismail Helvaci
+  - Justin Huber
+  - Jihye Bae
+  - Sen-ching Samson Cheung
+  first_submitted: '2026-03-01'
+  last_updated: '2026-03-01'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2602.24275'
+  title: Hierarchical Action Learning for Weakly-Supervised Action Segmentation
+  authors:
+  - Junxian Huang
+  - Ruichu Cai
+  - Hao Zhu
+  - Juntao Fang
+  - Boyan Xu
+  - Weilin Chen
+  - Zijian Li
+  - Shenghua Gao
+  first_submitted: '2026-02-27'
+  last_updated: '2026-02-27'
+  comment: ''
+  journal_ref: CVPR2026
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2602.21406'
+  title: Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation
+  authors:
+  - Asim Unmesh
+  - Kaki Ramesh
+  - Mayank Patel
+  - Rahul Jain
+  - Karthik Ramani
+  first_submitted: '2026-02-24'
+  last_updated: '2026-02-24'
+  comment: ICRA 2026
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2601.06394'
+  title: 'Context Matters: Peer-Aware Student Behavioral Engagement Measurement via VLM Action Parsing and LLM Sequence Classification'
+  authors:
+  - Ahmed Abdelkawy
+  - Ahmed Elsayed
+  - Asem Ali
+  - Aly Farag
+  - Thomas Tretter
+  - Michael McIntyre
+  first_submitted: '2026-01-10'
+  last_updated: '2026-04-29'
+  comment: accepted to the Computer Vision for Education (CV4Edu) workshop, CVPR 2026
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'
+- arxiv_id: '2601.01914'
+  title: Learning Action Hierarchies via Hybrid Geometric Diffusion
+  authors:
+  - Arjun Ramesh Kaushik
+  - Nalini K. Ratha
+  - Venu Govindaraju
+  first_submitted: '2026-01-05'
+  last_updated: '2026-01-05'
+  comment: Accepted at WACV-26
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2510.07652'
+  title: Dual-Stream Alignment for Action Segmentation
+  authors:
+  - Harshala Gammulle
+  - Clinton Fookes
+  - Sridha Sridharan
+  - Simon Denman
+  first_submitted: '2025-10-09'
+  last_updated: '2025-10-09'
+  comment: Journal Submission
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2509.05543'
+  title: 'DuoCLR: Dual-Surrogate Contrastive Learning for Skeleton-based Human Action Segmentation'
+  authors:
+  - Haitao Tian
+  - Pierre Payeur
+  first_submitted: '2025-09-05'
+  last_updated: '2025-09-05'
+  comment: ICCV 2025 accepted paper
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2508.10281'
+  title: 'VIFSS: View-Invariant and Figure Skating-Specific Pose Representation Learning for Temporal Action Segmentation'
+  authors:
+  - Ryota Tanaka
+  - Tomohiro Suzuki
+  - Keisuke Fujii
+  first_submitted: '2025-08-14'
+  last_updated: '2025-08-14'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2508.05529'
+  title: 'Looking into the Unknown: Exploring Action Discovery for Segmentation of Known and Unknown Actions'
+  authors:
+  - Federico Spurio
+  - Emad Bahrami
+  - Olga Zatsarynna
+  - Yazan Abu Farha
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2025-08-07'
+  last_updated: '2025-08-07'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2508.04513'
+  title: Skeleton Motion Words for Unsupervised Skeleton-Based Temporal Action Segmentation
+  authors:
+  - Uzay Gökay
+  - Federico Spurio
+  - Dominik R. Bach
+  - Juergen Gall
+  first_submitted: '2025-08-06'
+  last_updated: '2025-08-06'
+  comment: Accepted to ICCV2025
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2507.03539'
+  title: 'CLOT: Closed Loop Optimal Transport for Unsupervised Action Segmentation'
+  authors:
+  - Elena Bueno-Benito
+  - Mariella Dimiccoli
+  first_submitted: '2025-07-04'
+  last_updated: '2025-08-07'
+  comment: Accepted to ICCV2025
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2507.00756'
+  title: Towards Open-World Human Action Segmentation Using Graph Convolutional Networks
+  authors:
+  - Hao Xing
+  - Kai Zhe Boey
+  - Gordon Cheng
+  first_submitted: '2025-07-01'
+  last_updated: '2025-12-11'
+  comment: 8 pages, 3 figures, accepted in IROS25, Hangzhou, China
+  journal_ref: ''
+  doi: 10.1109/IROS60139.2025.11247257
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2507.00752'
+  title: Multi-Modal Graph Convolutional Network with Sinusoidal Encoding for Robust Human Action Segmentation
+  authors:
+  - Hao Xing
+  - Kai Zhe Boey
+  - Yuankai Wu
+  - Darius Burschka
+  - Gordon Cheng
+  first_submitted: '2025-07-01'
+  last_updated: '2025-12-11'
+  comment: 8 pages, 5 figures, accepted in IROS25, Hangzhou, China
+  journal_ref: ''
+  doi: 10.1109/IROS60139.2025.11245867
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2506.09650'
+  title: 'HopaDIFF: Holistic-Partial Aware Fourier Conditioned Diffusion for Referring Human Action Segmentation in Multi-Person
+    Scenarios'
+  authors:
+  - Kunyu Peng
+  - Junchao Huang
+  - Xiangsheng Huang
+  - Di Wen
+  - Junwei Zheng
+  - Yufan Chen
+  - Kailun Yang
+  - Jiamin Wu
+  - Chongqing Hao
+  - Rainer Stiefelhagen
+  first_submitted: '2025-06-11'
+  last_updated: '2025-10-03'
+  comment: Accepted to NeurIPS 2025. The dataset and code are available at https://github.com/KPeng9510/HopaDIFF
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'
+- arxiv_id: '2506.02472'
+  title: 'HRTR: A Single-stage Transformer for Fine-grained Sub-second Action Segmentation in Stroke Rehabilitation'
+  authors:
+  - Halil Ismail Helvaci
+  - Justin Philip Huber
+  - Jihye Bae
+  - Sen-ching Samson Cheung
+  first_submitted: '2025-06-03'
+  last_updated: '2025-06-11'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2506.00101'
+  title: 'EgoVIS@CVPR: What Changed and What Could Have Changed? State-Change Counterfactuals for Procedure-Aware Video Representation
+    Learning'
+  authors:
+  - Chi-Hsi Kung
+  - Frangil Ramirez
+  - Juhyung Ha
+  - Yi-Ting Chen
+  - David Crandall
+  - Yi-Hsuan Tsai
+  first_submitted: '2025-05-30'
+  last_updated: '2025-09-26'
+  comment: 4 pages, 1 figure, 4 tables. Full paper is available at arXiv:2503.21055
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2504.18756'
+  title: Multi-Stage Boundary-Aware Transformer Network for Action Segmentation in Untrimmed Surgical Videos
+  authors:
+  - Rezowan Shuvo
+  - M S Mekala
+  - Eyad Elyan
+  first_submitted: '2025-04-26'
+  last_updated: '2025-06-10'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2504.18662'
+  title: 'M2R2: MultiModal Robotic Representation for Temporal Action Segmentation'
+  authors:
+  - Daniel Sliwowski
+  - Dongheui Lee
+  first_submitted: '2025-04-25'
+  last_updated: '2026-04-29'
+  comment: 8 pages, 6 figures, 2 tables
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2504.05700'
+  title: Pose-Aware Weakly-Supervised Action Segmentation
+  authors:
+  - Seth Z. Zhao
+  - Reza Ghoddoosian
+  - Isht Dwivedi
+  - Nakul Agarwal
+  - Behzad Dariush
+  first_submitted: '2025-04-08'
+  last_updated: '2025-04-08'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2504.02512'
+  title: Towards Generalizing Temporal Action Segmentation to Unseen Views
+  authors:
+  - Emad Bahrami
+  - Olga Zatsarynna
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2025-04-03'
+  last_updated: '2025-04-03'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2503.21055'
+  title: What Changed and What Could Have Changed? State-Change Counterfactuals for Procedure-Aware Video Representation Learning
+  authors:
+  - Chi-Hsi Kung
+  - Frangil Ramirez
+  - Juhyung Ha
+  - Yi-Ting Chen
+  - David Crandall
+  - Yi-Hsuan Tsai
+  first_submitted: '2025-03-27'
+  last_updated: '2025-08-12'
+  comment: 16 pages, 4 figures
+  journal_ref: International Conference on Computer Vision, ICCV 2025
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2503.18358'
+  title: Cost-Sensitive Learning for Long-Tailed Temporal Action Segmentation
+  authors:
+  - Zhanzhong Pang
+  - Fadime Sener
+  - Shrinivas Ramasubramanian
+  - Angela Yao
+  first_submitted: '2025-03-24'
+  last_updated: '2025-03-24'
+  comment: BMCV 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2503.16832'
+  title: Joint Self-Supervised Video Alignment and Action Segmentation
+  authors:
+  - Ali Shah Ali
+  - Syed Ahmed Mahmood
+  - Mubin Saeed
+  - Andrey Konin
+  - M. Zeeshan Zia
+  - Quoc-Huy Tran
+  first_submitted: '2025-03-21'
+  last_updated: '2025-12-05'
+  comment: Accepted to ICCV 2025
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2503.15126'
+  title: Text-Derived Relational Graph-Enhanced Network for Skeleton-Based Action Segmentation
+  authors:
+  - Haoyu Ji
+  - Bowen Chen
+  - Weihong Ren
+  - Wenze Huang
+  - Zhihao Yang
+  - Zhiyong Wang
+  - Honghai Liu
+  first_submitted: '2025-03-19'
+  last_updated: '2025-03-19'
+  comment: ''
+  journal_ref: ''
+  doi: 10.1109/TIP.2025.3624581
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2503.14112'
+  title: Condensing Action Segmentation Datasets via Generative Network Inversion
+  authors:
+  - Guodong Ding
+  - Rongyu Chen
+  - Angela Yao
+  first_submitted: '2025-03-18'
+  last_updated: '2025-03-18'
+  comment: 10 pages, 3 figures, 5 tables, Accepted to CVPR2025
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2503.06316'
+  title: End-to-End Action Segmentation Transformer
+  authors:
+  - Tieqiao Wang
+  - Sinisa Todorovic
+  first_submitted: '2025-03-08'
+  last_updated: '2025-08-27'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2502.10713'
+  title: Improving action segmentation via explicit similarity measurement
+  authors:
+  - Kamel Aouaidjia
+  - Wenhao Zhang
+  - Aofan Li
+  - Chongsheng Zhang
+  first_submitted: '2025-02-15'
+  last_updated: '2025-02-15'
+  comment: 13 pages, 5 figures
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2501.07214'
+  title: 'TimeLogic: A Temporal Logic Benchmark for Video QA'
+  authors:
+  - Sirnam Swetha
+  - Hilde Kuehne
+  - Mubarak Shah
+  first_submitted: '2025-01-13'
+  last_updated: '2025-01-13'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2412.17640'
+  title: Hierarchical Vector Quantization for Unsupervised Action Segmentation
+  authors:
+  - Federico Spurio
+  - Emad Bahrami
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2024-12-23'
+  last_updated: '2025-01-24'
+  comment: To be published in Conference on Artificial Intelligence (AAAI) 2025
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2412.14988'
+  title: Stitch Contrast and Segment_Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos
+  authors:
+  - Haitao Tian
+  - Pierre Payeur
+  first_submitted: '2024-12-19'
+  last_updated: '2024-12-21'
+  comment: Accepted at AAAI 2025
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2412.12829'
+  title: '2by2: Weakly-Supervised Learning for Global Action Segmentation'
+  authors:
+  - Elena Bueno-Benito
+  - Mariella Dimiccoli
+  first_submitted: '2024-12-17'
+  last_updated: '2024-12-17'
+  comment: ''
+  journal_ref: vol 15332, year 2024, pp 380-395
+  doi: 10.1007/978-3-031-78125-4_26
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2412.04353'
+  title: 'ActFusion: a Unified Diffusion Model for Action Segmentation and Anticipation'
+  authors:
+  - Dayoung Gong
+  - Suha Kwak
+  - Minsu Cho
+  first_submitted: '2024-12-05'
+  last_updated: '2024-12-05'
+  comment: Accepted to NeurIPS 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2412.02930'
+  title: 'TemporalVLM: Video LLMs for Temporal Reasoning in Long Videos'
+  authors:
+  - Fawad Javed Fateh
+  - Umer Ahmed
+  - Hamza Khan
+  - M. Zeeshan Zia
+  - Quoc-Huy Tran
+  first_submitted: '2024-12-04'
+  last_updated: '2026-04-19'
+  comment: Accepted to ACL 2026
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2411.01122'
+  title: 'OnlineTAS: An Online Baseline for Temporal Action Segmentation'
+  authors:
+  - Qing Zhong
+  - Guodong Ding
+  - Angela Yao
+  first_submitted: '2024-11-02'
+  last_updated: '2024-11-02'
+  comment: 16 pages, 4 figures, 12 tables. Accepted to NeurIPS 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2410.22211'
+  title: 'ProMQA: Question Answering Dataset for Multimodal Procedural Activity Understanding'
+  authors:
+  - Kimihiro Hasegawa
+  - Wiradee Imrattanatrai
+  - Zhi-Qi Cheng
+  - Masaki Asada
+  - Susan Holm
+  - Yuran Wang
+  - Ken Fukuda
+  - Teruko Mitamura
+  first_submitted: '2024-10-29'
+  last_updated: '2025-11-04'
+  comment: 'NAACL2025, Code and Data: https://github.com/kimihiroh/promqa'
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2410.06353'
+  title: Language-Assisted Human Part Motion Learning for Skeleton-Based Temporal Action Segmentation
+  authors:
+  - Bowen Chen
+  - Haoyu Ji
+  - Zhiyong Wang
+  - Benjamin Filtjens
+  - Chunzhuo Wang
+  - Weihong Ren
+  - Bart Vanrumste
+  - Honghai Liu
+  first_submitted: '2024-10-08'
+  last_updated: '2024-10-08'
+  comment: This work has been submitted to the IEEE for possible publication
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2409.18478'
+  title: 'Temporal2Seq: A Unified Framework for Temporal Video Understanding Tasks'
+  authors:
+  - Min Yang
+  - Zichen Zhang
+  - Qian Dang
+  - Limin Wang
+  first_submitted: '2024-09-27'
+  last_updated: '2026-06-10'
+  comment: Accepted by CVIU
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2408.16638'
+  title: '3D Pose-Based Temporal Action Segmentation for Figure Skating: A Fine-Grained and Jump Procedure-Aware Annotation
+    Approach'
+  authors:
+  - Ryota Tanaka
+  - Tomohiro Suzuki
+  - Keisuke Fujii
+  first_submitted: '2024-08-29'
+  last_updated: '2024-08-29'
+  comment: 10 pages, 7th ACM International Workshop on Multimedia Content Analysis in Sports
+  journal_ref: ''
+  doi: 10.1145/3689061.3689077
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2408.09919'
+  title: Long-Tail Temporal Action Segmentation with Group-wise Temporal Logit Adjustment
+  authors:
+  - Zhanzhong Pang
+  - Fadime Sener
+  - Shrinivas Ramasubramanian
+  - Angela Yao
+  first_submitted: '2024-08-19'
+  last_updated: '2024-08-19'
+  comment: Accepted by ECCV 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2408.02024'
+  title: Faster Diffusion Action Segmentation
+  authors:
+  - Shuaibing Wang
+  - Shunli Wang
+  - Mingcheng Li
+  - Dingkang Yang
+  - Haopeng Kuang
+  - Ziyun Qian
+  - Lihua Zhang
+  first_submitted: '2024-08-04'
+  last_updated: '2024-08-04'
+  comment: 25 pages, 6 figures
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2407.16727'
+  title: A study of animal action segmentation algorithms across supervised, unsupervised, and semi-supervised learning paradigms
+  authors:
+  - Ari Blau
+  - Evan S Schaffer
+  - Neeli Mishra
+  - Nathaniel J Miska
+  - The International Brain Laboratory
+  - Liam Paninski
+  - Matthew R Whiteway
+  first_submitted: '2024-07-23'
+  last_updated: '2024-12-17'
+  comment: 33 pages, 15 figures
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2405.15995'
+  title: Efficient Temporal Action Segmentation via Boundary-aware Query Voting
+  authors:
+  - Peiyao Wang
+  - Yuewei Lin
+  - Erik Blasch
+  - Jie Wei
+  - Haibin Ling
+  first_submitted: '2024-05-25'
+  last_updated: '2024-05-25'
+  comment: 17 pages, 8 figures, 11 tables
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2404.06894'
+  title: 'O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation'
+  authors:
+  - Matthew Kent Myers
+  - Nick Wright
+  - A. Stephen McGough
+  - Nicholas Martin
+  first_submitted: '2024-04-10'
+  last_updated: '2024-04-10'
+  comment: 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2404.01518'
+  title: Temporally Consistent Unbalanced Optimal Transport for Unsupervised Action Segmentation
+  authors:
+  - Ming Xu
+  - Stephen Gould
+  first_submitted: '2024-04-01'
+  last_updated: '2024-04-08'
+  comment: Accepted to CVPR 2024 (Oral)
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2403.19225'
+  title: Efficient and Effective Weakly-Supervised Action Segmentation via Action-Transition-Aware Boundary Alignment
+  authors:
+  - Angchi Xu
+  - Wei-Shi Zheng
+  first_submitted: '2024-03-28'
+  last_updated: '2024-03-28'
+  comment: Accepted to CVPR 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2403.06102'
+  title: Coherent Temporal Synthesis for Incremental Action Segmentation
+  authors:
+  - Guodong Ding
+  - Hans Golong
+  - Angela Yao
+  first_submitted: '2024-03-10'
+  last_updated: '2024-03-10'
+  comment: 10 pages, 6 figures, 5 tables, accepted to CVPR 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2402.18319'
+  title: A Multimodal Handover Failure Detection Dataset and Baselines
+  authors:
+  - Santosh Thoduka
+  - Nico Hochgeschwender
+  - Juergen Gall
+  - Paul G. Plöger
+  first_submitted: '2024-02-28'
+  last_updated: '2025-08-25'
+  comment: Accepted at ICRA 2024
+  journal_ref: ''
+  doi: 10.1109/ICRA57147.2024.10610143
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2401.11644'
+  title: 'Friends Across Time: Multi-Scale Action Segmentation Transformer for Surgical Phase Recognition'
+  authors:
+  - Bokai Zhang
+  - Jiayuan Meng
+  - Bin Cheng
+  - Dean Biskup
+  - Svetlana Petculescu
+  - Angela Chapman
+  first_submitted: '2024-01-22'
+  last_updated: '2024-01-22'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2401.00438'
+  title: SFGANS Self-supervised Future Generator for human ActioN Segmentation
+  authors:
+  - Or Berman
+  - Adam Goldbraikh
+  - Shlomi Laufer
+  first_submitted: '2023-12-31'
+  last_updated: '2023-12-31'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2312.12347'
+  title: 'SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation'
+  authors:
+  - Feixiang Zhou
+  - Zheheng Jiang
+  - Huiyu Zhou
+  - Xuelong Li
+  first_submitted: '2023-12-19'
+  last_updated: '2024-07-19'
+  comment: Accepted to IEEE Transactions on Multimedia
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2312.05830'
+  title: A Decoupled Spatio-Temporal Framework for Skeleton-based Action Segmentation
+  authors:
+  - Yunheng Li
+  - Zhongyu Li
+  - Shanghua Gao
+  - Qilong Wang
+  - Qibin Hou
+  - Ming-Ming Cheng
+  first_submitted: '2023-12-10'
+  last_updated: '2023-12-10'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2312.04266'
+  title: Activity Grammars for Temporal Action Segmentation
+  authors:
+  - Dayoung Gong
+  - Joonseok Lee
+  - Deunsol Jung
+  - Suha Kwak
+  - Minsu Cho
+  first_submitted: '2023-12-07'
+  last_updated: '2023-12-07'
+  comment: Accepted to NeurIPS 2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2312.02638'
+  title: 'Synchronization is All You Need: Exocentric-to-Egocentric Transfer for Temporal Action Segmentation with Unlabeled
+    Synchronized Video Pairs'
+  authors:
+  - Camillo Quattrocchi
+  - Antonino Furnari
+  - Daniele Di Mauro
+  - Mario Valerio Giuffrida
+  - Giovanni Maria Farinella
+  first_submitted: '2023-12-05'
+  last_updated: '2024-07-16'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2311.17428'
+  title: 'SigFormer: Sparse Signal-Guided Transformer for Multi-Modal Human Action Segmentation'
+  authors:
+  - Qi Liu
+  - Xinchen Liu
+  - Kun Liu
+  - Xiaoyan Gu
+  - Wu Liu
+  first_submitted: '2023-11-29'
+  last_updated: '2024-08-26'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2311.12401'
+  title: 'CASR: Refining Action Segmentation via Marginalizing Frame-levle Causal Relationships'
+  authors:
+  - Keqing Du
+  - Xinyu Yang
+  - Hang Chen
+  first_submitted: '2023-11-21'
+  last_updated: '2024-01-26'
+  comment: We found that the paper needs to be modified in the model and all experiments must be re-run, so we request to
+    withdraw the current version
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2309.15683'
+  title: End-to-End Streaming Video Temporal Action Segmentation with Reinforce Learning
+  authors:
+  - Jinrong Zhang
+  - Wujun Wen
+  - Shenglan Liu
+  - Yunheng Li
+  - Qifeng Li
+  - Lin Feng
+  first_submitted: '2023-09-27'
+  last_updated: '2024-05-23'
+  comment: submit to TNNLS
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2309.06276'
+  title: 'OTAS: Unsupervised Boundary Detection for Object-Centric Temporal Action Segmentation'
+  authors:
+  - Yuerong Li
+  - Zhengrong Xue
+  - Huazhe Xu
+  first_submitted: '2023-09-12'
+  last_updated: '2023-09-12'
+  comment: Accepted to WACV 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2309.06462'
+  title: Action Segmentation Using 2D Skeleton Heatmaps and Multi-Modality Fusion
+  authors:
+  - Syed Waleed Hyder
+  - Muhammad Usama
+  - Anas Zafar
+  - Muhammad Naufil
+  - Fawad Javed Fateh
+  - Andrey Konin
+  - M. Zeeshan Zia
+  - Quoc-Huy Tran
+  first_submitted: '2023-09-12'
+  last_updated: '2024-04-26'
+  comment: Accepted to ICRA 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2308.16552'
+  title: Prompt-enhanced Hierarchical Transformer Elevating Cardiopulmonary Resuscitation Instruction via Temporal Action
+    Segmentation
+  authors:
+  - Yang Liu
+  - Xiaoyun Zhong
+  - Shiyao Zhai
+  - Zhicheng Du
+  - Zhenyuan Gao
+  - Qiming Huang
+  - Canyang Zhang
+  - Bin Jiang
+  - Vijay Kumar Pandey
+  - Sanyang Han
+  - Runming Wang
+  - Yuxing Han
+  - Peiwu Qin
+  first_submitted: '2023-08-31'
+  last_updated: '2023-08-31'
+  comment: Transformer for Cardiopulmonary Resuscitation
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2308.14500'
+  title: 'LAC: Latent Action Composition for Skeleton-based Action Segmentation'
+  authors:
+  - Di Yang
+  - Yaohui Wang
+  - Antitza Dantcheva
+  - Quan Kong
+  - Lorenzo Garattoni
+  - Gianpiero Francesca
+  - Francois Bremond
+  first_submitted: '2023-08-28'
+  last_updated: '2024-02-21'
+  comment: ICCV 2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2308.14900'
+  title: 'BIT: Bi-Level Temporal Modeling for Efficient Supervised Action Segmentation'
+  authors:
+  - Zijia Lu
+  - Ehsan Elhamifar
+  first_submitted: '2023-08-28'
+  last_updated: '2023-10-07'
+  comment: 9 pages, 6 figures
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2308.11358'
+  title: How Much Temporal Long-Term Context is Needed for Action Segmentation?
+  authors:
+  - Emad Bahrami
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2023-08-22'
+  last_updated: '2023-09-25'
+  comment: ICCV 2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2307.16803'
+  title: 'DPMix: Mixture of Depth and Point Cloud Video Experts for 4D Action Segmentation'
+  authors:
+  - Yue Zhang
+  - Hehe Fan
+  - Yi Yang
+  - Mohan Kankanhalli
+  first_submitted: '2023-07-31'
+  last_updated: '2023-07-31'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2305.19478'
+  title: Permutation-Aware Action Segmentation via Unsupervised Frame-to-Segment Alignment
+  authors:
+  - Quoc-Huy Tran
+  - Ahmed Mehmood
+  - Muhammad Ahmed
+  - Muhammad Naufil
+  - Anas Zafar
+  - Andrey Konin
+  - M. Zeeshan Zia
+  first_submitted: '2023-05-31'
+  last_updated: '2025-12-01'
+  comment: Accepted to WACV 2024
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2305.11365'
+  title: Enhancing Transformer Backbone for Egocentric Video Action Segmentation
+  authors:
+  - Sakib Reza
+  - Balaji Sundareshan
+  - Mohsen Moghaddam
+  - Octavia Camps
+  first_submitted: '2023-05-19'
+  last_updated: '2023-05-23'
+  comment: Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2304.06403'
+  title: Leveraging triplet loss for unsupervised action segmentation
+  authors:
+  - E. Bueno-Benito
+  - B. Tura
+  - M. Dimiccoli
+  first_submitted: '2023-04-13'
+  last_updated: '2023-07-19'
+  comment: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2023, pp. 4921-4929
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2304.02110'
+  title: 'DIR-AS: Decoupling Individual Identification and Temporal Reasoning for Action Segmentation'
+  authors:
+  - Peiyao Wang
+  - Haibin Ling
+  first_submitted: '2023-04-04'
+  last_updated: '2023-04-04'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2303.17959'
+  title: Diffusion Action Segmentation
+  authors:
+  - Daochang Liu
+  - Qiyue Li
+  - AnhDung Dinh
+  - Tingting Jiang
+  - Mubarak Shah
+  - Chang Xu
+  first_submitted: '2023-03-31'
+  last_updated: '2023-08-12'
+  comment: ICCV 2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2303.07814'
+  title: 'MS-TCRNet: Multi-Stage Temporal Convolutional Recurrent Networks for Action Segmentation Using Sensor-Augmented
+    Kinematics'
+  authors:
+  - Adam Goldbraikh
+  - Omer Shubi
+  - Or Rubin
+  - Carla M Pugh
+  - Shlomi Laufer
+  first_submitted: '2023-03-14'
+  last_updated: '2024-07-12'
+  comment: 41 pages, 7 figures. Submitted to Pattern Recognition
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2303.05166'
+  title: 'TAEC: Unsupervised Action Segmentation with Temporal-Aware Embedding and Clustering'
+  authors:
+  - Wei Lin
+  - Anna Kukleva
+  - Horst Possegger
+  - Hilde Kuehne
+  - Horst Bischof
+  first_submitted: '2023-03-09'
+  last_updated: '2023-03-09'
+  comment: Computer Vision Winter Workshop 2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2302.13074'
+  title: Temporal Segment Transformer for Action Segmentation
+  authors:
+  - Zhichao Liu
+  - Leshan Wang
+  - Desen Zhou
+  - Jian Wang
+  - Songyang Zhang
+  - Yang Bai
+  - Errui Ding
+  - Rui Fan
+  first_submitted: '2023-02-25'
+  last_updated: '2023-02-25'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2212.11694'
+  title: Timestamp-Supervised Action Segmentation from the Perspective of Clustering
+  authors:
+  - Dazhao Du
+  - Enhan Li
+  - Lingyu Si
+  - Fanjiang Xu
+  - Fuchun Sun
+  first_submitted: '2022-12-22'
+  last_updated: '2023-04-23'
+  comment: Accepted as a conference paper to the 32nd International Joint Conference on Artificial Intelligence (IJCAI-23)
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2212.11078'
+  title: 'C2F-TCN: A Framework for Semi and Fully Supervised Temporal Action Segmentation'
+  authors:
+  - Dipika Singhania
+  - Rahul Rahaman
+  - Angela Yao
+  first_submitted: '2022-12-20'
+  last_updated: '2022-12-20'
+  comment: 'arXiv admin note: text overlap with arXiv:2112.01402'
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2211.13694'
+  title: Hand Guided High Resolution Feature Enhancement for Fine-Grained Atomic Action Segmentation within Complex Human
+    Assemblies
+  authors:
+  - Matthew Kent Myers
+  - Nick Wright
+  - Stephen McGough
+  - Nicholas Martin
+  first_submitted: '2022-11-24'
+  last_updated: '2022-11-24'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2211.01311'
+  title: Distill and Collect for Semi-Supervised Temporal Action Segmentation
+  authors:
+  - Sovan Biswas
+  - Anthony Rhodes
+  - Ramesh Manuvinakurike
+  - Giuseppe Raffa
+  - Richard Beckwith
+  first_submitted: '2022-11-02'
+  last_updated: '2022-11-03'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2210.10352'
+  title: 'Temporal Action Segmentation: An Analysis of Modern Techniques'
+  authors:
+  - Guodong Ding
+  - Fadime Sener
+  - Angela Yao
+  first_submitted: '2022-10-19'
+  last_updated: '2023-10-21'
+  comment: 19 pages, 9 figures, 8 tables, TPAMI 2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2210.06501'
+  title: Robust Action Segmentation from Timestamp Supervision
+  authors:
+  - Yaser Souri
+  - Yazan Abu Farha
+  - Emad Bahrami
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2022-10-12'
+  last_updated: '2022-10-12'
+  comment: BMVC 2022
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2209.13808'
+  title: Streaming Video Temporal Action Segmentation In Real Time
+  authors:
+  - Wujun Wen
+  - Yunheng Li
+  - Zhuben Dong
+  - Lin Feng
+  - Wanxiao Yang
+  - Shenlan Liu
+  first_submitted: '2022-09-28'
+  last_updated: '2023-10-10'
+  comment: accepted by ISKE2023
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2209.05653'
+  title: 'Semantic2Graph: Graph-based Multi-modal Feature Fusion for Action Segmentation in Videos'
+  authors:
+  - Junbin Zhang
+  - Pei-Hsuan Tsai
+  - Meng-Hsun Tsai
+  first_submitted: '2022-09-13'
+  last_updated: '2024-02-06'
+  comment: 13 pages, 3 figures, 9 tables. Published on Applied Intelligence
+  journal_ref: Applied Intelligence(2024)
+  doi: 10.1007/s10489-023-05259-z
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2209.00638'
+  title: Unified Fully and Timestamp Supervised Temporal Action Segmentation via Sequence to Sequence Translation
+  authors:
+  - Nadine Behrmann
+  - S. Alireza Golestaneh
+  - Zico Kolter
+  - Juergen Gall
+  - Mehdi Noroozi
+  first_submitted: '2022-09-01'
+  last_updated: '2022-10-11'
+  comment: ECCV 2022 (Main Conference)
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2207.09925'
+  title: An Efficient Framework for Few-shot Skeleton-based Temporal Action Segmentation
+  authors:
+  - Leiyang Xu
+  - Qiang Wang
+  - Xiaotian Lin
+  - Lin Yuan
+  first_submitted: '2022-07-20'
+  last_updated: '2022-07-20'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2207.10137'
+  title: A Generalized & Robust Framework For Timestamp Supervision in Temporal Action Segmentation
+  authors:
+  - Rahul Rahaman
+  - Dipika Singhania
+  - Alexandre Thiery
+  - Angela Yao
+  first_submitted: '2022-07-20'
+  last_updated: '2022-07-20'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2207.08653'
+  title: Leveraging Action Affinity and Continuity for Semi-supervised Temporal Action Segmentation
+  authors:
+  - Guodong Ding
+  - Angela Yao
+  first_submitted: '2022-07-18'
+  last_updated: '2022-07-21'
+  comment: 16 pages, 5 figures
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2207.00712'
+  title: Turning to a Teacher for Timestamp Supervised Temporal Action Segmentation
+  authors:
+  - Yang Zhao
+  - Yan Song
+  first_submitted: '2022-07-02'
+  last_updated: '2022-07-02'
+  comment: 6 pages, ICME 2022 oral
+  journal_ref: ''
+  doi: 10.1109/ICME52920.2022.9859626
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2206.15031'
+  title: Timestamp-Supervised Action Segmentation with Graph Convolutional Networks
+  authors:
+  - Hamza Khan
+  - Sanjay Haresh
+  - Awais Ahmed
+  - Shakeeb Siddiqui
+  - Andrey Konin
+  - M. Zeeshan Zia
+  - Quoc-Huy Tran
+  first_submitted: '2022-06-30'
+  last_updated: '2022-08-02'
+  comment: Accepted to IROS 2022
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2206.06637'
+  title: 'RF-Next: Efficient Receptive Field Search for Convolutional Neural Networks'
+  authors:
+  - Shanghua Gao
+  - Zhong-Yu Li
+  - Qi Han
+  - Ming-Ming Cheng
+  - Liang Wang
+  first_submitted: '2022-06-14'
+  last_updated: '2022-06-15'
+  comment: Accepted by TPAMI. This paper is a journal extension of our CVPR 2021 paper (arXiv:2101.00910)
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2205.13425'
+  title: Do we really need temporal convolutions in action segmentation?
+  authors:
+  - Dazhao Du
+  - Bing Su
+  - Yu Li
+  - Zhongang Qi
+  - Lingyu Si
+  - Ying Shan
+  first_submitted: '2022-05-26'
+  last_updated: '2022-11-22'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2205.10008'
+  title: Action parsing using context features
+  authors:
+  - Nagita Mehrseresht
+  first_submitted: '2022-05-20'
+  last_updated: '2022-05-20'
+  comment: ''
+  journal_ref: 'International Conference on Digital Image Computing: Techniques and Applications (DICTA), 2017, pp. 1-7'
+  doi: 10.1109/DICTA.2017.8227399
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2205.09445'
+  title: Cross-Enhancement Transformer for Action Segmentation
+  authors:
+  - Jiahui Wang
+  - Zhenyou Wang
+  - Shanna Zhuang
+  - Hui Wang
+  first_submitted: '2022-05-19'
+  last_updated: '2022-05-19'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2203.13309'
+  title: Weakly-Supervised Online Action Segmentation in Multi-View Instructional Videos
+  authors:
+  - Reza Ghoddoosian
+  - Isht Dwivedi
+  - Nakul Agarwal
+  - Chiho Choi
+  - Behzad Dariush
+  first_submitted: '2022-03-24'
+  last_updated: '2022-03-24'
+  comment: Accepted CVPR 2022
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2203.04476'
+  title: Part-level Action Parsing via a Pose-guided Coarse-to-Fine Framework
+  authors:
+  - Xiaodong Chen
+  - Xinchen Liu
+  - Wu Liu
+  - Kun Liu
+  - Dong Wu
+  - Yongdong Zhang
+  - Tao Mei
+  first_submitted: '2022-03-09'
+  last_updated: '2022-09-02'
+  comment: 'Accepted by IEEE ISCAS 2022, 5 pages, 2 figures. arXiv admin note: text overlap with arXiv:2110.03368'
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'
+- arxiv_id: '2202.01727'
+  title: Skeleton-Based Action Segmentation with Multi-Stage Spatial-Temporal Graph Convolutional Neural Networks
+  authors:
+  - Benjamin Filtjens
+  - Bart Vanrumste
+  - Peter Slaets
+  first_submitted: '2022-02-03'
+  last_updated: '2022-10-09'
+  comment: ''
+  journal_ref: ''
+  doi: 10.1109/TETC.2022.3230912
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2201.05675'
+  title: 'Transformers in Action: Weakly Supervised Action Segmentation'
+  authors:
+  - John Ridley
+  - Huseyin Coskun
+  - David Joseph Tan
+  - Nassir Navab
+  - Federico Tombari
+  first_submitted: '2022-01-14'
+  last_updated: '2022-01-20'
+  comment: Under Review
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2112.01402'
+  title: Iterative Contrast-Classify For Semi-supervised Temporal Action Segmentation
+  authors:
+  - Dipika Singhania
+  - Rahul Rahaman
+  - Angela Yao
+  first_submitted: '2021-12-02'
+  last_updated: '2021-12-08'
+  comment: AAAI-2022
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2111.03225'
+  title: 'Technical Report: Disentangled Action Parsing Networks for Accurate Part-level Action Parsing'
+  authors:
+  - Xuanhan Wang
+  - Xiaojia Chen
+  - Lianli Gao
+  - Lechao Chen
+  - Jingkuan Song
+  first_submitted: '2021-11-05'
+  last_updated: '2021-11-05'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'
+- arxiv_id: '2110.08568'
+  title: 'ASFormer: Transformer for Action Segmentation'
+  authors:
+  - Fangqiu Yi
+  - Hongyu Wen
+  - Tingting Jiang
+  first_submitted: '2021-10-16'
+  last_updated: '2021-10-16'
+  comment: Accepted by BMVC 2021
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2110.05697'
+  title: Hierarchical Modeling for Task Recognition and Action Segmentation in Weakly-Labeled Instructional Videos
+  authors:
+  - Reza Ghoddoosian
+  - Saif Sayed
+  - Vassilis Athitsos
+  first_submitted: '2021-10-12'
+  last_updated: '2021-10-12'
+  comment: Accepted in WACV 2022
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2110.03368'
+  title: A Baseline Framework for Part-level Action Parsing and Action Recognition
+  authors:
+  - Xiaodong Chen
+  - Xinchen Liu
+  - Kun Liu
+  - Wu Liu
+  - Tao Mei
+  first_submitted: '2021-10-07'
+  last_updated: '2022-09-01'
+  comment: 4 pages, 1 figures, ICCV 2021 Challenge, 2nd place solution for Kinetics-TPS Track in ICCV DeeperAction Workshop
+    2021
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'
+- arxiv_id: '2108.06706'
+  title: Temporal Action Segmentation with High-level Complex Activity Labels
+  authors:
+  - Guodong Ding
+  - Angela Yao
+  first_submitted: '2021-08-15'
+  last_updated: '2022-12-17'
+  comment: 12 pages, 6 figures
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2108.03894'
+  title: 'FIFA: Fast Inference Approximation for Action Segmentation'
+  authors:
+  - Yaser Souri
+  - Yazan Abu Farha
+  - Fabien Despinoy
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2021-08-09'
+  last_updated: '2021-08-09'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2106.03738'
+  title: Unsupervised Action Segmentation for Instructional Videos
+  authors:
+  - AJ Piergiovanni
+  - Anelia Angelova
+  - Michael S. Ryoo
+  - Irfan Essa
+  first_submitted: '2021-06-07'
+  last_updated: '2021-06-07'
+  comment: 4 page abstract for LUV workshop
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2105.14158'
+  title: 'SSCAP: Self-supervised Co-occurrence Action Parsing for Unsupervised Temporal Action Segmentation'
+  authors:
+  - Zhe Wang
+  - Hao Chen
+  - Xinyu Li
+  - Chunhui Liu
+  - Yuanjun Xiong
+  - Joseph Tighe
+  - Charless Fowlkes
+  first_submitted: '2021-05-29'
+  last_updated: '2021-10-25'
+  comment: WACV 2022 camera ready
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2105.13353'
+  title: Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering
+  authors:
+  - Sateesh Kumar
+  - Sanjay Haresh
+  - Awais Ahmed
+  - Andrey Konin
+  - M. Zeeshan Zia
+  - Quoc-Huy Tran
+  first_submitted: '2021-05-27'
+  last_updated: '2023-08-17'
+  comment: Presented at CVPR 2022
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2104.07461'
+  title: Action Segmentation with Mixed Temporal Domain Adaptation
+  authors:
+  - Min-Hung Chen
+  - Baopu Li
+  - Yingze Bao
+  - Ghassan AlRegib
+  first_submitted: '2021-04-15'
+  last_updated: '2021-04-16'
+  comment: 'Winter Conference on Applications of Computer Vision (WACV) 2020. Website: https://minhungchen.netlify.app/publication/mtda'
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2104.02113'
+  title: Anchor-Constrained Viterbi for Set-Supervised Action Segmentation
+  authors:
+  - Jun Li
+  - Sinisa Todorovic
+  first_submitted: '2021-04-05'
+  last_updated: '2021-04-05'
+  comment: CVPR 2021
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2104.02116'
+  title: Action Shuffle Alternating Learning for Unsupervised Action Segmentation
+  authors:
+  - Jun Li
+  - Sinisa Todorovic
+  first_submitted: '2021-04-05'
+  last_updated: '2021-04-05'
+  comment: CVPR 2021
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2103.11264'
+  title: Temporally-Weighted Hierarchical Clustering for Unsupervised Action Segmentation
+  authors:
+  - M. Saquib Sarfraz
+  - Naila Murray
+  - Vivek Sharma
+  - Ali Diba
+  - Luc Van Gool
+  - Rainer Stiefelhagen
+  first_submitted: '2021-03-20'
+  last_updated: '2021-03-27'
+  comment: CVPR 2021
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2103.06669'
+  title: Temporal Action Segmentation from Timestamp Supervision
+  authors:
+  - Zhe Li
+  - Yazan Abu Farha
+  - Juergen Gall
+  first_submitted: '2021-03-11'
+  last_updated: '2021-03-26'
+  comment: CVPR 2021
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2101.00910'
+  title: 'Global2Local: Efficient Structure Search for Video Action Segmentation'
+  authors:
+  - Shang-Hua Gao
+  - Qi Han
+  - Zhong-Yu Li
+  - Pai Peng
+  - Liang Wang
+  - Ming-Ming Cheng
+  first_submitted: '2021-01-04'
+  last_updated: '2021-04-30'
+  comment: 'Accepted by CVPR 2021. Source code: https://github.com/ShangHua-Gao/G2L-search'
+  journal_ref: CVPR 2021
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2012.07508'
+  title: Temporal Relational Modeling with Self-Supervision for Action Segmentation
+  authors:
+  - Dong Wang
+  - Di Hu
+  - Xingjian Li
+  - Dejing Dou
+  first_submitted: '2020-12-14'
+  last_updated: '2020-12-14'
+  comment: Accepted by the Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI-21)
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2008.13759'
+  title: Online Spatiotemporal Action Detection and Prediction via Causal Representations
+  authors:
+  - Gurkirt Singh
+  first_submitted: '2020-08-31'
+  last_updated: '2020-08-31'
+  comment: 'PhD thesis, Oxford Brookes University, Examiners: Dr. Andrea Vedaldi and Dr. Fridolin Wild, 172 pages'
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'
+- arxiv_id: '2007.06866'
+  title: Alleviating Over-segmentation Errors by Detecting Action Boundaries
+  authors:
+  - Yuchi Ishikawa
+  - Seito Kasai
+  - Yoshimitsu Aoki
+  - Hirokatsu Kataoka
+  first_submitted: '2020-07-14'
+  last_updated: '2020-07-14'
+  comment: under review
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2006.09220'
+  title: 'MS-TCN++: Multi-Stage Temporal Convolutional Network for Action Segmentation'
+  authors:
+  - Shijie Li
+  - Yazan Abu Farha
+  - Yun Liu
+  - Ming-Ming Cheng
+  - Juergen Gall
+  first_submitted: '2020-06-16'
+  last_updated: '2020-09-02'
+  comment: 'IEEE Transactions on Pattern Analysis and Machine Intelligence. arXiv admin note: substantial text overlap with
+    arXiv:1903.01945'
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2005.10229'
+  title: Intra- and Inter-Action Understanding via Temporal Action Parsing
+  authors:
+  - Dian Shao
+  - Yue Zhao
+  - Bo Dai
+  - Dahua Lin
+  first_submitted: '2020-05-20'
+  last_updated: '2020-05-20'
+  comment: 'CVPR 2020 Poster; Project page: https://sdolivia.github.io/TAPOS/'
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2005.09743'
+  title: On Evaluating Weakly Supervised Action Segmentation Methods
+  authors:
+  - Yaser Souri
+  - Alexander Richard
+  - Luca Minciullo
+  - Juergen Gall
+  first_submitted: '2020-05-19'
+  last_updated: '2021-10-21'
+  comment: Technical Report
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2005.03209'
+  title: Hierarchical Attention Network for Action Segmentation
+  authors:
+  - Harshala Gammulle
+  - Simon Denman
+  - Sridha Sridharan
+  - Clinton Fookes
+  first_submitted: '2020-05-07'
+  last_updated: '2020-05-07'
+  comment: Published in Pattern Recognition Letters
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2003.14266'
+  title: 'SCT: Set Constrained Temporal Transformer for Set Supervised Action Segmentation'
+  authors:
+  - Mohsen Fayyaz
+  - Juergen Gall
+  first_submitted: '2020-03-31'
+  last_updated: '2020-03-31'
+  comment: CVPR 2020
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2003.13141'
+  title: Learning a Weakly-Supervised Video Actor-Action Segmentation Model with a Wise Selection
+  authors:
+  - Jie Chen
+  - Zhiheng Li
+  - Jiebo Luo
+  - Chenliang Xu
+  first_submitted: '2020-03-29'
+  last_updated: '2020-03-29'
+  comment: '11 pages, 8 figures, cvpr-2020 supplementary video: https://youtu.be/CX1hEOV9tlo'
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'
+- arxiv_id: '2003.10066'
+  title: Caption Generation of Robot Behaviors based on Unsupervised Learning of Action Segments
+  authors:
+  - Koichiro Yoshino
+  - Kohei Wakimoto
+  - Yuta Nishimura
+  - Satoshi Nakamura
+  first_submitted: '2020-03-23'
+  last_updated: '2020-03-23'
+  comment: Will appear in IWSDS2020
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '2003.02824'
+  title: Action Segmentation with Joint Self-Supervised Temporal Domain Adaptation
+  authors:
+  - Min-Hung Chen
+  - Baopu Li
+  - Yingze Bao
+  - Ghassan AlRegib
+  - Zsolt Kira
+  first_submitted: '2020-03-05'
+  last_updated: '2020-03-18'
+  comment: 'CVPR 2020. Source code: https://github.com/cmhungsteve/SSTDA'
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '2002.11925'
+  title: Set-Constrained Viterbi for Set-Supervised Action Segmentation
+  authors:
+  - Jun Li
+  - Sinisa Todorovic
+  first_submitted: '2020-02-27'
+  last_updated: '2020-03-27'
+  comment: CVPR 2020 conference paper
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1909.13155'
+  title: Weakly Supervised Energy-Based Learning for Action Segmentation
+  authors:
+  - Jun Li
+  - Peng Lei
+  - Sinisa Todorovic
+  first_submitted: '2019-09-28'
+  last_updated: '2019-09-28'
+  comment: ICCV 2019 Oral paper
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1909.09269'
+  title: Fine-grained Action Segmentation using the Semi-Supervised Action GAN
+  authors:
+  - Harshala Gammulle
+  - Simon Denman
+  - Sridha Sridharan
+  - Clinton Fookes
+  first_submitted: '2019-09-20'
+  last_updated: '2019-09-20'
+  comment: Published in Pattern Recognition Journal
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1909.09283'
+  title: Coupled Generative Adversarial Network for Continuous Fine-grained Action Segmentation
+  authors:
+  - Harshala Gammulle
+  - Tharindu Fernando
+  - Simon Denman
+  - Sridha Sridharan
+  - Clinton Fookes
+  first_submitted: '2019-09-20'
+  last_updated: '2019-09-20'
+  comment: WACV 2019
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1908.08391'
+  title: Learning Object-Action Relations from Bimanual Human Demonstration Using Graph Networks
+  authors:
+  - Christian R. G. Dreher
+  - Mirko Wächter
+  - Tamim Asfour
+  first_submitted: '2019-08-22'
+  last_updated: '2019-09-12'
+  comment: Submitted to IEEE Robotics and Automation Letters
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '1906.01004'
+  title: Frontal Low-rank Random Tensors for Fine-grained Action Segmentation
+  authors:
+  - Yan Zhang
+  - Krikamol Muandet
+  - Qianli Ma
+  - Heiko Neumann
+  - Siyu Tang
+  first_submitted: '2019-06-03'
+  last_updated: '2020-04-06'
+  comment: 19 pages (4 pages appendix), 3 figures. Revised theories and models, new experiments
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1906.01028'
+  title: A Hybrid RNN-HMM Approach for Weakly Supervised Temporal Action Segmentation
+  authors:
+  - Hilde Kuehne
+  - Alexander Richard
+  - Juergen Gall
+  first_submitted: '2019-06-03'
+  last_updated: '2019-06-03'
+  comment: '15 pages, preprint for IEEE TPAMI https://ieeexplore.ieee.org/document/8585084 (open access). arXiv admin note:
+    substantial text overlap with arXiv:1703.08132'
+  journal_ref: ''
+  doi: 10.1109/TPAMI.2018.2884469
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1904.03116'
+  title: Fast Weakly Supervised Action Segmentation Using Mutual Consistency
+  authors:
+  - Yaser Souri
+  - Mohsen Fayyaz
+  - Luca Minciullo
+  - Gianpiero Francesca
+  - Juergen Gall
+  first_submitted: '2019-04-05'
+  last_updated: '2021-06-10'
+  comment: Accepted for publication at TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence) in 2021. First
+    two authors contributed equally
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1903.01945'
+  title: 'MS-TCN: Multi-Stage Temporal Convolutional Network for Action Segmentation'
+  authors:
+  - Yazan Abu Farha
+  - Juergen Gall
+  first_submitted: '2019-03-05'
+  last_updated: '2019-04-02'
+  comment: CVPR 2019 Camera Ready
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1812.01922'
+  title: Local Temporal Bilinear Pooling for Fine-grained Action Parsing
+  authors:
+  - Yan Zhang
+  - Siyu Tang
+  - Krikamol Muandet
+  - Christian Jarvers
+  - Heiko Neumann
+  first_submitted: '2018-12-05'
+  last_updated: '2019-05-26'
+  comment: 11 pages, 2 figures. Cam.R
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1811.10575'
+  title: Stacked Spatio-Temporal Graph Convolutional Networks for Action Segmentation
+  authors:
+  - Pallabi Ghosh
+  - Yi Yao
+  - Larry S. Davis
+  - Ajay Divakaran
+  first_submitted: '2018-11-26'
+  last_updated: '2019-06-02'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1811.03382'
+  title: Active Learning using Deep Bayesian Networks for Surgical Workflow Analysis
+  authors:
+  - Sebastian Bodenstedt
+  - Dominik Rivoir
+  - Alexander Jenke
+  - Martin Wagner
+  - Michael Breucha
+  - Beat Müller-Stich
+  - Sören Torge Mees
+  - Jürgen Weitz
+  - Stefanie Speidel
+  first_submitted: '2018-11-08'
+  last_updated: '2019-04-02'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '1806.06811'
+  title: Temporal coherence-based self-supervised learning for laparoscopic workflow analysis
+  authors:
+  - Isabel Funke
+  - Alexander Jenke
+  - Sören Torge Mees
+  - Jürgen Weitz
+  - Stefanie Speidel
+  - Sebastian Bodenstedt
+  first_submitted: '2018-06-18'
+  last_updated: '2018-09-07'
+  comment: Accepted at the Workshop on Context-Aware Operating Theaters (OR 2.0), a MICCAI satellite event
+  journal_ref: CARE 2018, CLIP 2018, OR 2.0 2018, ISIC 2018. Lecture Notes in Computer Science, vol 11041 (2018) 85-93
+  doi: 10.1007/978-3-030-01201-4_11
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '1803.10699'
+  title: Weakly-Supervised Action Segmentation with Iterative Soft Boundary Assignment
+  authors:
+  - Li Ding
+  - Chenliang Xu
+  first_submitted: '2018-03-28'
+  last_updated: '2018-03-28'
+  comment: CVPR 2018
+  journal_ref: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018, pp. 6508-6516
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1803.05790'
+  title: Temporal Human Action Segmentation via Dynamic Clustering
+  authors:
+  - Yan Zhang
+  - He Sun
+  - Siyu Tang
+  - Heiko Neumann
+  first_submitted: '2018-03-15'
+  last_updated: '2018-03-18'
+  comment: comparing with the 1st version, only corrected typos
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1801.09571'
+  title: End-to-End Fine-Grained Action Segmentation and Recognition Using Conditional Random Field Models and Discriminative
+    Sparse Coding
+  authors:
+  - Effrosyni Mavroudi
+  - Divya Bhaskara
+  - Shahin Sefati
+  - Haider Ali
+  - René Vidal
+  first_submitted: '2018-01-29'
+  last_updated: '2018-01-29'
+  comment: Camera ready version accepted at WACV 2018
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1710.00187'
+  title: Unsupervised Segmentation of Action Segments in Egocentric Videos using Gaze
+  authors:
+  - I. Hipiny
+  - H. Ujir
+  - J. L. Minoi
+  - S. F. Samson Juan
+  - M. A. Khairuddin
+  - M. S. Sunar
+  first_submitted: '2017-09-30'
+  last_updated: '2021-06-23'
+  comment: Published in 2017 IEEE International Conference On Signal and Image Processing Applications
+  journal_ref: ''
+  doi: 10.1109/ICSIPA.2017.8120635
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '1706.00699'
+  title: 'Action Sets: Weakly Supervised Action Segmentation without Ordering Constraints'
+  authors:
+  - Alexander Richard
+  - Hilde Kuehne
+  - Juergen Gall
+  first_submitted: '2017-06-02'
+  last_updated: '2018-05-17'
+  comment: CVPR 2018
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1705.07818'
+  title: 'TricorNet: A Hybrid Temporal Convolutional and Recurrent Network for Video Action Segmentation'
+  authors:
+  - Li Ding
+  - Chenliang Xu
+  first_submitted: '2017-05-22'
+  last_updated: '2017-05-22'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1703.08132'
+  title: Weakly Supervised Action Learning with RNN based Fine-to-coarse Modeling
+  authors:
+  - Alexander Richard
+  - Hilde Kuehne
+  - Juergen Gall
+  first_submitted: '2017-03-23'
+  last_updated: '2017-10-09'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: query hit but title does not explicitly define a TAS task
+  verification_date: '2026-07-28'
+- arxiv_id: '1611.05267'
+  title: Temporal Convolutional Networks for Action Segmentation and Detection
+  authors:
+  - Colin Lea
+  - Michael D. Flynn
+  - Rene Vidal
+  - Austin Reiter
+  - Gregory D. Hager
+  first_submitted: '2016-11-16'
+  last_updated: '2016-11-16'
+  comment: ''
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1608.08242'
+  title: 'Temporal Convolutional Networks: A Unified Approach to Action Segmentation'
+  authors:
+  - Colin Lea
+  - Rene Vidal
+  - Austin Reiter
+  - Gregory D. Hager
+  first_submitted: '2016-08-29'
+  last_updated: '2016-08-29'
+  comment: Submitted to the ECCV workshop on "Brave new ideas for motion representations in videos" (http://bravenewmotion.github.io/)
+  journal_ref: ''
+  doi: ''
+  decision: candidate-only
+  decision_reason: Earlier TCN manuscript/version represented by the verified CVPR 2017 conference record.
+  verification_date: '2026-07-28'
+- arxiv_id: '1602.02995'
+  title: Segmental Spatiotemporal CNNs for Fine-grained Action Segmentation
+  authors:
+  - Colin Lea
+  - Austin Reiter
+  - Rene Vidal
+  - Gregory D. Hager
+  first_submitted: '2016-02-09'
+  last_updated: '2016-09-30'
+  comment: Updated from the ECCV 2016 version. We fixed an important mathematical error and made the section on segmental
+    inference clearer
+  journal_ref: ''
+  doi: ''
+  decision: include-pending-verification
+  decision_reason: title explicitly names temporal/action segmentation
+  verification_date: '2026-07-28'
+- arxiv_id: '1502.00501'
+  title: An Expressive Deep Model for Human Action Parsing from A Single Image
+  authors:
+  - Zhujin Liang
+  - Xiaolong Wang
+  - Rui Huang
+  - Liang Lin
+  first_submitted: '2015-02-02'
+  last_updated: '2015-02-02'
+  comment: 6 pages, 8 figures, ICME 2014
+  journal_ref: ''
+  doi: 10.1109/ICME.2014.6890158
+  decision: candidate-only
+  decision_reason: excluded neighboring spatial/localization task
+  verification_date: '2026-07-28'

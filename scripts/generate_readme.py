@@ -45,8 +45,8 @@ def paper_entry(paper: dict) -> list[str]:
     tags = paper["supervision"] + paper["method_family"][:2] + paper["modality"][:1] + paper["datasets"][:2]
     return [
         f'<a id="{anchor(paper)}"></a>',
-        f"- **{paper['title']}** — {authors}, {paper['venue']} {paper['year']}.  ",
-        f"  {' '.join(links)}  " if links else "  ",
+        f"- **{paper['title']}** — {authors}, {paper['venue']} {paper['year']}.",
+        f"  {' '.join(links)}" if links else "",
         "  " + " ".join(f"`{tag}`" for tag in tags),
     ]
 
@@ -87,10 +87,10 @@ def render() -> str:
         "一个经过一手来源核验、可重复生成的 Temporal Action Segmentation（TAS）论文与资料索引。"
         "TAS 在长视频、骨架或多模态序列上预测逐帧/逐时间步动作类别，并同时确定连续动作片段的边界。",
         "",
-        f"**Data cutoff:** {CUTOFF_DATE}  ",
-        f"**Verified conference papers:** {len(formal)}  ",
-        f"**Preprints / pending verification:** {len(preprints)}  ",
-        f"**Related benchmark or boundary papers:** {len(related)}",
+        f"- **Data cutoff:** {CUTOFF_DATE}",
+        f"- **Verified conference papers:** {len(formal)}",
+        f"- **Preprints / pending verification:** {len(preprints)}",
+        f"- **Related benchmark or boundary papers:** {len(related)}",
         "",
         "## Scope and inclusion criteria",
         "",
@@ -199,4 +199,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -15,7 +15,7 @@
 ## 代表论文索引
 
 - [ATLAS: An Annotation Tool for Long-horizon Robotic Action Segmentation](https://arxiv.org/abs/2604.26637) — Preprint 2026; `boundary-modeling`
-- [Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation](https://arxiv.org/abs/2607.09081) — Preprint 2026; `diffusion, dataset-condensation`
+- [Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation](https://arxiv.org/abs/2607.09081) — ECCV 2026; `diffusion, dataset-condensation`
 - [Boundary-Centric Clip-Budgeted Active Learning for Temporal Action Segmentation](https://arxiv.org/abs/2604.15173) — Preprint 2026; `boundary-modeling`
 - [Combining Boundary Supervision and Segment-Level Regularization for Fine-Grained Action Segmentation](https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/html/Mitsuoka_Combining_Boundary_Supervision_and_Segment-Level_Regularization_for_Fine-Grained_Action_Segmentation_CVPRW_2026_paper.html) — CVPR Workshop 2026; `boundary-modeling`
 - [Ego-METAS: Egocentric online Multimodal Energy-efficient Temporal Action Segmentation benchmark](https://arxiv.org/abs/2606.02246) — Preprint 2026; `unknown`
@@ -51,7 +51,7 @@
 - [Language-Assisted Human Part Motion Learning for Skeleton-Based Temporal Action Segmentation](https://arxiv.org/abs/2410.06353) — Preprint 2024; `unknown`
 - [Language-Assisted Skeleton Action Understanding for Skeleton-Based Temporal Action Segmentation](https://eccv.ecva.net/virtual/2024/poster/1462) — ECCV 2024; `language-model, contrastive-learning`
 - [Long-Tail Temporal Action Segmentation with Group-wise Temporal Logit Adjustment](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4389_ECCV_2024_paper.php) — ECCV 2024; `duration-modeling`
-- [O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation](https://arxiv.org/abs/2404.06894) — Preprint 2024; `boundary-modeling`
+- [O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation](https://arxiv.org/abs/2404.06894) — TAHRI 2024; `boundary-modeling`
 - [OnlineTAS: An Online Baseline for Temporal Action Segmentation](https://papers.nips.cc/paper_files/paper/2024/hash/6c6c5fccf3c8661fcae219be7ca226f7-Abstract-Conference.html) — NeurIPS 2024; `TCN, causal-model`
 - [Progress-Aware Online Action Segmentation for Egocentric Procedural Task Videos](https://openaccess.thecvf.com/content/CVPR2024/html/Shen_Progress-Aware_Online_Action_Segmentation_for_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.html) — CVPR 2024; `causal-model`
 - [A Decoupled Spatio-Temporal Framework for Skeleton-based Action Segmentation](https://arxiv.org/abs/2312.05830) — Preprint 2023; `unknown`
@@ -63,13 +63,14 @@
 - [DPMix: Mixture of Depth and Point Cloud Video Experts for 4D Action Segmentation](https://arxiv.org/abs/2307.16803) — Preprint 2023; `unknown`
 - [Diffusion Action Segmentation](https://openaccess.thecvf.com/content/ICCV2023/html/Liu_Diffusion_Action_Segmentation_ICCV_2023_paper.html) — ICCV 2023; `diffusion, boundary-modeling, multi-stage-TCN`
 - [End-to-End Streaming Video Temporal Action Segmentation with Reinforce Learning](https://arxiv.org/abs/2309.15683) — Preprint 2023; `unknown`
-- [Enhancing Transformer Backbone for Egocentric Video Action Segmentation](https://arxiv.org/abs/2305.11365) — Preprint 2023; `Transformer`
+- [Enhancing Transformer Backbone for Egocentric Video Action Segmentation](https://arxiv.org/abs/2305.11365) — Ego4D/EPIC Workshop 2023; `Transformer`
 - [How Much Temporal Long-Term Context is Needed for Action Segmentation?](https://openaccess.thecvf.com/content/ICCV2023/html/Bahrami_How_Much_Temporal_Long-Term_Context_is_Needed_for_Action_Segmentation_ICCV_2023_paper.html) — ICCV 2023; `Transformer, TCN`
 - [MS-TCRNet: Multi-Stage Temporal Convolutional Recurrent Networks for Action Segmentation Using Sensor-Augmented Kinematics](https://arxiv.org/abs/2303.07814) — Preprint 2023; `TCN, multi-stage-TCN`
 - [Markov Game Video Augmentation for Action Segmentation](https://openaccess.thecvf.com/content/ICCV2023/html/Aziere_Markov_Game_Video_Augmentation_for_Action_Segmentation_ICCV_2023_paper.html) — ICCV 2023; `unknown`
 - [Prompt-enhanced Hierarchical Transformer Elevating Cardiopulmonary Resuscitation Instruction via Temporal Action Segmentation](https://arxiv.org/abs/2308.16552) — Preprint 2023; `Transformer`
 - [SigFormer: Sparse Signal-Guided Transformer for Multi-Modal Human Action Segmentation](https://arxiv.org/abs/2311.17428) — Preprint 2023; `Transformer, cross-attention, boundary-modeling`
 - [Streaming Video Temporal Action Segmentation in Real Time](https://doi.org/10.1109/ISKE60036.2023.10481438) — ISKE 2023; `TCN, causal-model`
+- [Temporal Action Segmentation: An Analysis of Modern Techniques](https://arxiv.org/abs/2210.10352) — IEEE TPAMI 2023; `unknown`
 - [Temporal Segment Transformer for Action Segmentation](https://arxiv.org/abs/2302.13074) — Preprint 2023; `Transformer`
 - [Video Action Segmentation via Contextually Refined Temporal Keypoints](https://openaccess.thecvf.com/content/ICCV2023/html/Jiang_Video_Action_Segmentation_via_Contextually_Refined_Temporal_Keypoints_ICCV_2023_paper.html) — ICCV 2023; `unknown`
 - [Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) — CVPR 2022; `unknown`
@@ -80,7 +81,6 @@
 - [Semantic2Graph: Graph-based Multi-modal Feature Fusion for Action Segmentation in Videos](https://arxiv.org/abs/2209.05653) — Preprint 2022; `Transformer`
 - [Set-Supervised Action Learning in Procedural Task Videos via Pairwise Order Consistency](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Set-Supervised_Action_Learning_in_Procedural_Task_Videos_via_Pairwise_Order_CVPR_2022_paper.html) — CVPR 2022; `unknown`
 - [Skeleton-Based Action Segmentation with Multi-Stage Spatial-Temporal Graph Convolutional Neural Networks](https://arxiv.org/abs/2202.01727) — Preprint 2022; `TCN, multi-stage-TCN`
-- [Temporal Action Segmentation: An Analysis of Modern Techniques](https://arxiv.org/abs/2210.10352) — Preprint 2022; `unknown`
 - [Uncertainty-Aware Representation Learning for Action Segmentation](https://www.ijcai.org/proceedings/2022/115) — IJCAI 2022; `uncertainty-modeling, boundary-modeling`
 - [ASFormer: Transformer for Action Segmentation](https://www.bmvc2021-virtualconference.com/conference/papers/paper_0578.html) — BMVC 2021; `Transformer`
 - [Anchor-Constrained Viterbi for Set-Supervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2021/html/Li_Anchor-Constrained_Viterbi_for_Set-Supervised_Action_Segmentation_CVPR_2021_paper.html) — CVPR 2021; `structured-decoding`
@@ -90,7 +90,7 @@
 - [Temporal Action Segmentation with High-level Complex Activity Labels](https://arxiv.org/abs/2108.06706) — Preprint 2021; `prototype-learning`
 - [Action Segmentation with Mixed Temporal Domain Adaptation](https://openaccess.thecvf.com/content_WACV_2020/html/Chen_Action_Segmentation_with_Mixed_Temporal_Domain_Adaptation_WACV_2020_paper.html) — WACV 2020; `unknown`
 - [Boundary-Aware Cascade Networks for Temporal Action Segmentation](https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/35_ECCV_2020_paper.php) — ECCV 2020; `boundary-modeling`
-- [Hierarchical Attention Network for Action Segmentation](https://arxiv.org/abs/2005.03209) — Preprint 2020; `unknown`
+- [Hierarchical Attention Network for Action Segmentation](https://arxiv.org/abs/2005.03209) — Pattern Recognition Letters 2020; `unknown`
 - [Improving Action Segmentation via Graph-Based Temporal Reasoning](https://openaccess.thecvf.com/content_CVPR_2020/html/Huang_Improving_Action_Segmentation_via_Graph-Based_Temporal_Reasoning_CVPR_2020_paper.html) — CVPR 2020; `boundary-modeling`
 - [Stacked Spatio-Temporal Graph Convolutional Networks for Action Segmentation](https://openaccess.thecvf.com/content_WACV_2020/html/Ghosh_Stacked_Spatio-Temporal_Graph_Convolutional_Networks_for_Action_Segmentation_WACV_2020_paper.html) — WACV 2020; `unknown`
 - [TeCNO: Surgical Phase Recognition with Multi-Stage Temporal Convolutional Networks](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_33) — MICCAI 2020; `TCN, multi-stage-TCN`

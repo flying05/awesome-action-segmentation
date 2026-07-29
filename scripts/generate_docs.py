@@ -70,7 +70,11 @@ def paper_link(paper: dict) -> str:
 
 
 def write_timeline(papers: list[dict]) -> None:
-    formal = [p for p in papers if p["venue_tier"] != "Preprint"]
+    formal = [
+        p for p in papers
+        if p.get("metadata_verified")
+        and p["venue_tier"] != "Related-but-not-core"
+    ]
     lines = ["# History Timeline", ""]
     by_year: dict[int, list[dict]] = defaultdict(list)
     for p in formal:
@@ -236,10 +240,12 @@ MICCAI and IROS records are kept separate.
 
 Discovery indexes and search engines are candidate generators only. A formal record requires a first-party
 proceedings, publisher, society, or official accepted-paper/program page. An arXiv comment is treated as an
-author-supplied claim, not proof: independently confirmed records are upgraded, while unmatched claims remain
-`Preprint` and are displayed explicitly for follow-up. Officially accepted but not yet published records use
-`conference-accepted` and state that proceedings are pending. Every candidate is judged from title, abstract,
-output form, datasets and metrics; keyword coincidence alone is insufficient.
+author-supplied claim, not proof: independently confirmed records are upgraded. A non-submission comment that
+names a venue is classified under that venue with `conference-claimed` or `journal-claimed`, rather than under
+`Preprint`, while remaining visibly unverified. `submitted` and `under review` stay as preprints. Officially
+accepted but not yet published records use `conference-accepted` and state that proceedings are pending. Every
+candidate is judged from title, abstract, output form, datasets and metrics; keyword coincidence alone is
+insufficient.
 
 ## Known retrieval limitations
 
@@ -275,9 +281,17 @@ def write_unresolved() -> None:
 
 
 def write_verification(papers: list[dict]) -> None:
-    formal = [p for p in papers if p["venue_tier"] not in {"Preprint", "Related-but-not-core"}]
+    formal = [
+        p for p in papers
+        if p.get("metadata_verified")
+        and p["venue_tier"] != "Related-but-not-core"
+    ]
     extended = [p for p in formal if p["venue_tier"] in {"Extended-Vision", "Medical", "Robotics-Embodied"}]
-    preprints = [p for p in papers if p["venue_tier"] == "Preprint"]
+    claims = [
+        p for p in papers
+        if p.get("publication_type") in {"conference-claimed", "journal-claimed"}
+    ]
+    preprints = [p for p in papers if p.get("publication_type") == "preprint"]
     related = [p for p in papers if p["venue_tier"] == "Related-but-not-core"]
     manifest = []
     manifest_path = ROOT / "library" / "pdf_manifest.csv"
@@ -305,9 +319,6 @@ def write_verification(papers: list[dict]) -> None:
         if claim.get("verification") == "officially-verified"
     )
     unverified_claims = len(publication_claims) - verified_claims
-    retained_preprint_claims = sum(
-        1 for paper in preprints if paper.get("publication_claim")
-    )
     duplicates = 0
     dup_path = LOGS / "duplicate_report.csv"
     if dup_path.exists():
@@ -321,7 +332,8 @@ def write_verification(papers: list[dict]) -> None:
         f"| Candidate records | {len(papers)} |",
         f"| Verified formal core + extension | {len(formal)} |",
         f"| Extended venue papers | {len(extended)} |",
-        f"| Preprints / pending verification | {len(preprints)} |",
+        f"| Conference/journal claims pending official verification | {len(claims)} |",
+        f"| Preprints without an accepted venue claim | {len(preprints)} |",
         f"| Related-but-not-core / excluded from core count | {len(related)} |",
         f"| Duplicate records merged in last report | {duplicates} |",
         f"| PDFs downloaded and parsed | {downloaded} |",
@@ -333,12 +345,13 @@ def write_verification(papers: list[dict]) -> None:
         f"| arXiv publication claims extracted from comment/journal_ref | {len(publication_claims)} |",
         f"| Publication claims matched to official records | {verified_claims} |",
         f"| Unmatched claims across the full candidate audit | {unverified_claims} |",
-        f"| Retained preprints with publication metadata requiring review | {retained_preprint_claims} |", "",
+        f"| Venue-classified unverified publication claims | {len(claims)} |", "",
         "## Venue and year statistics", "",
         f"- Venues: {'; '.join(f'{k}: {v}' for k, v in sorted(by_venue.items()))}",
         f"- Years: {'; '.join(f'{k}: {v}' for k, v in sorted(by_year.items()))}", "",
         "## Verification rules", "",
-        "正式记录必须有一手来源；预印本不进入正式计数。验证失败不会中止流水线，也不会伪造本地路径。"
+        "正式记录必须有一手来源；会议/期刊声明按 venue 分类，但不进入 verified 正式计数。"
+        "纯预印本同样不进入正式计数。验证失败不会中止流水线，也不会伪造本地路径。"
         "PDF 存在时会重新计算 SHA256 并尝试解析。截止日期后的记录不得进入正式结果。", "",
         "## Remaining possible omissions", "",
         "- 旧版 ACM MM、BMVC 和 WACV 搜索界面的全文召回可能不完整。",

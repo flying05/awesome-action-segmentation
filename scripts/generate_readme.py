@@ -76,8 +76,16 @@ def cross_index(papers: list[dict], field: str, headings: list[tuple[str, str]])
 
 def render() -> str:
     papers = load_papers()
-    formal = [p for p in papers if p["venue_tier"] not in {"Preprint", "Related-but-not-core"}]
-    preprints = [p for p in papers if p["venue_tier"] == "Preprint"]
+    formal = [
+        p for p in papers
+        if p.get("metadata_verified")
+        and p["venue_tier"] != "Related-but-not-core"
+    ]
+    claims = [
+        p for p in papers
+        if p.get("publication_type") in {"conference-claimed", "journal-claimed"}
+    ]
+    preprints = [p for p in papers if p.get("publication_type") == "preprint"]
     related = [p for p in papers if p["venue_tier"] == "Related-but-not-core"]
     venues = Counter(p["venue"] for p in formal)
     years = Counter(p["year"] for p in formal)
@@ -89,7 +97,8 @@ def render() -> str:
         "",
         f"- **Data cutoff:** {CUTOFF_DATE}",
         f"- **Verified conference papers:** {len(formal)}",
-        f"- **Preprints / pending verification:** {len(preprints)}",
+        f"- **Conference/journal claims pending verification:** {len(claims)}",
+        f"- **Preprints without an accepted venue claim:** {len(preprints)}",
         f"- **Related benchmark or boundary papers:** {len(related)}",
         "",
         "## Scope and inclusion criteria",
@@ -101,7 +110,8 @@ def render() -> str:
         "",
         "会议范围包括 CVPR、ICCV、NeurIPS、ICML、AAAI、IJCAI、ACM MM，以及 ECCV、WACV、"
         "BMVC；与 TAS 直接相关的 MICCAI、IROS 等工作置于扩展类别。2026 年只收录在截点前已能"
-        "由正式 proceedings 确认的论文。arXiv-only 工作严格置于独立的 Pending Verification 区。",
+        "由正式 proceedings 确认的论文。comment/journal_ref 已声明会议或期刊的记录按该 venue 分类并"
+        "标记为待核验；未声明发表去向的 arXiv-only 工作置于独立预印本区。",
         "",
         "## Statistics",
         "",
@@ -150,8 +160,8 @@ def render() -> str:
         ("embodied", "Robotics and Embodied Agents"),
         ("streaming", "Online and Streaming"),
     ]))
-    lines.extend(["## Preprints / Pending Verification", ""])
-    for paper in sorted(preprints, key=lambda p: (-p["year"], p["title"])):
+    lines.extend(["## Conference / Journal Claims Pending Official Verification", ""])
+    for paper in sorted(claims, key=lambda p: (-p["year"], p["venue"], p["title"])):
         lines.extend(paper_entry(paper))
         claim = paper.get("publication_claim", {})
         if claim:
@@ -164,6 +174,12 @@ def render() -> str:
                 f"`{claim.get('status', 'venue-mentioned')}`; "
                 f"`{claim.get('verification', 'unverified-author-metadata')}`."
             )
+        lines.append(f"  _Status:_ {paper['notes']}")
+    if not claims:
+        lines.append("- None.")
+    lines.extend(["", "## Preprints / No Accepted Venue Claim", ""])
+    for paper in sorted(preprints, key=lambda p: (-p["year"], p["title"])):
+        lines.extend(paper_entry(paper))
         lines.append(f"  _Status:_ {paper['notes']}")
     if not preprints:
         lines.append("- None.")

@@ -5,11 +5,12 @@
 | Candidate records | 174 |
 | Verified formal core + extension | 111 |
 | Extended venue papers | 17 |
-| Preprints / pending verification | 61 |
+| Conference/journal claims pending official verification | 9 |
+| Preprints without an accepted venue claim | 52 |
 | Related-but-not-core / excluded from core count | 2 |
 | Duplicate records merged in last report | 186 |
-| PDFs downloaded and parsed | 162 |
-| PDF download failures in manifest | 11 |
+| PDFs downloaded and parsed | 168 |
+| PDF download failures in manifest | 5 |
 | Papers requiring manual review | 61 |
 
 | arXiv API unique candidates audited | 166 |
@@ -18,7 +19,7 @@
 | arXiv publication claims extracted from comment/journal_ref | 80 |
 | Publication claims matched to official records | 59 |
 | Unmatched claims across the full candidate audit | 21 |
-| Retained preprints with publication metadata requiring review | 12 |
+| Venue-classified unverified publication claims | 9 |
 
 ## Venue and year statistics
 
@@ -27,7 +28,7 @@
 
 ## Verification rules
 
-正式记录必须有一手来源；预印本不进入正式计数。验证失败不会中止流水线，也不会伪造本地路径。PDF 存在时会重新计算 SHA256 并尝试解析。截止日期后的记录不得进入正式结果。
+正式记录必须有一手来源；会议/期刊声明按 venue 分类，但不进入 verified 正式计数。纯预印本同样不进入正式计数。验证失败不会中止流水线，也不会伪造本地路径。PDF 存在时会重新计算 SHA256 并尝试解析。截止日期后的记录不得进入正式结果。
 
 ## Remaining possible omissions
 

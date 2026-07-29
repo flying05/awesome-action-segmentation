@@ -22,10 +22,12 @@ MICCAI and IROS records are kept separate.
 
 Discovery indexes and search engines are candidate generators only. A formal record requires a first-party
 proceedings, publisher, society, or official accepted-paper/program page. An arXiv comment is treated as an
-author-supplied claim, not proof: independently confirmed records are upgraded, while unmatched claims remain
-`Preprint` and are displayed explicitly for follow-up. Officially accepted but not yet published records use
-`conference-accepted` and state that proceedings are pending. Every candidate is judged from title, abstract,
-output form, datasets and metrics; keyword coincidence alone is insufficient.
+author-supplied claim, not proof: independently confirmed records are upgraded. A non-submission comment that
+names a venue is classified under that venue with `conference-claimed` or `journal-claimed`, rather than under
+`Preprint`, while remaining visibly unverified. `submitted` and `under review` stay as preprints. Officially
+accepted but not yet published records use `conference-accepted` and state that proceedings are pending. Every
+candidate is judged from title, abstract, output form, datasets and metrics; keyword coincidence alone is
+insufficient.
 
 ## Known retrieval limitations
 

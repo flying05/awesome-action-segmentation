@@ -17,7 +17,7 @@
 - [Ego-METAS: Egocentric online Multimodal Energy-efficient Temporal Action Segmentation benchmark](https://arxiv.org/abs/2606.02246) — Preprint 2026; `unknown`
 - [Pose-Aware Weakly-Supervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2025W/MULA2025/html/Zhao_Pose-Aware_Weakly-Supervised_Action_Segmentation_CVPRW_2025_paper.html) — CVPR Workshop 2025; `contrastive-learning, boundary-modeling`
 - [Friends Across Time: Multi-Scale Action Segmentation Transformer for Surgical Phase Recognition](https://arxiv.org/abs/2401.11644) — Preprint 2024; `Transformer, cross-attention, causal-model`
-- [O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation](https://arxiv.org/abs/2404.06894) — Preprint 2024; `boundary-modeling`
+- [O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation](https://arxiv.org/abs/2404.06894) — TAHRI 2024; `boundary-modeling`
 - [OnlineTAS: An Online Baseline for Temporal Action Segmentation](https://papers.nips.cc/paper_files/paper/2024/hash/6c6c5fccf3c8661fcae219be7ca226f7-Abstract-Conference.html) — NeurIPS 2024; `TCN, causal-model`
 - [Progress-Aware Online Action Segmentation for Egocentric Procedural Task Videos](https://openaccess.thecvf.com/content/CVPR2024/html/Shen_Progress-Aware_Online_Action_Segmentation_for_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.html) — CVPR 2024; `causal-model`
 - [End-to-End Streaming Video Temporal Action Segmentation with Reinforce Learning](https://arxiv.org/abs/2309.15683) — Preprint 2023; `unknown`

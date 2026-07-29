@@ -15,6 +15,7 @@ from urllib.parse import urlencode, urljoin
 from bs4 import BeautifulSoup
 
 from _common import (
+    CORE_VENUES,
     CUTOFF_DATE,
     DATA,
     LOGS,
@@ -27,6 +28,7 @@ from _common import (
     request,
     save_serializations,
     setup_logging,
+    stable_id,
 )
 from _curated import FORMAL, PREPRINTS
 
@@ -378,6 +380,14 @@ PUBLICATION_VENUE_PATTERNS = [
     ("LUV Workshop", r"\bLUV workshop\b"),
 ]
 
+JOURNAL_CLAIM_VENUES = {
+    "Pattern Recognition Letters",
+    "Pattern Recognition",
+    "IEEE Transactions on Multimedia",
+    "IEEE TPAMI",
+    "IEEE TNNLS",
+}
+
 
 def extract_publication_claim(comment: str, journal_ref: str) -> dict:
     """Turn free-form arXiv publication notes into an auditable claim."""
@@ -433,6 +443,20 @@ def extract_publication_claim(comment: str, journal_ref: str) -> dict:
         "source_field": source_field,
         "evidence": evidence,
     }
+
+
+def claim_classification(claim: dict) -> tuple[str, str]:
+    """Return publication type and tier for a non-submission venue claim."""
+    if not claim or claim.get("status") == "submission-only":
+        return "preprint", "Preprint"
+    venue = claim["venue"]
+    if venue in JOURNAL_CLAIM_VENUES:
+        return "journal-claimed", "Journal"
+    if venue in CORE_VENUES:
+        return "conference-claimed", CORE_VENUES[venue]
+    if "Workshop" in venue or venue in {"TAHRI", "LUV Workshop", "CVWW"}:
+        return "conference-claimed", "Extended-Vision"
+    return "conference-claimed", "Extended-Vision"
 
 
 def parse_arxiv_entry(entry: ET.Element, cutoff_date: str) -> tuple[dict, dict]:
@@ -534,6 +558,22 @@ def parse_arxiv_entry(entry: ET.Element, cutoff_date: str) -> tuple[dict, dict]:
     record["venue_tier"] = "Preprint"
     record["publication_type"] = "preprint"
     record["metadata_verified"] = False
+    claimed_type, claimed_tier = claim_classification(publication_claim)
+    if claimed_type != "preprint":
+        claimed_year = publication_claim.get("year") or int(submitted[:4])
+        record.update({
+            "id": stable_id(claimed_year, publication_claim["venue"], title),
+            "year": claimed_year,
+            "venue": publication_claim["venue"],
+            "venue_tier": claimed_tier,
+            "publication_type": claimed_type,
+            "notes": (
+                f"arXiv {arxiv_id}; {publication_claim['source_field']} states "
+                f"{publication_claim['evidence']}. Classified under "
+                f"{publication_claim['venue']} rather than Preprint; official "
+                "publication verification is still pending."
+            ),
+        })
     return record, candidate
 
 
@@ -674,7 +714,9 @@ def main() -> int:
     api_existing_runtime: list[dict] = []
     if api_arxiv_ids:
         def is_api_preprint(paper: dict) -> bool:
-            if paper.get("venue_tier") != "Preprint":
+            if paper.get("publication_type") not in {
+                "preprint", "conference-claimed", "journal-claimed",
+            }:
                 return False
             match = re.search(r"(\d{4}\.\d{4,5})", paper.get("arxiv_url", ""))
             return bool(match and match.group(1) in api_arxiv_ids)

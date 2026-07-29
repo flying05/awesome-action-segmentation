@@ -18,9 +18,12 @@ def test_serialization_counts_match():
 
 def test_readme_count_and_doc_ids():
     papers = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text(encoding="utf-8"))
-    formal = [p for p in papers if p["venue_tier"] not in {"Preprint", "Related-but-not-core"}]
+    formal = [
+        p for p in papers
+        if p.get("metadata_verified")
+        and p["venue_tier"] != "Related-but-not-core"
+    ]
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     count = int(re.search(r"\*\*Verified conference papers:\*\*\s*(\d+)", readme).group(1))
     assert count == len(formal)
     assert all(f'paper-{paper["id"]}' in readme for paper in papers)
-

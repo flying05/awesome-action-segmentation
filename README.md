@@ -4,14 +4,15 @@
 
 - **Data cutoff:** 2026-07-28
 - **Verified conference papers:** 111
-- **Preprints / pending verification:** 61
+- **Conference/journal claims pending verification:** 9
+- **Preprints without an accepted venue claim:** 52
 - **Related benchmark or boundary papers:** 2
 
 ## Scope and inclusion criteria
 
 纳入的核心工作必须输出稠密动作标签或连续动作片段，并以帧准确率、MoF、Edit、segmental F1、mIoU 或动作边界指标进行评价。仅做整段动作识别、proposal、时序动作定位、时空框检测、图像/人体空间分割或无动作语义的章节切分不进入核心列表。每条正式记录至少保留一个会议proceedings、学会数字图书馆或正式论文页作为验证来源。
 
-会议范围包括 CVPR、ICCV、NeurIPS、ICML、AAAI、IJCAI、ACM MM，以及 ECCV、WACV、BMVC；与 TAS 直接相关的 MICCAI、IROS 等工作置于扩展类别。2026 年只收录在截点前已能由正式 proceedings 确认的论文。arXiv-only 工作严格置于独立的 Pending Verification 区。
+会议范围包括 CVPR、ICCV、NeurIPS、ICML、AAAI、IJCAI、ACM MM，以及 ECCV、WACV、BMVC；与 TAS 直接相关的 MICCAI、IROS 等工作置于扩展类别。2026 年只收录在截点前已能由正式 proceedings 确认的论文。comment/journal_ref 已声明会议或期刊的记录按该 venue 分类并标记为待核验；未声明发表去向的 arXiv-only 工作置于独立预印本区。
 
 ## Statistics
 
@@ -660,19 +661,70 @@
 - [Weakly-Supervised Online Action Segmentation in Multi-View Instructional Videos](#paper-2022-cvpr-weakly-supervised-online-multi-view)
 - [NeuralNetwork-Viterbi: A Framework for Weakly Supervised Video Learning](#paper-2018-cvpr-neuralnetwork-viterbi-framework-weakly-supervised)
 
-## Preprints / Pending Verification
+## Conference / Journal Claims Pending Official Verification
+
+<a id="paper-2026-eccv-adaptive-latent-trajectory-anchoring-dataset"></a>
+- **Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation** — Artheme Gauthier-Villar, Guodong Ding, Angela Yao, ECCV 2026.
+  [PDF](https://arxiv.org/pdf/2607.09081) [arXiv](https://arxiv.org/abs/2607.09081)
+  `fully-supervised` `diffusion` `dataset-condensation` `unknown` `Breakfast`
+  _Publication metadata:_ ECCV 2026; `author-claimed-accepted`; `unverified-author-metadata`.
+  _Status:_ arXiv 2607.09081; comment states 16 pages, 5 figures, accepted to ECCV 2026. Classified under ECCV rather than Preprint; official publication verification is still pending.
+<a id="paper-2026-icra-exploring-vision-language-models-open"></a>
+- **Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation** — Asim Unmesh, Kaki Ramesh, Mayank Patel, et al., ICRA 2026.
+  [PDF](https://arxiv.org/pdf/2602.21406) [arXiv](https://arxiv.org/abs/2602.21406)
+  `zero-shot` `unknown` `video-language`
+  _Publication metadata:_ ICRA 2026; `venue-mentioned`; `unverified-author-metadata`.
+  _Status:_ arXiv 2602.21406; comment states ICRA 2026. Classified under ICRA rather than Preprint; official publication verification is still pending.
+<a id="paper-2024-tahri-o-talc-steps-towards-combating"></a>
+- **O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation** — Matthew Kent Myers, Nick Wright, A. Stephen McGough, et al., TAHRI 2024.
+  [PDF](https://arxiv.org/pdf/2404.06894) [arXiv](https://arxiv.org/abs/2404.06894)
+  `fully-supervised` `boundary-modeling` `unknown`
+  _Publication metadata:_ TAHRI; `author-claimed-accepted`; `unverified-author-metadata`.
+  _Status:_ arXiv 2404.06894; comment states 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference. Classified under TAHRI rather than Preprint; official publication verification is still pending.
+<a id="paper-2023-ego4d-epic-workshop-enhancing-transformer-backbone-egocentric"></a>
+- **Enhancing Transformer Backbone for Egocentric Video Action Segmentation** — Sakib Reza, Balaji Sundareshan, Mohsen Moghaddam, et al., Ego4D/EPIC Workshop 2023.
+  [PDF](https://arxiv.org/pdf/2305.11365) [arXiv](https://arxiv.org/abs/2305.11365)
+  `fully-supervised` `Transformer` `unknown` `GTEA`
+  _Publication metadata:_ Ego4D/EPIC Workshop 2023; `venue-mentioned`; `unverified-author-metadata`.
+  _Status:_ arXiv 2305.11365; comment states Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023. Classified under Ego4D/EPIC Workshop rather than Preprint; official publication verification is still pending.
+<a id="paper-2023-ieee-tpami-analysis-modern-techniques"></a>
+- **Temporal Action Segmentation: An Analysis of Modern Techniques** — Guodong Ding, Fadime Sener, Angela Yao, IEEE TPAMI 2023.
+  [PDF](https://arxiv.org/pdf/2210.10352) [arXiv](https://arxiv.org/abs/2210.10352)
+  `fully-supervised` `unknown` `unknown`
+  _Publication metadata:_ IEEE TPAMI 2023; `venue-mentioned`; `unverified-author-metadata`.
+  _Status:_ arXiv 2210.10352; comment states 19 pages, 9 figures, 8 tables, TPAMI 2023. Classified under IEEE TPAMI rather than Preprint; official publication verification is still pending.
+<a id="paper-2023-ieee-transactions-on-multimedia-smc-nca-semantic-guided-multi"></a>
+- **SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation** — Feixiang Zhou, Zheheng Jiang, Huiyu Zhou, et al., IEEE Transactions on Multimedia 2023.
+  [PDF](https://arxiv.org/pdf/2312.12347) [arXiv](https://arxiv.org/abs/2312.12347)
+  `semi-supervised` `unknown` `unknown`
+  _Publication metadata:_ IEEE Transactions on Multimedia; `author-claimed-accepted`; `unverified-author-metadata`.
+  _Status:_ arXiv 2312.12347; comment states Accepted to IEEE Transactions on Multimedia. Classified under IEEE Transactions on Multimedia rather than Preprint; official publication verification is still pending.
+<a id="paper-2021-luv-workshop-unsupervised-instructional-videos"></a>
+- **Unsupervised Action Segmentation for Instructional Videos** — AJ Piergiovanni, Anelia Angelova, Michael S. Ryoo, et al., LUV Workshop 2021.
+  [PDF](https://arxiv.org/pdf/2106.03738) [arXiv](https://arxiv.org/abs/2106.03738)
+  `unsupervised` `unknown` `unknown`
+  _Publication metadata:_ LUV Workshop; `venue-mentioned`; `unverified-author-metadata`.
+  _Status:_ arXiv 2106.03738; comment states 4 page abstract for LUV workshop. Classified under LUV Workshop rather than Preprint; official publication verification is still pending.
+<a id="paper-2020-pattern-recognition-letters-hierarchical-attention-network"></a>
+- **Hierarchical Attention Network for Action Segmentation** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Pattern Recognition Letters 2020.
+  [PDF](https://arxiv.org/pdf/2005.03209) [arXiv](https://arxiv.org/abs/2005.03209)
+  `fully-supervised` `unknown` `unknown`
+  _Publication metadata:_ Pattern Recognition Letters; `author-claimed-accepted`; `unverified-author-metadata`.
+  _Status:_ arXiv 2005.03209; comment states Published in Pattern Recognition Letters. Classified under Pattern Recognition Letters rather than Preprint; official publication verification is still pending.
+<a id="paper-2019-pattern-recognition-fine-grained-using-semi-supervised"></a>
+- **Fine-grained Action Segmentation using the Semi-Supervised Action GAN** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Pattern Recognition 2019.
+  [PDF](https://arxiv.org/pdf/1909.09269) [arXiv](https://arxiv.org/abs/1909.09269)
+  `semi-supervised` `unknown` `unknown`
+  _Publication metadata:_ Pattern Recognition; `author-claimed-accepted`; `unverified-author-metadata`.
+  _Status:_ arXiv 1909.09269; comment states Published in Pattern Recognition Journal. Classified under Pattern Recognition rather than Preprint; official publication verification is still pending.
+
+## Preprints / No Accepted Venue Claim
 
 <a id="paper-2026-preprint-atlas-annotation-tool-long-horizon"></a>
 - **ATLAS: An Annotation Tool for Long-horizon Robotic Action Segmentation** — Sergej Stanovcic, Daniel Sliwowski, Dongheui Lee, Preprint 2026.
   [PDF](https://arxiv.org/pdf/2604.26637) [arXiv](https://arxiv.org/abs/2604.26637)
   `fully-supervised` `boundary-modeling` `multimodal`
   _Status:_ arXiv 2604.26637; first submitted 2026-04-29; last updated 2026-04-29; comment=7 pages, 2 figures, 2 tables; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2026-preprint-adaptive-latent-trajectory-anchoring-dataset"></a>
-- **Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation** — Artheme Gauthier-Villar, Guodong Ding, Angela Yao, Preprint 2026.
-  [PDF](https://arxiv.org/pdf/2607.09081) [arXiv](https://arxiv.org/abs/2607.09081)
-  `fully-supervised` `diffusion` `dataset-condensation` `unknown` `Breakfast`
-  _Publication metadata:_ ECCV 2026; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2607.09081; first submitted 2026-07-10; last updated 2026-07-10; comment=16 pages, 5 figures, accepted to ECCV 2026; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2026-preprint-boundary-centric-clip-budgeted-active"></a>
 - **Boundary-Centric Clip-Budgeted Active Learning for Temporal Action Segmentation** — Halil Ismail Helvaci, Sen-ching Samson Cheung, Preprint 2026.
   [PDF](https://arxiv.org/pdf/2604.15173) [arXiv](https://arxiv.org/abs/2604.15173)
@@ -688,12 +740,6 @@
   [PDF](https://arxiv.org/pdf/2606.02246) [arXiv](https://arxiv.org/abs/2606.02246)
   `fully-supervised` `unknown` `multimodal` `EgoExo4D` `CMU-MMAC`
   _Status:_ arXiv 2606.02246; first submitted 2026-05-29; last updated 2026-05-29; comment=Project Page: https://maria-sanvil.github.io/Ego-METAS-website/; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2026-preprint-exploring-vision-language-models-open"></a>
-- **Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation** — Asim Unmesh, Kaki Ramesh, Mayank Patel, et al., Preprint 2026.
-  [PDF](https://arxiv.org/pdf/2602.21406) [arXiv](https://arxiv.org/abs/2602.21406)
-  `zero-shot` `unknown` `video-language`
-  _Publication metadata:_ ICRA 2026; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2602.21406; first submitted 2026-02-24; last updated 2026-02-24; comment=ICRA 2026; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2026-preprint-fine-grained-renorrhaphy-robot-assisted"></a>
 - **Fine-Grained Action Segmentation for Renorrhaphy in Robot-Assisted Partial Nephrectomy** — Jiaheng Dai, Huanrong Liu, Tailai Zhou, et al., Preprint 2026.
   [PDF](https://arxiv.org/pdf/2604.09051) [arXiv](https://arxiv.org/abs/2604.09051)
@@ -784,12 +830,6 @@
   [PDF](https://arxiv.org/pdf/2410.06353) [arXiv](https://arxiv.org/abs/2410.06353)
   `fully-supervised` `unknown` `skeleton` `PKU-MMD` `LARa`
   _Status:_ arXiv 2410.06353; first submitted 2024-10-08; last updated 2024-10-08; comment=This work has been submitted to the IEEE for possible publication; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2024-preprint-o-talc-steps-towards-combating"></a>
-- **O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation** — Matthew Kent Myers, Nick Wright, A. Stephen McGough, et al., Preprint 2024.
-  [PDF](https://arxiv.org/pdf/2404.06894) [arXiv](https://arxiv.org/abs/2404.06894)
-  `fully-supervised` `boundary-modeling` `unknown`
-  _Publication metadata:_ TAHRI; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2404.06894; first submitted 2024-04-10; last updated 2024-04-10; comment=5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2023-preprint-decoupled-spatio-framework-skeleton-based"></a>
 - **A Decoupled Spatio-Temporal Framework for Skeleton-based Action Segmentation** — Yunheng Li, Zhongyu Li, Shanghua Gao, et al., Preprint 2023.
   [PDF](https://arxiv.org/pdf/2312.05830) [arXiv](https://arxiv.org/abs/2312.05830)
@@ -819,19 +859,11 @@
 - **End-to-End Streaming Video Temporal Action Segmentation with Reinforce Learning** — Jinrong Zhang, Wujun Wen, Shenglan Liu, et al., Preprint 2023.
   [PDF](https://arxiv.org/pdf/2309.15683) [arXiv](https://arxiv.org/abs/2309.15683)
   `fully-supervised` `unknown` `multimodal` `GTEA`
-  _Publication metadata:_ IEEE TNNLS; `submission-only`; `unverified-author-metadata`.
   _Status:_ arXiv 2309.15683; first submitted 2023-09-27; last updated 2024-05-23; comment=submit to TNNLS; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2023-preprint-enhancing-transformer-backbone-egocentric"></a>
-- **Enhancing Transformer Backbone for Egocentric Video Action Segmentation** — Sakib Reza, Balaji Sundareshan, Mohsen Moghaddam, et al., Preprint 2023.
-  [PDF](https://arxiv.org/pdf/2305.11365) [arXiv](https://arxiv.org/abs/2305.11365)
-  `fully-supervised` `Transformer` `unknown` `GTEA`
-  _Publication metadata:_ Ego4D/EPIC Workshop 2023; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2305.11365; first submitted 2023-05-19; last updated 2023-05-23; comment=Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2023-preprint-ms-tcrnet-multi-stage-convolutional"></a>
 - **MS-TCRNet: Multi-Stage Temporal Convolutional Recurrent Networks for Action Segmentation Using Sensor-Augmented Kinematics** — Adam Goldbraikh, Omer Shubi, Or Rubin, et al., Preprint 2023.
   [PDF](https://arxiv.org/pdf/2303.07814) [arXiv](https://arxiv.org/abs/2303.07814)
   `fully-supervised` `TCN` `multi-stage-TCN` `IMU`
-  _Publication metadata:_ Pattern Recognition; `submission-only`; `unverified-author-metadata`.
   _Status:_ arXiv 2303.07814; first submitted 2023-03-14; last updated 2024-07-12; comment=41 pages, 7 figures. Submitted to Pattern Recognition; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2023-preprint-prompt-enhanced-hierarchical-transformer-elevating"></a>
 - **Prompt-enhanced Hierarchical Transformer Elevating Cardiopulmonary Resuscitation Instruction via Temporal Action Segmentation** — Yang Liu, Xiaoyun Zhong, Shiyao Zhai, et al., Preprint 2023.
@@ -843,12 +875,6 @@
   [PDF](https://arxiv.org/pdf/2401.00438) [arXiv](https://arxiv.org/abs/2401.00438)
   `self-supervised` `unknown` `unknown`
   _Status:_ arXiv 2401.00438; first submitted 2023-12-31; last updated 2023-12-31; comment=none; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2023-preprint-smc-nca-semantic-guided-multi"></a>
-- **SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation** — Feixiang Zhou, Zheheng Jiang, Huiyu Zhou, et al., Preprint 2023.
-  [PDF](https://arxiv.org/pdf/2312.12347) [arXiv](https://arxiv.org/abs/2312.12347)
-  `semi-supervised` `unknown` `unknown`
-  _Publication metadata:_ IEEE Transactions on Multimedia; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2312.12347; first submitted 2023-12-19; last updated 2024-07-19; comment=Accepted to IEEE Transactions on Multimedia; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2023-preprint-sigformer-sparse-signal-guided-transformer"></a>
 - **SigFormer: Sparse Signal-Guided Transformer for Multi-Modal Human Action Segmentation** — Qi Liu, Xinchen Liu, Kun Liu, et al., Preprint 2023.
   [PDF](https://arxiv.org/pdf/2311.17428) [arXiv](https://arxiv.org/abs/2311.17428)
@@ -904,12 +930,6 @@
   [PDF](https://arxiv.org/pdf/2202.01727) [arXiv](https://arxiv.org/abs/2202.01727)
   `fully-supervised` `TCN` `multi-stage-TCN` `skeleton`
   _Status:_ arXiv 2202.01727; first submitted 2022-02-03; last updated 2022-10-09; comment=none; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2022-preprint-analysis-modern-techniques"></a>
-- **Temporal Action Segmentation: An Analysis of Modern Techniques** — Guodong Ding, Fadime Sener, Angela Yao, Preprint 2022.
-  [PDF](https://arxiv.org/pdf/2210.10352) [arXiv](https://arxiv.org/abs/2210.10352)
-  `fully-supervised` `unknown` `unknown`
-  _Publication metadata:_ IEEE TPAMI 2023; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2210.10352; first submitted 2022-10-19; last updated 2023-10-21; comment=19 pages, 9 figures, 8 tables, TPAMI 2023; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2022-preprint-transformers-weakly-supervised"></a>
 - **Transformers in Action: Weakly Supervised Action Segmentation** — John Ridley, Huseyin Coskun, David Joseph Tan, et al., Preprint 2022.
   [PDF](https://arxiv.org/pdf/2201.05675) [arXiv](https://arxiv.org/abs/2201.05675)
@@ -930,18 +950,6 @@
   [PDF](https://arxiv.org/pdf/2108.06706) [arXiv](https://arxiv.org/abs/2108.06706)
   `fully-supervised` `prototype-learning` `unknown`
   _Status:_ arXiv 2108.06706; first submitted 2021-08-15; last updated 2022-12-17; comment=12 pages, 6 figures; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2021-preprint-unsupervised-instructional-videos"></a>
-- **Unsupervised Action Segmentation for Instructional Videos** — AJ Piergiovanni, Anelia Angelova, Michael S. Ryoo, et al., Preprint 2021.
-  [PDF](https://arxiv.org/pdf/2106.03738) [arXiv](https://arxiv.org/abs/2106.03738)
-  `unsupervised` `unknown` `unknown`
-  _Publication metadata:_ LUV Workshop; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2106.03738; first submitted 2021-06-07; last updated 2021-06-07; comment=4 page abstract for LUV workshop; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2020-preprint-hierarchical-attention-network"></a>
-- **Hierarchical Attention Network for Action Segmentation** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Preprint 2020.
-  [PDF](https://arxiv.org/pdf/2005.03209) [arXiv](https://arxiv.org/abs/2005.03209)
-  `fully-supervised` `unknown` `unknown`
-  _Publication metadata:_ Pattern Recognition Letters; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2005.03209; first submitted 2020-05-07; last updated 2020-05-07; comment=Published in Pattern Recognition Letters; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2020-preprint-evaluating-weakly-supervised-methods"></a>
 - **On Evaluating Weakly Supervised Action Segmentation Methods** — Yaser Souri, Alexander Richard, Luca Minciullo, et al., Preprint 2020.
   [PDF](https://arxiv.org/pdf/2005.09743) [arXiv](https://arxiv.org/abs/2005.09743)
@@ -951,14 +959,7 @@
 - **A Hybrid RNN-HMM Approach for Weakly Supervised Temporal Action Segmentation** — Hilde Kuehne, Alexander Richard, Juergen Gall, Preprint 2019.
   [PDF](https://arxiv.org/pdf/1906.01028) [arXiv](https://arxiv.org/abs/1906.01028)
   `weakly-supervised` `unknown` `unknown` `Breakfast`
-  _Publication metadata:_ IEEE TPAMI; `submission-only`; `unverified-author-metadata`.
   _Status:_ arXiv 1906.01028; first submitted 2019-06-03; last updated 2019-06-03; comment=15 pages, preprint for IEEE TPAMI https://ieeexplore.ieee.org/document/8585084 (open access). arXiv admin note: substantial text overlap with arXiv:1703.08132; journal_ref=none. No formal conference proceedings placement has been verified.
-<a id="paper-2019-preprint-fine-grained-using-semi-supervised"></a>
-- **Fine-grained Action Segmentation using the Semi-Supervised Action GAN** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Preprint 2019.
-  [PDF](https://arxiv.org/pdf/1909.09269) [arXiv](https://arxiv.org/abs/1909.09269)
-  `semi-supervised` `unknown` `unknown`
-  _Publication metadata:_ Pattern Recognition; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 1909.09269; first submitted 2019-09-20; last updated 2019-09-20; comment=Published in Pattern Recognition Journal; journal_ref=none. No formal conference proceedings placement has been verified.
 <a id="paper-2019-preprint-frontal-low-rank-random-tensors"></a>
 - **Frontal Low-rank Random Tensors for Fine-grained Action Segmentation** — Yan Zhang, Krikamol Muandet, Qianli Ma, et al., Preprint 2019.
   [PDF](https://arxiv.org/pdf/1906.01004) [arXiv](https://arxiv.org/abs/1906.01004)

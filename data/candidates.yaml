@@ -3775,7 +3775,7 @@
     conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2026-preprint-exploring-vision-language-models-open
+- id: 2026-icra-exploring-vision-language-models-open
   title: Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation
   authors:
   - Asim Unmesh
@@ -3784,9 +3784,9 @@
   - Rahul Jain
   - Karthik Ramani
   year: 2026
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: ICRA
+  venue_tier: Robotics-Embodied
+  publication_type: conference-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2602.21406
   arxiv_url: https://arxiv.org/abs/2602.21406
@@ -3837,8 +3837,8 @@
   verification_sources:
   - https://arxiv.org/abs/2602.21406
   verification_date: '2026-07-28'
-  notes: arXiv 2602.21406; first submitted 2026-02-24; last updated 2026-02-24; comment=ICRA 2026; journal_ref=none. No formal
-    conference proceedings placement has been verified.
+  notes: arXiv 2602.21406; comment states ICRA 2026. Classified under ICRA rather than Preprint; official publication verification
+    is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names ICRA 2026 (venue-mentioned); no matching first-party publication record has yet been
     attached.
@@ -4209,7 +4209,7 @@
     No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2024-preprint-o-talc-steps-towards-combating
+- id: 2024-tahri-o-talc-steps-towards-combating
   title: 'O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation'
   authors:
   - Matthew Kent Myers
@@ -4217,9 +4217,9 @@
   - A. Stephen McGough
   - Nicholas Martin
   year: 2024
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: TAHRI
+  venue_tier: Extended-Vision
+  publication_type: conference-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2404.06894
   arxiv_url: https://arxiv.org/abs/2404.06894
@@ -4273,9 +4273,8 @@
   verification_sources:
   - https://arxiv.org/abs/2404.06894
   verification_date: '2026-07-28'
-  notes: arXiv 2404.06894; first submitted 2024-04-10; last updated 2024-04-10; comment=5 pages, 3 figures. Accepted as a
-    short (unindexed) paper at the TAHRI conference; journal_ref=none. No formal conference proceedings placement has been
-    verified.
+  notes: arXiv 2404.06894; comment states 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference.
+    Classified under TAHRI rather than Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names TAHRI (author-claimed-accepted); no matching first-party publication record has yet been
     attached.
@@ -4286,7 +4285,7 @@
     source_field: comment
     evidence: 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference
     verification: unverified-author-metadata
-- id: 2023-preprint-smc-nca-semantic-guided-multi
+- id: 2023-ieee-transactions-on-multimedia-smc-nca-semantic-guided-multi
   title: 'SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation'
   authors:
   - Feixiang Zhou
@@ -4294,9 +4293,9 @@
   - Huiyu Zhou
   - Xuelong Li
   year: 2023
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: IEEE Transactions on Multimedia
+  venue_tier: Journal
+  publication_type: journal-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2312.12347
   arxiv_url: https://arxiv.org/abs/2312.12347
@@ -4351,8 +4350,8 @@
   verification_sources:
   - https://arxiv.org/abs/2312.12347
   verification_date: '2026-07-28'
-  notes: arXiv 2312.12347; first submitted 2023-12-19; last updated 2024-07-19; comment=Accepted to IEEE Transactions on Multimedia;
-    journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 2312.12347; comment states Accepted to IEEE Transactions on Multimedia. Classified under IEEE Transactions
+    on Multimedia rather than Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names IEEE Transactions on Multimedia (author-claimed-accepted); no matching first-party publication
     record has yet been attached.
@@ -4663,7 +4662,7 @@
     journal_ref=none. No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2023-preprint-enhancing-transformer-backbone-egocentric
+- id: 2023-ego4d-epic-workshop-enhancing-transformer-backbone-egocentric
   title: Enhancing Transformer Backbone for Egocentric Video Action Segmentation
   authors:
   - Sakib Reza
@@ -4671,9 +4670,9 @@
   - Mohsen Moghaddam
   - Octavia Camps
   year: 2023
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: Ego4D/EPIC Workshop
+  venue_tier: Extended-Vision
+  publication_type: conference-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2305.11365
   arxiv_url: https://arxiv.org/abs/2305.11365
@@ -4727,8 +4726,8 @@
   verification_sources:
   - https://arxiv.org/abs/2305.11365
   verification_date: '2026-07-28'
-  notes: arXiv 2305.11365; first submitted 2023-05-19; last updated 2023-05-23; comment=Joint 3rd Ego4D and 11th EPIC Workshop
-    on Egocentric Vision at CVPR 2023; journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 2305.11365; comment states Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023. Classified
+    under Ego4D/EPIC Workshop rather than Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names Ego4D/EPIC Workshop 2023 (venue-mentioned); no matching first-party publication record
     has yet been attached.
@@ -4870,16 +4869,16 @@
     conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2022-preprint-analysis-modern-techniques
+- id: 2023-ieee-tpami-analysis-modern-techniques
   title: 'Temporal Action Segmentation: An Analysis of Modern Techniques'
   authors:
   - Guodong Ding
   - Fadime Sener
   - Angela Yao
-  year: 2022
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  year: 2023
+  venue: IEEE TPAMI
+  venue_tier: Journal
+  publication_type: journal-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2210.10352
   arxiv_url: https://arxiv.org/abs/2210.10352
@@ -4929,8 +4928,8 @@
   verification_sources:
   - https://arxiv.org/abs/2210.10352
   verification_date: '2026-07-28'
-  notes: arXiv 2210.10352; first submitted 2022-10-19; last updated 2023-10-21; comment=19 pages, 9 figures, 8 tables, TPAMI
-    2023; journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 2210.10352; comment states 19 pages, 9 figures, 8 tables, TPAMI 2023. Classified under IEEE TPAMI rather than
+    Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names IEEE TPAMI 2023 (venue-mentioned); no matching first-party publication record has yet
     been attached.
@@ -5220,16 +5219,16 @@
     Revised theories and models, new experiments; journal_ref=none. No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2026-preprint-adaptive-latent-trajectory-anchoring-dataset
+- id: 2026-eccv-adaptive-latent-trajectory-anchoring-dataset
   title: Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation
   authors:
   - Artheme Gauthier-Villar
   - Guodong Ding
   - Angela Yao
   year: 2026
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: ECCV
+  venue_tier: Top-Vision
+  publication_type: conference-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2607.09081
   arxiv_url: https://arxiv.org/abs/2607.09081
@@ -5281,8 +5280,8 @@
   verification_sources:
   - https://arxiv.org/abs/2607.09081
   verification_date: '2026-07-28'
-  notes: arXiv 2607.09081; first submitted 2026-07-10; last updated 2026-07-10; comment=16 pages, 5 figures, accepted to ECCV
-    2026; journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 2607.09081; comment states 16 pages, 5 figures, accepted to ECCV 2026. Classified under ECCV rather than Preprint;
+    official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names ECCV 2026 (author-claimed-accepted); no matching first-party publication record has yet
     been attached.
@@ -6869,7 +6868,7 @@
     conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2021-preprint-unsupervised-instructional-videos
+- id: 2021-luv-workshop-unsupervised-instructional-videos
   title: Unsupervised Action Segmentation for Instructional Videos
   authors:
   - AJ Piergiovanni
@@ -6877,9 +6876,9 @@
   - Michael S. Ryoo
   - Irfan Essa
   year: 2021
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: LUV Workshop
+  venue_tier: Extended-Vision
+  publication_type: conference-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2106.03738
   arxiv_url: https://arxiv.org/abs/2106.03738
@@ -6925,8 +6924,8 @@
   verification_sources:
   - https://arxiv.org/abs/2106.03738
   verification_date: '2026-07-28'
-  notes: arXiv 2106.03738; first submitted 2021-06-07; last updated 2021-06-07; comment=4 page abstract for LUV workshop;
-    journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 2106.03738; comment states 4 page abstract for LUV workshop. Classified under LUV Workshop rather than Preprint;
+    official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names LUV Workshop (venue-mentioned); no matching first-party publication record has yet been
     attached.
@@ -7002,7 +7001,7 @@
     No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2020-preprint-hierarchical-attention-network
+- id: 2020-pattern-recognition-letters-hierarchical-attention-network
   title: Hierarchical Attention Network for Action Segmentation
   authors:
   - Harshala Gammulle
@@ -7010,9 +7009,9 @@
   - Sridha Sridharan
   - Clinton Fookes
   year: 2020
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: Pattern Recognition Letters
+  venue_tier: Journal
+  publication_type: journal-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2005.03209
   arxiv_url: https://arxiv.org/abs/2005.03209
@@ -7066,8 +7065,8 @@
   verification_sources:
   - https://arxiv.org/abs/2005.03209
   verification_date: '2026-07-28'
-  notes: arXiv 2005.03209; first submitted 2020-05-07; last updated 2020-05-07; comment=Published in Pattern Recognition Letters;
-    journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 2005.03209; comment states Published in Pattern Recognition Letters. Classified under Pattern Recognition Letters
+    rather than Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names Pattern Recognition Letters (author-claimed-accepted); no matching first-party publication
     record has yet been attached.
@@ -7078,7 +7077,7 @@
     source_field: comment
     evidence: Published in Pattern Recognition Letters
     verification: unverified-author-metadata
-- id: 2019-preprint-fine-grained-using-semi-supervised
+- id: 2019-pattern-recognition-fine-grained-using-semi-supervised
   title: Fine-grained Action Segmentation using the Semi-Supervised Action GAN
   authors:
   - Harshala Gammulle
@@ -7086,9 +7085,9 @@
   - Sridha Sridharan
   - Clinton Fookes
   year: 2019
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: Pattern Recognition
+  venue_tier: Journal
+  publication_type: journal-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/1909.09269
   arxiv_url: https://arxiv.org/abs/1909.09269
@@ -7141,8 +7140,8 @@
   verification_sources:
   - https://arxiv.org/abs/1909.09269
   verification_date: '2026-07-28'
-  notes: arXiv 1909.09269; first submitted 2019-09-20; last updated 2019-09-20; comment=Published in Pattern Recognition Journal;
-    journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 1909.09269; comment states Published in Pattern Recognition Journal. Classified under Pattern Recognition rather
+    than Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names Pattern Recognition (author-claimed-accepted); no matching first-party publication record
     has yet been attached.

@@ -39,7 +39,7 @@
 - [Joint Visual-Temporal Embedding for Unsupervised Learning of Actions in Untrimmed Sequences](https://openaccess.thecvf.com/content/WACV2021/html/VidalMata_Joint_Visual-Temporal_Embedding_for_Unsupervised_Learning_of_Actions_in_Untrimmed_WACV_2021_paper.html) — WACV 2021; `unknown`
 - [Temporal Relational Modeling with Self-Supervision for Action Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/16377) — AAAI 2021; `graphical-model, self-supervised`
 - [Temporally-Weighted Hierarchical Clustering for Unsupervised Action Segmentation](https://openaccess.thecvf.com/content/CVPR2021/html/Sarfraz_Temporally-Weighted_Hierarchical_Clustering_for_Unsupervised_Action_Segmentation_CVPR_2021_paper.html) — CVPR 2021; `clustering`
-- [Unsupervised Action Segmentation for Instructional Videos](https://arxiv.org/abs/2106.03738) — Preprint 2021; `unknown`
+- [Unsupervised Action Segmentation for Instructional Videos](https://arxiv.org/abs/2106.03738) — LUV Workshop 2021; `unknown`
 - [Action Segmentation With Joint Self-Supervised Temporal Domain Adaptation](https://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Action_Segmentation_With_Joint_Self-Supervised_Temporal_Domain_Adaptation_CVPR_2020_paper.html) — CVPR 2020; `unknown`
 - [Intra- and Inter-Action Understanding via Temporal Action Parsing](https://openaccess.thecvf.com/content_CVPR_2020/html/Shao_Intra-_and_Inter-Action_Understanding_via_Temporal_Action_Parsing_CVPR_2020_paper.html) — CVPR 2020; `clustering, boundary-modeling`
 - [Unsupervised Learning of Action Classes With Continuous Temporal Embedding](https://openaccess.thecvf.com/content_CVPR_2019/html/Kukleva_Unsupervised_Learning_of_Action_Classes_With_Continuous_Temporal_Embedding_CVPR_2019_paper.html) — CVPR 2019; `unknown`

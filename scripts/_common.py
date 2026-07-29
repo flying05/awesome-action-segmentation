@@ -39,7 +39,7 @@ REQUIRED_FIELDS = [
 
 VENUE_TIERS = {
     "CCF-A", "Top-Vision", "Extended-Vision", "Medical",
-    "Robotics-Embodied", "Preprint", "Related-but-not-core",
+    "Robotics-Embodied", "Journal", "Preprint", "Related-but-not-core",
 }
 
 CORE_VENUES = {
@@ -299,11 +299,11 @@ def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]]
         if duplicate:
             # Prefer a verified formal publication over a preprint.
             if (record.get("metadata_verified") and
-                    duplicate.get("venue_tier") == "Preprint"):
+                    not duplicate.get("metadata_verified")):
                 merge_complementary(record, duplicate)
                 kept.remove(duplicate)
                 kept.append(record)
-                duplicates.append((record["id"], duplicate["id"], "formal-over-preprint"))
+                duplicates.append((record["id"], duplicate["id"], "verified-over-unverified"))
                 for key, value in list(seen.items()):
                     if value is duplicate:
                         seen[key] = record
@@ -340,7 +340,11 @@ def save_serializations(records: list[dict[str, Any]]) -> None:
             writer.writerow(row)
     with (DATA / "papers.bib").open("w", encoding="utf-8", newline="\n") as handle:
         for record in records:
-            entry = "article" if record["publication_type"] == "preprint" else "inproceedings"
+            entry = (
+                "article"
+                if record["publication_type"] in {"preprint", "journal", "journal-claimed"}
+                else "inproceedings"
+            )
             authors = " and ".join(record["authors"]) or "Unknown"
             handle.write(
                 f"@{entry}{{{record['id'].replace('-', '_')},\n"

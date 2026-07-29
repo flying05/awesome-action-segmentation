@@ -47,11 +47,21 @@ def validate() -> list[str]:
             errors.append(f"{paper['id']}: invalid venue_tier {paper['venue_tier']}")
         if paper["year"] > int(CUTOFF_DATE[:4]):
             errors.append(f"{paper['id']}: after cutoff year")
-        formal = paper["venue_tier"] not in {"Preprint", "Related-but-not-core"}
+        formal = (
+            paper.get("metadata_verified")
+            and paper["venue_tier"] != "Related-but-not-core"
+        )
         if formal and not any(paper["verification_sources"]):
             errors.append(f"{paper['id']}: formal record has no first-party source")
         if formal and paper["publication_type"] == "preprint":
             errors.append(f"{paper['id']}: preprint leaked into formal list")
+        if paper.get("publication_type") in {"conference-claimed", "journal-claimed"}:
+            if paper["venue"] == "Preprint" or paper["venue_tier"] == "Preprint":
+                errors.append(f"{paper['id']}: publication claim left in Preprint classification")
+            if paper.get("metadata_verified"):
+                errors.append(f"{paper['id']}: unverified claim marked metadata_verified")
+            if not paper.get("publication_claim"):
+                errors.append(f"{paper['id']}: claimed publication lacks structured evidence")
         for key in ["official_publication_url", "official_pdf_url", "arxiv_url", "code_url", "project_url"]:
             value = paper[key]
             if value and urlparse(value).scheme not in {"http", "https"}:
@@ -77,7 +87,11 @@ def validate() -> list[str]:
         if not (ROOT / relative).exists():
             errors.append(f"missing generated file: {relative}")
     readme = (ROOT / "README.md").read_text(encoding="utf-8") if (ROOT / "README.md").exists() else ""
-    formal_count = sum(1 for p in papers if p["venue_tier"] not in {"Preprint", "Related-but-not-core"})
+    formal_count = sum(
+        1 for p in papers
+        if p.get("metadata_verified")
+        and p["venue_tier"] != "Related-but-not-core"
+    )
     marker = re.search(r"\*\*Verified conference papers:\*\*\s*(\d+)", readme)
     if not marker or int(marker.group(1)) != formal_count:
         errors.append("README formal paper count does not match metadata")

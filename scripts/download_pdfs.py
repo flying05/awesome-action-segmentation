@@ -63,6 +63,25 @@ def main() -> int:
         if not source:
             rows.append([paper["id"], paper["title"], paper["year"], paper["venue"], "", "", 0, "", "skipped", "no public PDF URL"])
             continue
+        recorded = (
+            ROOT / paper["local_pdf_path"]
+            if paper.get("local_pdf_path")
+            else None
+        )
+        if recorded and is_pdf(recorded):
+            digest = sha256_file(recorded)
+            paper.update({
+                "pdf_downloaded": True,
+                "local_pdf_path": recorded.relative_to(ROOT).as_posix(),
+                "pdf_sha256": digest,
+            })
+            rows.append([
+                paper["id"], paper["title"], paper["year"], paper["venue"],
+                source, paper["local_pdf_path"], recorded.stat().st_size,
+                digest, "existing", "",
+            ])
+            success += 1
+            continue
         target = PDF_DIR / filename(paper)
         if target.exists() and is_pdf(target):
             digest = sha256_file(target)

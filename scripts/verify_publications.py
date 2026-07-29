@@ -24,7 +24,9 @@ def main() -> int:
     failures: list[list[str]] = []
     checked = verified = 0
     for paper in papers:
-        if paper["venue_tier"] == "Preprint":
+        if paper.get("publication_type") in {
+            "preprint", "conference-claimed", "journal-claimed",
+        }:
             continue
         if args.only_unverified and paper.get("metadata_verified"):
             continue
@@ -59,4 +61,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

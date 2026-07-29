@@ -350,6 +350,79 @@
   notes: Official workshop paper; kept in the extended list, not the main-conference core count.
   needs_manual_review: false
   review_reason: ''
+- id: 2026-eccv-adaptive-latent-trajectory-anchoring-dataset
+  title: Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation
+  authors:
+  - Artheme Gauthier-Villar
+  - Guodong Ding
+  - Angela Yao
+  year: 2026
+  venue: ECCV
+  venue_tier: Top-Vision
+  publication_type: conference-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/2607.09081
+  arxiv_url: https://arxiv.org/abs/2607.09081
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: Dataset condensation for action segmentation synthesizes compact, informative representations of long, untrimmed
+    video datasets. The existing approach relies on Variational Autoencoders and an iterative latent optimization; it is computationally
+    expensive and suffers from over-smoothed reconstructions and rigid temporal constraints. This paper proposes to shift
+    the condensation paradigm from optimization-based inversion to deterministic latent mapping. By leveraging Denoising Diffusion
+    Implicit Models, we represent action segments as continuous trajectories anchored by sparse latent points in the noise
+    manifold. To maximize representational efficiency, we introduce an adaptive allocation mechanism that dynamically redistributes
+    the anchoring budget based on segment-wise reconstruction difficulty. Extensive experiments demonstrate that our framework
+    significantly outperforms state-of-the-art methods in segmentation performance across common datasets. Notably, our approach
+    achieves performance parity with real data training while maintaining a condensation ratio of 2.4\% on Breakfast dataset.
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - fully-supervised
+  modality:
+  - unknown
+  setting:
+  - offline
+  - long-video
+  method_family:
+  - diffusion
+  - dataset-condensation
+  backbone: unknown
+  datasets:
+  - Breakfast
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2026_Preprint_Gauthier-Villar_adaptive_latent_trajectory_anchoring_for_action_segment.pdf
+  pdf_sha256: 47e2d1bce8792d0a66581c3f0a762250fe557d2e4942d5f794a93c52781c6a89
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/2607.09081
+  verification_date: '2026-07-28'
+  notes: arXiv 2607.09081; comment states 16 pages, 5 figures, accepted to ECCV 2026. Classified under ECCV rather than Preprint;
+    official publication verification is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names ECCV 2026 (author-claimed-accepted); no matching first-party publication record has yet
+    been attached.
+  publication_claim:
+    venue: ECCV
+    year: 2026
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 16 pages, 5 figures, accepted to ECCV 2026
+    verification: unverified-author-metadata
 - id: 2026-icpr-deep-kernel-approximation-unsupervised
   title: Deep Kernel Video Approximation for Unsupervised Action Segmentation
   authors:
@@ -482,6 +555,80 @@
     pending.
   needs_manual_review: false
   review_reason: ''
+- id: 2026-icra-exploring-vision-language-models-open
+  title: Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation
+  authors:
+  - Asim Unmesh
+  - Kaki Ramesh
+  - Mayank Patel
+  - Rahul Jain
+  - Karthik Ramani
+  year: 2026
+  venue: ICRA
+  venue_tier: Robotics-Embodied
+  publication_type: conference-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/2602.21406
+  arxiv_url: https://arxiv.org/abs/2602.21406
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'Temporal Action Segmentation (TAS) requires dividing videos into action segments, yet the vast space of activities
+    and alternative breakdowns makes collecting comprehensive datasets infeasible. Existing methods remain limited to closed
+    vocabularies and fixed label sets. In this work, we explore the largely unexplored problem of Open-Vocabulary Zero-Shot
+    Temporal Action Segmentation (OVTAS) by leveraging the strong zero-shot capabilities of Vision-Language Models (VLMs).
+    We introduce a training-free pipeline that follows a segmentation-by-classification design: Frame-Action Embedding Similarity
+    (FAES) matches video frames to candidate action labels, and Similarity-Matrix Temporal Segmentation (SMTS) enforces temporal
+    consistency. Beyond proposing OVTAS, we present a systematic study across 14 diverse VLMs, providing the first broad analysis
+    of their suitability for open-vocabulary action segmentation. Experiments on standard benchmarks show that OVTAS achieves
+    strong results without task-specific supervision, underscoring the potential of VLMs for structured temporal understanding.'
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - zero-shot
+  modality:
+  - video-language
+  setting:
+  - long-video
+  - offline
+  - open-vocabulary
+  method_family:
+  - unknown
+  backbone: unknown
+  datasets: []
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2026_Preprint_Unmesh_exploring_vision_language_models_for_open_vocabulary_ze.pdf
+  pdf_sha256: 018005389a316b974ae793d4daee146fd9eff8c8bd72b41bf98032fe29395d7d
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/2602.21406
+  verification_date: '2026-07-28'
+  notes: arXiv 2602.21406; comment states ICRA 2026. Classified under ICRA rather than Preprint; official publication verification
+    is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names ICRA 2026 (venue-mentioned); no matching first-party publication record has yet been
+    attached.
+  publication_claim:
+    venue: ICRA
+    year: 2026
+    status: venue-mentioned
+    source_field: comment
+    evidence: ICRA 2026
+    verification: unverified-author-metadata
 - id: 2026-icra-m2r2-multimodal-robotic-representation
   title: 'M2R2: MultiModal Robotic Representation for Temporal Action Segmentation'
   authors:
@@ -615,79 +762,6 @@
     No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2026-preprint-adaptive-latent-trajectory-anchoring-dataset
-  title: Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation
-  authors:
-  - Artheme Gauthier-Villar
-  - Guodong Ding
-  - Angela Yao
-  year: 2026
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/2607.09081
-  arxiv_url: https://arxiv.org/abs/2607.09081
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: Dataset condensation for action segmentation synthesizes compact, informative representations of long, untrimmed
-    video datasets. The existing approach relies on Variational Autoencoders and an iterative latent optimization; it is computationally
-    expensive and suffers from over-smoothed reconstructions and rigid temporal constraints. This paper proposes to shift
-    the condensation paradigm from optimization-based inversion to deterministic latent mapping. By leveraging Denoising Diffusion
-    Implicit Models, we represent action segments as continuous trajectories anchored by sparse latent points in the noise
-    manifold. To maximize representational efficiency, we introduce an adaptive allocation mechanism that dynamically redistributes
-    the anchoring budget based on segment-wise reconstruction difficulty. Extensive experiments demonstrate that our framework
-    significantly outperforms state-of-the-art methods in segmentation performance across common datasets. Notably, our approach
-    achieves performance parity with real data training while maintaining a condensation ratio of 2.4\% on Breakfast dataset.
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - fully-supervised
-  modality:
-  - unknown
-  setting:
-  - offline
-  - long-video
-  method_family:
-  - diffusion
-  - dataset-condensation
-  backbone: unknown
-  datasets:
-  - Breakfast
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2026_Preprint_Gauthier-Villar_adaptive_latent_trajectory_anchoring_for_action_segment.pdf
-  pdf_sha256: 47e2d1bce8792d0a66581c3f0a762250fe557d2e4942d5f794a93c52781c6a89
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/2607.09081
-  verification_date: '2026-07-28'
-  notes: arXiv 2607.09081; first submitted 2026-07-10; last updated 2026-07-10; comment=16 pages, 5 figures, accepted to ECCV
-    2026; journal_ref=none. No formal conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: arXiv comment names ECCV 2026 (author-claimed-accepted); no matching first-party publication record has yet
-    been attached.
-  publication_claim:
-    venue: ECCV
-    year: 2026
-    status: author-claimed-accepted
-    source_field: comment
-    evidence: 16 pages, 5 figures, accepted to ECCV 2026
-    verification: unverified-author-metadata
 - id: 2026-preprint-boundary-centric-clip-budgeted-active
   title: Boundary-Centric Clip-Budgeted Active Learning for Temporal Action Segmentation
   authors:
@@ -901,80 +975,6 @@
     journal_ref=none. No formal conference proceedings placement has been verified.'
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2026-preprint-exploring-vision-language-models-open
-  title: Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation
-  authors:
-  - Asim Unmesh
-  - Kaki Ramesh
-  - Mayank Patel
-  - Rahul Jain
-  - Karthik Ramani
-  year: 2026
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/2602.21406
-  arxiv_url: https://arxiv.org/abs/2602.21406
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: 'Temporal Action Segmentation (TAS) requires dividing videos into action segments, yet the vast space of activities
-    and alternative breakdowns makes collecting comprehensive datasets infeasible. Existing methods remain limited to closed
-    vocabularies and fixed label sets. In this work, we explore the largely unexplored problem of Open-Vocabulary Zero-Shot
-    Temporal Action Segmentation (OVTAS) by leveraging the strong zero-shot capabilities of Vision-Language Models (VLMs).
-    We introduce a training-free pipeline that follows a segmentation-by-classification design: Frame-Action Embedding Similarity
-    (FAES) matches video frames to candidate action labels, and Similarity-Matrix Temporal Segmentation (SMTS) enforces temporal
-    consistency. Beyond proposing OVTAS, we present a systematic study across 14 diverse VLMs, providing the first broad analysis
-    of their suitability for open-vocabulary action segmentation. Experiments on standard benchmarks show that OVTAS achieves
-    strong results without task-specific supervision, underscoring the potential of VLMs for structured temporal understanding.'
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - zero-shot
-  modality:
-  - video-language
-  setting:
-  - long-video
-  - offline
-  - open-vocabulary
-  method_family:
-  - unknown
-  backbone: unknown
-  datasets: []
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2026_Preprint_Unmesh_exploring_vision_language_models_for_open_vocabulary_ze.pdf
-  pdf_sha256: 018005389a316b974ae793d4daee146fd9eff8c8bd72b41bf98032fe29395d7d
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/2602.21406
-  verification_date: '2026-07-28'
-  notes: arXiv 2602.21406; first submitted 2026-02-24; last updated 2026-02-24; comment=ICRA 2026; journal_ref=none. No formal
-    conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: arXiv comment names ICRA 2026 (venue-mentioned); no matching first-party publication record has yet been
-    attached.
-  publication_claim:
-    venue: ICRA
-    year: 2026
-    status: venue-mentioned
-    source_field: comment
-    evidence: ICRA 2026
-    verification: unverified-author-metadata
 - id: 2026-preprint-fine-grained-renorrhaphy-robot-assisted
   title: Fine-Grained Action Segmentation for Renorrhaphy in Robot-Assisted Partial Nephrectomy
   authors:
@@ -3981,7 +3981,7 @@
     IEEE for possible publication; journal_ref=none. No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2024-preprint-o-talc-steps-towards-combating
+- id: 2024-tahri-o-talc-steps-towards-combating
   title: 'O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation'
   authors:
   - Matthew Kent Myers
@@ -3989,9 +3989,9 @@
   - A. Stephen McGough
   - Nicholas Martin
   year: 2024
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: TAHRI
+  venue_tier: Extended-Vision
+  publication_type: conference-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2404.06894
   arxiv_url: https://arxiv.org/abs/2404.06894
@@ -4045,9 +4045,8 @@
   verification_sources:
   - https://arxiv.org/abs/2404.06894
   verification_date: '2026-07-28'
-  notes: arXiv 2404.06894; first submitted 2024-04-10; last updated 2024-04-10; comment=5 pages, 3 figures. Accepted as a
-    short (unindexed) paper at the TAHRI conference; journal_ref=none. No formal conference proceedings placement has been
-    verified.
+  notes: arXiv 2404.06894; comment states 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference.
+    Classified under TAHRI rather than Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names TAHRI (author-claimed-accepted); no matching first-party publication record has yet been
     attached.
@@ -4583,6 +4582,82 @@
   notes: ''
   needs_manual_review: false
   review_reason: ''
+- id: 2023-ego4d-epic-workshop-enhancing-transformer-backbone-egocentric
+  title: Enhancing Transformer Backbone for Egocentric Video Action Segmentation
+  authors:
+  - Sakib Reza
+  - Balaji Sundareshan
+  - Mohsen Moghaddam
+  - Octavia Camps
+  year: 2023
+  venue: Ego4D/EPIC Workshop
+  venue_tier: Extended-Vision
+  publication_type: conference-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/2305.11365
+  arxiv_url: https://arxiv.org/abs/2305.11365
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: Egocentric temporal action segmentation in videos is a crucial task in computer vision with applications in various
+    fields such as mixed reality, human behavior analysis, and robotics. Although recent research has utilized advanced visual-language
+    frameworks, transformers remain the backbone of action segmentation models. Therefore, it is necessary to improve transformers
+    to enhance the robustness of action segmentation models. In this work, we propose two novel ideas to enhance the state-of-the-art
+    transformer for action segmentation. First, we introduce a dual dilated attention mechanism to adaptively capture hierarchical
+    representations in both local-to-global and global-to-local contexts. Second, we incorporate cross-connections between
+    the encoder and decoder blocks to prevent the loss of local context by the decoder. We also utilize state-of-the-art visual-language
+    representation learning techniques to extract richer and more compact features for our transformer. Our proposed approach
+    outperforms other state-of-the-art methods on the Georgia Tech Egocentric Activities (GTEA) and HOI4D Office Tools datasets,
+    and we validate our introduced components with ablation studies. The source code and supplementary materials are publicly
+    available on https://www.sail-nu.com/dxformer.
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - fully-supervised
+  modality:
+  - unknown
+  setting:
+  - egocentric
+  - long-video
+  - offline
+  method_family:
+  - Transformer
+  backbone: unknown
+  datasets:
+  - GTEA
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2023_Preprint_Reza_enhancing_transformer_backbone_for_egocentric_video_act.pdf
+  pdf_sha256: ff8d040e299cc151e89b9db6110c8c2263765d1c9bfc230f1ccf6efadf731275
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/2305.11365
+  verification_date: '2026-07-28'
+  notes: arXiv 2305.11365; comment states Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023. Classified
+    under Ego4D/EPIC Workshop rather than Preprint; official publication verification is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names Ego4D/EPIC Workshop 2023 (venue-mentioned); no matching first-party publication record
+    has yet been attached.
+  publication_claim:
+    venue: Ego4D/EPIC Workshop
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023
+    verification: unverified-author-metadata
 - id: 2023-iccv-diffusion
   title: Diffusion Action Segmentation
   authors:
@@ -4998,6 +5073,154 @@
   notes: ''
   needs_manual_review: false
   review_reason: ''
+- id: 2023-ieee-tpami-analysis-modern-techniques
+  title: 'Temporal Action Segmentation: An Analysis of Modern Techniques'
+  authors:
+  - Guodong Ding
+  - Fadime Sener
+  - Angela Yao
+  year: 2023
+  venue: IEEE TPAMI
+  venue_tier: Journal
+  publication_type: journal-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/2210.10352
+  arxiv_url: https://arxiv.org/abs/2210.10352
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: Temporal action segmentation (TAS) in videos aims at densely identifying video frames in minutes-long videos with
+    multiple action classes. As a long-range video understanding task, researchers have developed an extended collection of
+    methods and examined their performance using various benchmarks. Despite the rapid growth of TAS techniques in recent
+    years, no systematic survey has been conducted in these sectors. This survey analyzes and summarizes the most significant
+    contributions and trends. In particular, we first examine the task definition, common benchmarks, types of supervision,
+    and prevalent evaluation measures. In addition, we systematically investigate two essential techniques of this topic,
+    i.e., frame representation and temporal modeling, which have been studied extensively in the literature. We then conduct
+    a thorough review of existing TAS works categorized by their levels of supervision and conclude our survey by identifying
+    and emphasizing several research gaps. In addition, we have curated a list of TAS resources, which is available at https://github.com/nus-cvml/awesome-temporal-action-segmentation.
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - fully-supervised
+  modality:
+  - unknown
+  setting:
+  - offline
+  - long-video
+  method_family:
+  - unknown
+  backbone: unknown
+  datasets: []
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2022_Preprint_Ding_temporal_action_segmentation_an_analysis_of_modern_tech.pdf
+  pdf_sha256: 35023df654025b00ea6f40881834348f0339393bf9d99b560611dbcce4fec865
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/2210.10352
+  verification_date: '2026-07-28'
+  notes: arXiv 2210.10352; comment states 19 pages, 9 figures, 8 tables, TPAMI 2023. Classified under IEEE TPAMI rather than
+    Preprint; official publication verification is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names IEEE TPAMI 2023 (venue-mentioned); no matching first-party publication record has yet
+    been attached.
+  publication_claim:
+    venue: IEEE TPAMI
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: 19 pages, 9 figures, 8 tables, TPAMI 2023
+    verification: unverified-author-metadata
+- id: 2023-ieee-transactions-on-multimedia-smc-nca-semantic-guided-multi
+  title: 'SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation'
+  authors:
+  - Feixiang Zhou
+  - Zheheng Jiang
+  - Huiyu Zhou
+  - Xuelong Li
+  year: 2023
+  venue: IEEE Transactions on Multimedia
+  venue_tier: Journal
+  publication_type: journal-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/2312.12347
+  arxiv_url: https://arxiv.org/abs/2312.12347
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: Semi-supervised temporal action segmentation (SS-TA) aims to perform frame-wise classification in long untrimmed
+    videos, where only a fraction of videos in the training set have labels. Recent studies have shown the potential of contrastive
+    learning in unsupervised representation learning using unlabelled data. However, learning the representation of each frame
+    by unsupervised contrastive learning for action segmentation remains an open and challenging problem. In this paper, we
+    propose a novel Semantic-guided Multi-level Contrast scheme with a Neighbourhood-Consistency-Aware unit (SMC-NCA) to extract
+    strong frame-wise representations for SS-TAS. Specifically, for representation learning, SMC is first used to explore
+    intra- and inter-information variations in a unified and contrastive way, based on action-specific semantic information
+    and temporal information highlighting relations between actions. Then, the NCA module, which is responsible for enforcing
+    spatial consistency between neighbourhoods centered at different frames to alleviate over-segmentation issues, works alongside
+    SMC for semi-supervised learning (SSL). Our SMC outperforms the other state-of-the-art methods on three benchmarks, offering
+    improvements of up to 17.8% and 12.6% in terms of Edit distance and accuracy, respectively. Additionally, the NCA unit
+    results in significantly better segmentation performance in the presence of only 5% labelled videos. We also demonstrate
+    the generalizability and effectiveness of the proposed method on our Parkinson Disease's Mouse Behaviour (PDMB) dataset.
+    Code is available at https://github.com/FeixiangZhou/SMC-NCA.
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - semi-supervised
+  modality:
+  - unknown
+  setting:
+  - offline
+  - long-video
+  method_family:
+  - unknown
+  backbone: unknown
+  datasets: []
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2023_Preprint_Zhou_smc_nca_semantic_guided_multi_level_contrast_for_semi_s.pdf
+  pdf_sha256: 9f73d6d6d81c8b3cd949d45794d7f4867cf14412277a9a0f23bd8e22192bc3a5
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/2312.12347
+  verification_date: '2026-07-28'
+  notes: arXiv 2312.12347; comment states Accepted to IEEE Transactions on Multimedia. Classified under IEEE Transactions
+    on Multimedia rather than Preprint; official publication verification is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names IEEE Transactions on Multimedia (author-claimed-accepted); no matching first-party publication
+    record has yet been attached.
+  publication_claim:
+    venue: IEEE Transactions on Multimedia
+    year: null
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to IEEE Transactions on Multimedia
+    verification: unverified-author-metadata
 - id: 2023-ijcai-hoi-aware-adaptive-network-weakly
   title: HOI-aware Adaptive Network for Weakly-supervised Action Segmentation
   authors:
@@ -5687,82 +5910,6 @@
     source_field: comment
     evidence: submit to TNNLS
     verification: unverified-author-metadata
-- id: 2023-preprint-enhancing-transformer-backbone-egocentric
-  title: Enhancing Transformer Backbone for Egocentric Video Action Segmentation
-  authors:
-  - Sakib Reza
-  - Balaji Sundareshan
-  - Mohsen Moghaddam
-  - Octavia Camps
-  year: 2023
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/2305.11365
-  arxiv_url: https://arxiv.org/abs/2305.11365
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: Egocentric temporal action segmentation in videos is a crucial task in computer vision with applications in various
-    fields such as mixed reality, human behavior analysis, and robotics. Although recent research has utilized advanced visual-language
-    frameworks, transformers remain the backbone of action segmentation models. Therefore, it is necessary to improve transformers
-    to enhance the robustness of action segmentation models. In this work, we propose two novel ideas to enhance the state-of-the-art
-    transformer for action segmentation. First, we introduce a dual dilated attention mechanism to adaptively capture hierarchical
-    representations in both local-to-global and global-to-local contexts. Second, we incorporate cross-connections between
-    the encoder and decoder blocks to prevent the loss of local context by the decoder. We also utilize state-of-the-art visual-language
-    representation learning techniques to extract richer and more compact features for our transformer. Our proposed approach
-    outperforms other state-of-the-art methods on the Georgia Tech Egocentric Activities (GTEA) and HOI4D Office Tools datasets,
-    and we validate our introduced components with ablation studies. The source code and supplementary materials are publicly
-    available on https://www.sail-nu.com/dxformer.
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - fully-supervised
-  modality:
-  - unknown
-  setting:
-  - egocentric
-  - long-video
-  - offline
-  method_family:
-  - Transformer
-  backbone: unknown
-  datasets:
-  - GTEA
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2023_Preprint_Reza_enhancing_transformer_backbone_for_egocentric_video_act.pdf
-  pdf_sha256: ff8d040e299cc151e89b9db6110c8c2263765d1c9bfc230f1ccf6efadf731275
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/2305.11365
-  verification_date: '2026-07-28'
-  notes: arXiv 2305.11365; first submitted 2023-05-19; last updated 2023-05-23; comment=Joint 3rd Ego4D and 11th EPIC Workshop
-    on Egocentric Vision at CVPR 2023; journal_ref=none. No formal conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: arXiv comment names Ego4D/EPIC Workshop 2023 (venue-mentioned); no matching first-party publication record
-    has yet been attached.
-  publication_claim:
-    venue: Ego4D/EPIC Workshop
-    year: 2023
-    status: venue-mentioned
-    source_field: comment
-    evidence: Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023
-    verification: unverified-author-metadata
 - id: 2023-preprint-ms-tcrnet-multi-stage-convolutional
   title: 'MS-TCRNet: Multi-Stage Temporal Convolutional Recurrent Networks for Action Segmentation Using Sensor-Augmented
     Kinematics'
@@ -5982,83 +6129,6 @@
     conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2023-preprint-smc-nca-semantic-guided-multi
-  title: 'SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation'
-  authors:
-  - Feixiang Zhou
-  - Zheheng Jiang
-  - Huiyu Zhou
-  - Xuelong Li
-  year: 2023
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/2312.12347
-  arxiv_url: https://arxiv.org/abs/2312.12347
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: Semi-supervised temporal action segmentation (SS-TA) aims to perform frame-wise classification in long untrimmed
-    videos, where only a fraction of videos in the training set have labels. Recent studies have shown the potential of contrastive
-    learning in unsupervised representation learning using unlabelled data. However, learning the representation of each frame
-    by unsupervised contrastive learning for action segmentation remains an open and challenging problem. In this paper, we
-    propose a novel Semantic-guided Multi-level Contrast scheme with a Neighbourhood-Consistency-Aware unit (SMC-NCA) to extract
-    strong frame-wise representations for SS-TAS. Specifically, for representation learning, SMC is first used to explore
-    intra- and inter-information variations in a unified and contrastive way, based on action-specific semantic information
-    and temporal information highlighting relations between actions. Then, the NCA module, which is responsible for enforcing
-    spatial consistency between neighbourhoods centered at different frames to alleviate over-segmentation issues, works alongside
-    SMC for semi-supervised learning (SSL). Our SMC outperforms the other state-of-the-art methods on three benchmarks, offering
-    improvements of up to 17.8% and 12.6% in terms of Edit distance and accuracy, respectively. Additionally, the NCA unit
-    results in significantly better segmentation performance in the presence of only 5% labelled videos. We also demonstrate
-    the generalizability and effectiveness of the proposed method on our Parkinson Disease's Mouse Behaviour (PDMB) dataset.
-    Code is available at https://github.com/FeixiangZhou/SMC-NCA.
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - semi-supervised
-  modality:
-  - unknown
-  setting:
-  - offline
-  - long-video
-  method_family:
-  - unknown
-  backbone: unknown
-  datasets: []
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2023_Preprint_Zhou_smc_nca_semantic_guided_multi_level_contrast_for_semi_s.pdf
-  pdf_sha256: 9f73d6d6d81c8b3cd949d45794d7f4867cf14412277a9a0f23bd8e22192bc3a5
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/2312.12347
-  verification_date: '2026-07-28'
-  notes: arXiv 2312.12347; first submitted 2023-12-19; last updated 2024-07-19; comment=Accepted to IEEE Transactions on Multimedia;
-    journal_ref=none. No formal conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: arXiv comment names IEEE Transactions on Multimedia (author-claimed-accepted); no matching first-party publication
-    record has yet been attached.
-  publication_claim:
-    venue: IEEE Transactions on Multimedia
-    year: null
-    status: author-claimed-accepted
-    source_field: comment
-    evidence: Accepted to IEEE Transactions on Multimedia
-    verification: unverified-author-metadata
 - id: 2023-preprint-sigformer-sparse-signal-guided-transformer
   title: 'SigFormer: Sparse Signal-Guided Transformer for Multi-Modal Human Action Segmentation'
   authors:
@@ -7857,77 +7927,6 @@
     conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2022-preprint-analysis-modern-techniques
-  title: 'Temporal Action Segmentation: An Analysis of Modern Techniques'
-  authors:
-  - Guodong Ding
-  - Fadime Sener
-  - Angela Yao
-  year: 2022
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/2210.10352
-  arxiv_url: https://arxiv.org/abs/2210.10352
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: Temporal action segmentation (TAS) in videos aims at densely identifying video frames in minutes-long videos with
-    multiple action classes. As a long-range video understanding task, researchers have developed an extended collection of
-    methods and examined their performance using various benchmarks. Despite the rapid growth of TAS techniques in recent
-    years, no systematic survey has been conducted in these sectors. This survey analyzes and summarizes the most significant
-    contributions and trends. In particular, we first examine the task definition, common benchmarks, types of supervision,
-    and prevalent evaluation measures. In addition, we systematically investigate two essential techniques of this topic,
-    i.e., frame representation and temporal modeling, which have been studied extensively in the literature. We then conduct
-    a thorough review of existing TAS works categorized by their levels of supervision and conclude our survey by identifying
-    and emphasizing several research gaps. In addition, we have curated a list of TAS resources, which is available at https://github.com/nus-cvml/awesome-temporal-action-segmentation.
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - fully-supervised
-  modality:
-  - unknown
-  setting:
-  - offline
-  - long-video
-  method_family:
-  - unknown
-  backbone: unknown
-  datasets: []
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2022_Preprint_Ding_temporal_action_segmentation_an_analysis_of_modern_tech.pdf
-  pdf_sha256: 35023df654025b00ea6f40881834348f0339393bf9d99b560611dbcce4fec865
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/2210.10352
-  verification_date: '2026-07-28'
-  notes: arXiv 2210.10352; first submitted 2022-10-19; last updated 2023-10-21; comment=19 pages, 9 figures, 8 tables, TPAMI
-    2023; journal_ref=none. No formal conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: arXiv comment names IEEE TPAMI 2023 (venue-mentioned); no matching first-party publication record has yet
-    been attached.
-  publication_claim:
-    venue: IEEE TPAMI
-    year: 2023
-    status: venue-mentioned
-    source_field: comment
-    evidence: 19 pages, 9 figures, 8 tables, TPAMI 2023
-    verification: unverified-author-metadata
 - id: 2022-preprint-transformers-weakly-supervised
   title: 'Transformers in Action: Weakly Supervised Action Segmentation'
   authors:
@@ -8187,9 +8186,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2021_AAAI_Wang_temporal_relational_modeling_with_self_supervision_for.pdf
+  pdf_sha256: 7daf327e3d8060bbb8dbe81b9e74b86974b3033c3f0ce5d511491a5ab963d87f
   metadata_verified: true
   verification_sources:
   - https://ojs.aaai.org/index.php/AAAI/article/view/16377
@@ -8783,6 +8782,74 @@
   notes: ''
   needs_manual_review: false
   review_reason: ''
+- id: 2021-luv-workshop-unsupervised-instructional-videos
+  title: Unsupervised Action Segmentation for Instructional Videos
+  authors:
+  - AJ Piergiovanni
+  - Anelia Angelova
+  - Michael S. Ryoo
+  - Irfan Essa
+  year: 2021
+  venue: LUV Workshop
+  venue_tier: Extended-Vision
+  publication_type: conference-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/2106.03738
+  arxiv_url: https://arxiv.org/abs/2106.03738
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: In this paper we address the problem of automatically discovering atomic actions in unsupervised manner from instructional
+    videos, which are rarely annotated with atomic actions. We present an unsupervised approach to learn atomic actions of
+    structured human tasks from a variety of instructional videos based on a sequential stochastic autoregressive model for
+    temporal segmentation of videos. This learns to represent and discover the sequential relationship between different atomic
+    actions of the task, and which provides automatic and unsupervised self-labeling.
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - unsupervised
+  modality:
+  - unknown
+  setting:
+  - offline
+  - long-video
+  method_family:
+  - unknown
+  backbone: unknown
+  datasets: []
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2021_Preprint_Piergiovanni_unsupervised_action_segmentation_for_instructional_vide.pdf
+  pdf_sha256: 2b9ca6452e6b27aa4aaa46ec55a560a6c9c77395f24de08b9bd69eba61f10319
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/2106.03738
+  verification_date: '2026-07-28'
+  notes: arXiv 2106.03738; comment states 4 page abstract for LUV workshop. Classified under LUV Workshop rather than Preprint;
+    official publication verification is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names LUV Workshop (venue-mentioned); no matching first-party publication record has yet been
+    attached.
+  publication_claim:
+    venue: LUV Workshop
+    year: null
+    status: venue-mentioned
+    source_field: comment
+    evidence: 4 page abstract for LUV workshop
+    verification: unverified-author-metadata
 - id: 2021-preprint-coarse-fine-multi-resolution-convolutional
   title: Coarse to Fine Multi-Resolution Temporal Convolutional Network
   authors:
@@ -8967,74 +9034,6 @@
     No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2021-preprint-unsupervised-instructional-videos
-  title: Unsupervised Action Segmentation for Instructional Videos
-  authors:
-  - AJ Piergiovanni
-  - Anelia Angelova
-  - Michael S. Ryoo
-  - Irfan Essa
-  year: 2021
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/2106.03738
-  arxiv_url: https://arxiv.org/abs/2106.03738
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: In this paper we address the problem of automatically discovering atomic actions in unsupervised manner from instructional
-    videos, which are rarely annotated with atomic actions. We present an unsupervised approach to learn atomic actions of
-    structured human tasks from a variety of instructional videos based on a sequential stochastic autoregressive model for
-    temporal segmentation of videos. This learns to represent and discover the sequential relationship between different atomic
-    actions of the task, and which provides automatic and unsupervised self-labeling.
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - unsupervised
-  modality:
-  - unknown
-  setting:
-  - offline
-  - long-video
-  method_family:
-  - unknown
-  backbone: unknown
-  datasets: []
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2021_Preprint_Piergiovanni_unsupervised_action_segmentation_for_instructional_vide.pdf
-  pdf_sha256: 2b9ca6452e6b27aa4aaa46ec55a560a6c9c77395f24de08b9bd69eba61f10319
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/2106.03738
-  verification_date: '2026-07-28'
-  notes: arXiv 2106.03738; first submitted 2021-06-07; last updated 2021-06-07; comment=4 page abstract for LUV workshop;
-    journal_ref=none. No formal conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: arXiv comment names LUV Workshop (venue-mentioned); no matching first-party publication record has yet been
-    attached.
-  publication_claim:
-    venue: LUV Workshop
-    year: null
-    status: venue-mentioned
-    source_field: comment
-    evidence: 4 page abstract for LUV workshop
-    verification: unverified-author-metadata
 - id: 2021-wacv-joint-visual-embedding-unsupervised-learning
   title: Joint Visual-Temporal Embedding for Unsupervised Learning of Actions in Untrimmed Sequences
   authors:
@@ -9295,9 +9294,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2020_CVPR_Shao_intra_and_inter_action_understanding_via_temporal_actio.pdf
+  pdf_sha256: dd98ef6dc7673be1b9a9f34929c2eb7d821dbef9da5232f760b3b067ee9571c4
   metadata_verified: true
   verification_sources:
   - https://openaccess.thecvf.com/content_CVPR_2020/html/Shao_Intra-_and_Inter-Action_Understanding_via_Temporal_Action_Parsing_CVPR_2020_paper.html
@@ -9667,7 +9666,7 @@
   notes: ''
   needs_manual_review: false
   review_reason: ''
-- id: 2020-preprint-hierarchical-attention-network
+- id: 2020-pattern-recognition-letters-hierarchical-attention-network
   title: Hierarchical Attention Network for Action Segmentation
   authors:
   - Harshala Gammulle
@@ -9675,9 +9674,9 @@
   - Sridha Sridharan
   - Clinton Fookes
   year: 2020
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: Pattern Recognition Letters
+  venue_tier: Journal
+  publication_type: journal-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2005.03209
   arxiv_url: https://arxiv.org/abs/2005.03209
@@ -9731,8 +9730,8 @@
   verification_sources:
   - https://arxiv.org/abs/2005.03209
   verification_date: '2026-07-28'
-  notes: arXiv 2005.03209; first submitted 2020-05-07; last updated 2020-05-07; comment=Published in Pattern Recognition Letters;
-    journal_ref=none. No formal conference proceedings placement has been verified.
+  notes: arXiv 2005.03209; comment states Published in Pattern Recognition Letters. Classified under Pattern Recognition Letters
+    rather than Preprint; official publication verification is still pending.
   needs_manual_review: true
   review_reason: arXiv comment names Pattern Recognition Letters (author-claimed-accepted); no matching first-party publication
     record has yet been attached.
@@ -10270,6 +10269,81 @@
   notes: ''
   needs_manual_review: false
   review_reason: ''
+- id: 2019-pattern-recognition-fine-grained-using-semi-supervised
+  title: Fine-grained Action Segmentation using the Semi-Supervised Action GAN
+  authors:
+  - Harshala Gammulle
+  - Simon Denman
+  - Sridha Sridharan
+  - Clinton Fookes
+  year: 2019
+  venue: Pattern Recognition
+  venue_tier: Journal
+  publication_type: journal-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/1909.09269
+  arxiv_url: https://arxiv.org/abs/1909.09269
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: 'In this paper we address the problem of continuous fine-grained action segmentation, in which multiple actions
+    are present in an unsegmented video stream. The challenge for this task lies in the need to represent the hierarchical
+    nature of the actions and to detect the transitions between actions, allowing us to localise the actions within the video
+    effectively. We propose a novel recurrent semi-supervised Generative Adversarial Network (GAN) model for continuous fine-grained
+    human action segmentation. Temporal context information is captured via a novel Gated Context Extractor (GCE) module,
+    composed of gated attention units, that directs the queued context information through the generator model, for enhanced
+    action segmentation. The GAN is made to learn features in a semi-supervised manner, enabling the model to perform action
+    classification jointly with the standard, unsupervised, GAN learning procedure. We perform extensive evaluations on different
+    architectural variants to demonstrate the importance of the proposed network architecture, and show that it is capable
+    of outperforming current state-of-the-art on three challenging datasets: 50 Salads, MERL Shopping and Georgia Tech Egocentric
+    Activities dataset.'
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - semi-supervised
+  modality:
+  - unknown
+  setting:
+  - egocentric
+  - long-video
+  - offline
+  method_family:
+  - unknown
+  backbone: unknown
+  datasets: []
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2019_Preprint_Gammulle_fine_grained_action_segmentation_using_the_semi_supervi.pdf
+  pdf_sha256: 5639da6a0eb86ccc3d3c22c288aeef7b043a92d3f3b3d2710b8280a7088b9d11
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/1909.09269
+  verification_date: '2026-07-28'
+  notes: arXiv 1909.09269; comment states Published in Pattern Recognition Journal. Classified under Pattern Recognition rather
+    than Preprint; official publication verification is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names Pattern Recognition (author-claimed-accepted); no matching first-party publication record
+    has yet been attached.
+  publication_claim:
+    venue: Pattern Recognition
+    year: null
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Published in Pattern Recognition Journal
+    verification: unverified-author-metadata
 - id: 2019-preprint-hybrid-rnn-hmm-approach-weakly
   title: A Hybrid RNN-HMM Approach for Weakly Supervised Temporal Action Segmentation
   authors:
@@ -10347,81 +10421,6 @@
     source_field: comment
     evidence: '15 pages, preprint for IEEE TPAMI https://ieeexplore.ieee.org/document/8585084 (open access). arXiv admin note:
       substantial text overlap with arXiv:1703.08132'
-    verification: unverified-author-metadata
-- id: 2019-preprint-fine-grained-using-semi-supervised
-  title: Fine-grained Action Segmentation using the Semi-Supervised Action GAN
-  authors:
-  - Harshala Gammulle
-  - Simon Denman
-  - Sridha Sridharan
-  - Clinton Fookes
-  year: 2019
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/1909.09269
-  arxiv_url: https://arxiv.org/abs/1909.09269
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: 'In this paper we address the problem of continuous fine-grained action segmentation, in which multiple actions
-    are present in an unsegmented video stream. The challenge for this task lies in the need to represent the hierarchical
-    nature of the actions and to detect the transitions between actions, allowing us to localise the actions within the video
-    effectively. We propose a novel recurrent semi-supervised Generative Adversarial Network (GAN) model for continuous fine-grained
-    human action segmentation. Temporal context information is captured via a novel Gated Context Extractor (GCE) module,
-    composed of gated attention units, that directs the queued context information through the generator model, for enhanced
-    action segmentation. The GAN is made to learn features in a semi-supervised manner, enabling the model to perform action
-    classification jointly with the standard, unsupervised, GAN learning procedure. We perform extensive evaluations on different
-    architectural variants to demonstrate the importance of the proposed network architecture, and show that it is capable
-    of outperforming current state-of-the-art on three challenging datasets: 50 Salads, MERL Shopping and Georgia Tech Egocentric
-    Activities dataset.'
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - semi-supervised
-  modality:
-  - unknown
-  setting:
-  - egocentric
-  - long-video
-  - offline
-  method_family:
-  - unknown
-  backbone: unknown
-  datasets: []
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2019_Preprint_Gammulle_fine_grained_action_segmentation_using_the_semi_supervi.pdf
-  pdf_sha256: 5639da6a0eb86ccc3d3c22c288aeef7b043a92d3f3b3d2710b8280a7088b9d11
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/1909.09269
-  verification_date: '2026-07-28'
-  notes: arXiv 1909.09269; first submitted 2019-09-20; last updated 2019-09-20; comment=Published in Pattern Recognition Journal;
-    journal_ref=none. No formal conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: arXiv comment names Pattern Recognition (author-claimed-accepted); no matching first-party publication record
-    has yet been attached.
-  publication_claim:
-    venue: Pattern Recognition
-    year: null
-    status: author-claimed-accepted
-    source_field: comment
-    evidence: Published in Pattern Recognition Journal
     verification: unverified-author-metadata
 - id: 2019-preprint-frontal-low-rank-random-tensors
   title: Frontal Low-rank Random Tensors for Fine-grained Action Segmentation
@@ -10553,9 +10552,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2019_WACV_Gammulle_coupled_generative_adversarial_network_for_continuous_f.pdf
+  pdf_sha256: a40ebc287a248e3926ed789c54812214771818c15c4111daa83324ded5ee54bd
   metadata_verified: true
   verification_sources:
   - https://doi.org/10.1109/WACV.2019.00027
@@ -10997,9 +10996,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2018_WACV_Mavroudi_end_to_end_fine_grained_action_segmentation_and_recogni.pdf
+  pdf_sha256: 631a3490a273a43801dfbc78e683141b22454a97ac0922d4a2cd0323872eb3c6
   metadata_verified: true
   verification_sources:
   - https://doi.org/10.1109/WACV.2018.00174
@@ -11188,9 +11187,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2017_DICTA_Mehrseresht_action_parsing_using_context_features.pdf
+  pdf_sha256: 34b4901a6f0e2656a0bed7570559ab8ef94242d402e443c425492846b205ce65
   metadata_verified: true
   verification_sources:
   - https://doi.org/10.1109/DICTA.2017.8227399
@@ -11435,9 +11434,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2016_ECCV_Lea_segmental_spatiotemporal_cnns_for_fine_grained_action_s.pdf
+  pdf_sha256: 8414470ccba4340f36fc74ea7804cccdc4909ad499c6906b74ef5b853d3afa33
   metadata_verified: true
   verification_sources:
   - https://link.springer.com/chapter/10.1007/978-3-319-46487-9_3

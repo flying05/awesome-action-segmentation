@@ -21,7 +21,7 @@ def test_required_fields_and_tiers():
 def test_formal_records_have_first_party_source():
     papers = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text(encoding="utf-8"))
     for paper in papers:
-        if paper["venue_tier"] not in {"Preprint", "Related-but-not-core"}:
+        if paper.get("metadata_verified") and paper["venue_tier"] != "Related-but-not-core":
             assert any(paper["verification_sources"]), paper["id"]
             assert paper["publication_type"] != "preprint"
 
@@ -66,3 +66,22 @@ def test_comment_claims_with_official_sources_are_promoted():
         assert by_title[title]["venue"] == venue
         assert by_title[title]["venue_tier"] != "Preprint"
         assert by_title[title]["verification_sources"]
+
+
+def test_unverified_venue_claims_are_not_classified_as_preprints():
+    papers = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text(encoding="utf-8"))
+    adaptive = next(
+        paper for paper in papers
+        if paper["title"].startswith("Adaptive Latent Trajectory Anchoring")
+    )
+    assert adaptive["venue"] == "ECCV"
+    assert adaptive["venue_tier"] == "Top-Vision"
+    assert adaptive["publication_type"] == "conference-claimed"
+    assert adaptive["metadata_verified"] is False
+
+    submitted = next(
+        paper for paper in papers
+        if paper["title"].startswith("MS-TCRNet")
+    )
+    assert submitted["venue"] == "Preprint"
+    assert submitted["publication_type"] == "preprint"

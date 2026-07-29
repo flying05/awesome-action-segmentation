@@ -148,7 +148,6 @@
 
 ### CVPR
 
-- [Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) — This dataset paper directly enabled or standardized temporal action/step segmentation evaluation, but its primary contribution is a benchmark rather than a core TAS method.
 - [Fast and Unsupervised Action Boundary Detection for Action Segmentation](https://openaccess.thecvf.com/content/CVPR2022/html/Du_Fast_and_Unsupervised_Action_Boundary_Detection_for_Action_Segmentation_CVPR_2022_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [Semi-Weakly-Supervised Learning of Complex Actions From Instructional Task Videos](https://openaccess.thecvf.com/content/CVPR2022/html/Shen_Semi-Weakly-Supervised_Learning_of_Complex_Actions_From_Instructional_Task_Videos_CVPR_2022_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [Set-Supervised Action Learning in Procedural Task Videos via Pairwise Order Consistency](https://openaccess.thecvf.com/content/CVPR2022/html/Lu_Set-Supervised_Action_Learning_in_Procedural_Task_Videos_via_Pairwise_Order_CVPR_2022_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
@@ -299,14 +298,13 @@
 ### CVPR
 
 - [Leveraging Hierarchical Parametric Networks for Skeletal Joints Based Action Segmentation and Recognition](https://openaccess.thecvf.com/content_cvpr_2014/html/Wu_Leveraging_Hierarchical_Parametric_2014_CVPR_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
-- [The Language of Actions: Recovering the Syntax and Semantics of Goal-Directed Human Activities](https://openaccess.thecvf.com/content_cvpr_2014/html/Kuehne_The_Language_of_2014_CVPR_paper.html) — This dataset paper directly enabled or standardized temporal action/step segmentation evaluation, but its primary contribution is a benchmark rather than a core TAS method.
 
 ## Statistics
 
 | Dimension | Counts / first year |
 |---|---|
-| Papers per year | 2014: 2; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 6; 2020: 11; 2021: 11; 2022: 18; 2023: 14; 2024: 17; 2025: 12; 2026: 10 |
-| Papers per venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 41; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 11; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 2; IJCAI: 3; IROS: 3; ISKE: 1; MICCAI: 1; NeurIPS: 5; WACV: 13 |
-| Supervision | few-shot: 1; fully-supervised: 52; self-supervised: 6; semi-supervised: 3; timestamp-supervised: 10; unsupervised: 19; weakly-supervised: 22 |
-| First observed method-family year | GAN: 2019; HOI: 2023; TCN: 2016; Transformer: 2020; VQ-tokenization: 2024; boundary-modeling: 2018; causal-model: 2023; clustering: 2016; contrastive-learning: 2022; cross-attention: 2024; dataset-condensation: 2025; diffusion: 2023; duration-modeling: 2017; graphical-model: 2021; hypernetwork: 2023; language-model: 2024; multi-stage-TCN: 2019; multimodal: 2019; optimal-transport: 2022; prototype-learning: 2021; self-supervised: 2021; skeleton: 2025; structured-decoding: 2014; teacher-student: 2022; uncertainty-modeling: 2022; unknown: 2014 |
-| Dataset mentions | Breakfast: 39; 50Salads: 20; GTEA: 15; IKEA ASM: 2; Assembly101: 2; LARa: 1; CrossTask: 1; PKU-MMD: 1; Cholec80: 1 |
+| Papers per year | 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 6; 2020: 11; 2021: 11; 2022: 17; 2023: 14; 2024: 17; 2025: 12; 2026: 10 |
+| Papers per venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 11; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 2; IJCAI: 3; IROS: 3; ISKE: 1; MICCAI: 1; NeurIPS: 5; WACV: 13 |
+| Supervision | few-shot: 1; fully-supervised: 50; self-supervised: 6; semi-supervised: 3; timestamp-supervised: 10; unsupervised: 19; weakly-supervised: 22 |
+| First observed method-family year | GAN: 2019; HOI: 2023; TCN: 2016; Transformer: 2020; VQ-tokenization: 2024; boundary-modeling: 2018; causal-model: 2023; clustering: 2016; contrastive-learning: 2022; cross-attention: 2024; dataset-condensation: 2025; diffusion: 2023; duration-modeling: 2017; graphical-model: 2021; hypernetwork: 2023; language-model: 2024; multi-stage-TCN: 2019; multimodal: 2019; optimal-transport: 2022; prototype-learning: 2021; self-supervised: 2021; skeleton: 2025; structured-decoding: 2016; teacher-student: 2022; uncertainty-modeling: 2022; unknown: 2014 |
+| Dataset mentions | Breakfast: 39; 50Salads: 20; GTEA: 15; IKEA ASM: 2; LARa: 1; CrossTask: 1; Assembly101: 1; PKU-MMD: 1; Cholec80: 1 |

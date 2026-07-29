@@ -3,8 +3,7 @@
 一个经过一手来源核验、可重复生成的 Temporal Action Segmentation（TAS）论文与资料索引。TAS 在长视频、骨架或多模态序列上预测逐帧/逐时间步动作类别，并同时确定连续动作片段的边界。
 
 - **Data cutoff:** 2026-07-28
-- **Verified conference papers:** 111
-- **Conference/journal claims pending verification:** 9
+- **Conference / journal papers:** 120
 - **Preprints without an accepted venue claim:** 52
 - **Related benchmark or boundary papers:** 2
 
@@ -12,14 +11,14 @@
 
 纳入的核心工作必须输出稠密动作标签或连续动作片段，并以帧准确率、MoF、Edit、segmental F1、mIoU 或动作边界指标进行评价。仅做整段动作识别、proposal、时序动作定位、时空框检测、图像/人体空间分割或无动作语义的章节切分不进入核心列表。每条正式记录至少保留一个会议proceedings、学会数字图书馆或正式论文页作为验证来源。
 
-会议范围包括 CVPR、ICCV、NeurIPS、ICML、AAAI、IJCAI、ACM MM，以及 ECCV、WACV、BMVC；与 TAS 直接相关的 MICCAI、IROS 等工作置于扩展类别。2026 年只收录在截点前已能由正式 proceedings 确认的论文。comment/journal_ref 已声明会议或期刊的记录按该 venue 分类并标记为待核验；未声明发表去向的 arXiv-only 工作置于独立预印本区。
+会议范围包括 CVPR、ICCV、NeurIPS、ICML、AAAI、IJCAI、ACM MM，以及 ECCV、WACV、BMVC；与 TAS 直接相关的 MICCAI、IROS 等工作置于扩展类别。正式论文页、proceedings，或arXiv comment/journal_ref 明确声明会议或期刊去向的记录，均直接归入对应 venue 的主论文索引；未声明发表去向的 arXiv-only 工作置于独立预印本区。
 
 ## Statistics
 
 | View | Counts |
 |---|---|
-| By venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 11; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 2; IJCAI: 3; IROS: 3; ISKE: 1; MICCAI: 1; NeurIPS: 5; WACV: 13 |
-| By year | 2026: 10; 2025: 12; 2024: 17; 2023: 14; 2022: 17; 2021: 11; 2020: 11; 2019: 6; 2018: 5; 2017: 3; 2016: 3; 2015: 1; 2014: 1 |
+| By venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 12; Ego4D/EPIC Workshop: 1; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 3; IEEE TPAMI: 1; IEEE Transactions on Multimedia: 1; IJCAI: 3; IROS: 3; ISKE: 1; LUV Workshop: 1; MICCAI: 1; NeurIPS: 5; Pattern Recognition: 1; Pattern Recognition Letters: 1; TAHRI: 1; WACV: 13 |
+| By year | 2026: 12; 2025: 12; 2024: 18; 2023: 17; 2022: 17; 2021: 12; 2020: 12; 2019: 7; 2018: 5; 2017: 3; 2016: 3; 2015: 1; 2014: 1 |
 
 ## Paper index by supervision
 
@@ -43,6 +42,10 @@
 - **Combining Boundary Supervision and Segment-Level Regularization for Fine-Grained Action Segmentation** — Hinako Mitsuoka, Kazuhiro Hotta, CVPR Workshop 2026.
   [Paper](https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/html/Mitsuoka_Combining_Boundary_Supervision_and_Segment-Level_Regularization_for_Fine-Grained_Action_Segmentation_CVPRW_2026_paper.html) [PDF](https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/papers/Mitsuoka_Combining_Boundary_Supervision_and_Segment-Level_Regularization_for_Fine-Grained_Action_Segmentation_CVPRW_2026_paper.pdf) [arXiv](https://arxiv.org/abs/2604.01859)
   `fully-supervised` `boundary-modeling` `unknown`
+<a id="paper-2026-eccv-adaptive-latent-trajectory-anchoring-dataset"></a>
+- **Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation** — Artheme Gauthier-Villar, Guodong Ding, Angela Yao, ECCV 2026.
+  [PDF](https://arxiv.org/pdf/2607.09081) [arXiv](https://arxiv.org/abs/2607.09081)
+  `fully-supervised` `diffusion` `dataset-condensation` `unknown` `Breakfast`
 <a id="paper-2026-icra-m2r2-multimodal-robotic-representation"></a>
 - **M2R2: MultiModal Robotic Representation for Temporal Action Segmentation** — Daniel Sliwowski, Dongheui Lee, ICRA 2026.
   [Paper](https://dsliwowski1.github.io/) [PDF](https://arxiv.org/pdf/2504.18662) [arXiv](https://arxiv.org/abs/2504.18662)
@@ -119,10 +122,18 @@
 - **OnlineTAS: An Online Baseline for Temporal Action Segmentation** — Shijie Li, Yazan Abu Farha, Juergen Gall, NeurIPS 2024.
   [Paper](https://papers.nips.cc/paper_files/paper/2024/hash/6c6c5fccf3c8661fcae219be7ca226f7-Abstract-Conference.html) [PDF](https://papers.nips.cc/paper_files/paper/2024/file/6c6c5fccf3c8661fcae219be7ca226f7-Paper-Conference.pdf) [arXiv](https://arxiv.org/abs/2411.01122)
   `fully-supervised` `TCN` `causal-model` `unknown`
+<a id="paper-2024-tahri-o-talc-steps-towards-combating"></a>
+- **O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation** — Matthew Kent Myers, Nick Wright, A. Stephen McGough, et al., TAHRI 2024.
+  [PDF](https://arxiv.org/pdf/2404.06894) [arXiv](https://arxiv.org/abs/2404.06894)
+  `fully-supervised` `boundary-modeling` `unknown`
 <a id="paper-2023-cvpr-aspnet-shared-private-representation-multiple"></a>
 - **ASPnet: Action Segmentation With Shared-Private Representation of Multiple Data Sources** — Beatrice van Amsterdam, Abdolrahim Kadkhodamohammadi, Imanol Luengo, et al., CVPR 2023.
   [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/van_Amsterdam_ASPnet_Action_Segmentation_With_Shared-Private_Representation_of_Multiple_Data_Sources_CVPR_2023_paper.html) [PDF](https://openaccess.thecvf.com/content/CVPR2023/papers/van_Amsterdam_ASPnet_Action_Segmentation_With_Shared-Private_Representation_of_Multiple_Data_Sources_CVPR_2023_paper.pdf)
   `fully-supervised` `unknown` `multimodal` `Breakfast` `50Salads`
+<a id="paper-2023-ego4d-epic-workshop-enhancing-transformer-backbone-egocentric"></a>
+- **Enhancing Transformer Backbone for Egocentric Video Action Segmentation** — Sakib Reza, Balaji Sundareshan, Mohsen Moghaddam, et al., Ego4D/EPIC Workshop 2023.
+  [PDF](https://arxiv.org/pdf/2305.11365) [arXiv](https://arxiv.org/abs/2305.11365)
+  `fully-supervised` `Transformer` `unknown` `GTEA`
 <a id="paper-2023-iccv-diffusion"></a>
 - **Diffusion Action Segmentation** — Daochang Liu, Qiyue Li, Anh-Dung Dinh, et al., ICCV 2023.
   [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Liu_Diffusion_Action_Segmentation_ICCV_2023_paper.html) [PDF](https://openaccess.thecvf.com/content/ICCV2023/papers/Liu_Diffusion_Action_Segmentation_ICCV_2023_paper.pdf) [arXiv](https://arxiv.org/abs/2303.17959) [Code](https://github.com/Finspire13/DiffAct)
@@ -139,6 +150,10 @@
 - **Video Action Segmentation via Contextually Refined Temporal Keypoints** — Borui Jiang, Yang Jin, Zhentao Tan, et al., ICCV 2023.
   [Paper](https://openaccess.thecvf.com/content/ICCV2023/html/Jiang_Video_Action_Segmentation_via_Contextually_Refined_Temporal_Keypoints_ICCV_2023_paper.html) [PDF](https://openaccess.thecvf.com/content/ICCV2023/papers/Jiang_Video_Action_Segmentation_via_Contextually_Refined_Temporal_Keypoints_ICCV_2023_paper.pdf)
   `fully-supervised` `unknown` `unknown` `Breakfast` `50Salads`
+<a id="paper-2023-ieee-tpami-analysis-modern-techniques"></a>
+- **Temporal Action Segmentation: An Analysis of Modern Techniques** — Guodong Ding, Fadime Sener, Angela Yao, IEEE TPAMI 2023.
+  [PDF](https://arxiv.org/pdf/2210.10352) [arXiv](https://arxiv.org/abs/2210.10352)
+  `fully-supervised` `unknown` `unknown`
 <a id="paper-2023-iske-streaming-real-time"></a>
 - **Streaming Video Temporal Action Segmentation in Real Time** — Wujun Wen, Yunheng Li, Zhuben Dong, et al., ISKE 2023.
   [Paper](https://doi.org/10.1109/ISKE60036.2023.10481438) [PDF](https://arxiv.org/pdf/2209.13808) [arXiv](https://arxiv.org/abs/2209.13808)
@@ -191,6 +206,10 @@
 - **TeCNO: Surgical Phase Recognition with Multi-Stage Temporal Convolutional Networks** — Tobias Czempiel, Magdalini Paschali, Matthias Keicher, et al., MICCAI 2020.
   [Paper](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_33) [Code](https://github.com/tobiascz/MICCAI2020-TeCNO)
   `fully-supervised` `TCN` `multi-stage-TCN` `unknown` `Cholec80`
+<a id="paper-2020-pattern-recognition-letters-hierarchical-attention-network"></a>
+- **Hierarchical Attention Network for Action Segmentation** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Pattern Recognition Letters 2020.
+  [PDF](https://arxiv.org/pdf/2005.03209) [arXiv](https://arxiv.org/abs/2005.03209)
+  `fully-supervised` `unknown` `unknown`
 <a id="paper-2020-wacv-mixed-domain-adaptation"></a>
 - **Action Segmentation with Mixed Temporal Domain Adaptation** — Min-Hung Chen, Baopu Li, Yingze Bao, et al., WACV 2020.
   [Paper](https://openaccess.thecvf.com/content_WACV_2020/html/Chen_Action_Segmentation_with_Mixed_Temporal_Domain_Adaptation_WACV_2020_paper.html) [PDF](https://openaccess.thecvf.com/content_WACV_2020/papers/Chen_Action_Segmentation_with_Mixed_Temporal_Domain_Adaptation_WACV_2020_paper.pdf) [arXiv](https://arxiv.org/abs/2104.07461)
@@ -365,6 +384,10 @@
 - **Improving Temporal Action Segmentation via Constraint-Aware Decoding** — Yeo Keat Ee, Debaditya Roy, Chen Li, et al., ICPR 2026.
   [Paper](https://icpr2026.org/acceptedPapersTrack.html) [PDF](https://arxiv.org/pdf/2605.10149) [arXiv](https://arxiv.org/abs/2605.10149) [Code](https://github.com/LUNAProject22/CAD)
   `semi-supervised` `boundary-modeling` `duration-modeling` `unknown`
+<a id="paper-2023-ieee-transactions-on-multimedia-smc-nca-semantic-guided-multi"></a>
+- **SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation** — Feixiang Zhou, Zheheng Jiang, Huiyu Zhou, et al., IEEE Transactions on Multimedia 2023.
+  [PDF](https://arxiv.org/pdf/2312.12347) [arXiv](https://arxiv.org/abs/2312.12347)
+  `semi-supervised` `unknown` `unknown`
 <a id="paper-2022-aaai-iterative-contrast-classify-semi-supervised"></a>
 - **Iterative Contrast-Classify for Semi-Supervised Temporal Action Segmentation** — Dipika Singhania, Rahul Rahaman, Angela Yao, AAAI 2022.
   [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/20124) [PDF](https://ojs.aaai.org/index.php/AAAI/article/download/20124/19883) [arXiv](https://arxiv.org/abs/2112.01402) [Code](https://github.com/dipika-singhania/ICC-Semi-Supervised-TAS)
@@ -373,6 +396,10 @@
 - **Leveraging Action Affinity and Continuity for Semi-Supervised Temporal Action Segmentation** — Guodong Ding, Angela Yao, ECCV 2022.
   [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/3254_ECCV_2022_paper.php) [PDF](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136950017.pdf) [arXiv](https://arxiv.org/abs/2207.08653) [Code](https://github.com/dinggd/semitas)
   `semi-supervised` `boundary-modeling` `unknown`
+<a id="paper-2019-pattern-recognition-fine-grained-using-semi-supervised"></a>
+- **Fine-grained Action Segmentation using the Semi-Supervised Action GAN** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Pattern Recognition 2019.
+  [PDF](https://arxiv.org/pdf/1909.09269) [arXiv](https://arxiv.org/abs/1909.09269)
+  `semi-supervised` `unknown` `unknown`
 
 ### Self-Supervised
 
@@ -455,6 +482,10 @@
 - **Temporally-Weighted Hierarchical Clustering for Unsupervised Action Segmentation** — Saquib Sarfraz, Naila Murray, Vivek Sharma, et al., CVPR 2021.
   [Paper](https://openaccess.thecvf.com/content/CVPR2021/html/Sarfraz_Temporally-Weighted_Hierarchical_Clustering_for_Unsupervised_Action_Segmentation_CVPR_2021_paper.html) [PDF](https://openaccess.thecvf.com/content/CVPR2021/papers/Sarfraz_Temporally-Weighted_Hierarchical_Clustering_for_Unsupervised_Action_Segmentation_CVPR_2021_paper.pdf) [arXiv](http://arxiv.org/abs/2103.11264)
   `unsupervised` `clustering` `unknown`
+<a id="paper-2021-luv-workshop-unsupervised-instructional-videos"></a>
+- **Unsupervised Action Segmentation for Instructional Videos** — AJ Piergiovanni, Anelia Angelova, Michael S. Ryoo, et al., LUV Workshop 2021.
+  [PDF](https://arxiv.org/pdf/2106.03738) [arXiv](https://arxiv.org/abs/2106.03738)
+  `unsupervised` `unknown` `unknown`
 <a id="paper-2021-wacv-joint-visual-embedding-unsupervised-learning"></a>
 - **Joint Visual-Temporal Embedding for Unsupervised Learning of Actions in Untrimmed Sequences** — Rosaura G. VidalMata, Walter J. Scheirer, Anna Kukleva, et al., WACV 2021.
   [Paper](https://openaccess.thecvf.com/content/WACV2021/html/VidalMata_Joint_Visual-Temporal_Embedding_for_Unsupervised_Learning_of_Actions_in_Untrimmed_WACV_2021_paper.html) [PDF](https://openaccess.thecvf.com/content/WACV2021/papers/VidalMata_Joint_Visual-Temporal_Embedding_for_Unsupervised_Learning_of_Actions_in_Untrimmed_WACV_2021_paper.pdf)
@@ -482,6 +513,10 @@
 
 ### Few-Shot and Zero-Shot
 
+<a id="paper-2026-icra-exploring-vision-language-models-open"></a>
+- **Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation** — Asim Unmesh, Kaki Ramesh, Mayank Patel, et al., ICRA 2026.
+  [PDF](https://arxiv.org/pdf/2602.21406) [arXiv](https://arxiv.org/abs/2602.21406)
+  `zero-shot` `unknown` `video-language`
 <a id="paper-2025-iccv-multi-modal-few-shot"></a>
 - **Multi-Modal Few-Shot Temporal Action Segmentation** — Zijia Lu, Ehsan Elhamifar, ICCV 2025.
   [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Lu_Multi-Modal_Few-Shot_Temporal_Action_Segmentation_ICCV_2025_paper.html) [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Lu_Multi-Modal_Few-Shot_Temporal_Action_Segmentation_ICCV_2025_paper.pdf) [Code](https://github.com/ZijiaLewisLu/ICCV2025-MMF-TAS)
@@ -521,6 +556,7 @@
 - [Efficient Temporal Action Segmentation via Boundary-aware Query Voting](#paper-2024-neurips-efficient-boundary-aware-query-voting)
 - [FACT: Frame-Action Cross-Attention Temporal Modeling for Efficient Action Segmentation](#paper-2024-cvpr-fact-frame-cross-attention-modeling)
 - [Permutation-Aware Activity Segmentation via Unsupervised Frame-To-Segment Alignment](#paper-2024-wacv-permutation-aware-activity-unsupervised-frame)
+- [Enhancing Transformer Backbone for Egocentric Video Action Segmentation](#paper-2023-ego4d-epic-workshop-enhancing-transformer-backbone-egocentric)
 - [How Much Temporal Long-Term Context is Needed for Action Segmentation?](#paper-2023-iccv-how-much-long-term-context)
 - [Unified Fully and Timestamp Supervised Temporal Action Segmentation via Sequence to Sequence Translation](#paper-2022-eccv-unified-fully-timestamp-supervised-sequence)
 - [ASFormer: Transformer for Action Segmentation](#paper-2021-bmvc-asformer-transformer)
@@ -528,6 +564,7 @@
 
 ### Diffusion Models
 
+- [Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation](#paper-2026-eccv-adaptive-latent-trajectory-anchoring-dataset)
 - [Learning Action Hierarchies via Hybrid Geometric Diffusion](#paper-2026-wacv-learning-hierarchies-hybrid-geometric-diffusion)
 - [Polyphony: Diffusion-based Dual-Hand Action Segmentation with Alternating Vision Transformer and Semantic Conditioning](#paper-2026-cvpr-polyphony-diffusion-based-dual-hand)
 - [ActFusion: a Unified Diffusion Model for Action Segmentation and Anticipation](#paper-2024-neurips-actfusion-unified-diffusion-model-anticipation)
@@ -567,6 +604,7 @@
 - [Pose-Aware Weakly-Supervised Action Segmentation](#paper-2025-cvpr-workshop-pose-aware-weakly-supervised)
 - [Efficient Temporal Action Segmentation via Boundary-aware Query Voting](#paper-2024-neurips-efficient-boundary-aware-query-voting)
 - [Efficient and Effective Weakly-Supervised Action Segmentation via Action-Transition-Aware Boundary Alignment](#paper-2024-cvpr-efficient-effective-weakly-supervised-transition)
+- [O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation](#paper-2024-tahri-o-talc-steps-towards-combating)
 - [OTAS: Unsupervised Boundary Detection for Object-Centric Temporal Action Segmentation](#paper-2024-wacv-otas-unsupervised-boundary-detection-object)
 - [Diffusion Action Segmentation](#paper-2023-iccv-diffusion)
 - [Fast and Unsupervised Action Boundary Detection for Action Segmentation](#paper-2022-cvpr-fast-unsupervised-boundary-detection)
@@ -616,6 +654,7 @@
 
 ### Efficient and Long-Video Methods
 
+- [Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation](#paper-2026-eccv-adaptive-latent-trajectory-anchoring-dataset)
 - [Condensing Action Segmentation Datasets via Generative Network Inversion](#paper-2025-cvpr-condensing-datasets-generative-network-inversion)
 
 ## Cross-index by application
@@ -628,10 +667,13 @@
 
 - [FACT: Frame-Action Cross-Attention Temporal Modeling for Efficient Action Segmentation](#paper-2024-cvpr-fact-frame-cross-attention-modeling)
 - [Progress-Aware Online Action Segmentation for Egocentric Procedural Task Videos](#paper-2024-cvpr-progress-aware-online-egocentric-procedural)
+- [Enhancing Transformer Backbone for Egocentric Video Action Segmentation](#paper-2023-ego4d-epic-workshop-enhancing-transformer-backbone-egocentric)
 - [My View Is the Best View: Procedure Learning from Egocentric Videos](#paper-2022-eccv-my-view-is-best-view)
 - [Temporal Relational Modeling with Self-Supervision for Action Segmentation](#paper-2021-aaai-relational-modeling-self-supervision)
+- [Hierarchical Attention Network for Action Segmentation](#paper-2020-pattern-recognition-letters-hierarchical-attention-network)
 - [Improving Action Segmentation via Graph-Based Temporal Reasoning](#paper-2020-cvpr-improving-graph-based-reasoning)
 - [Coupled Generative Adversarial Network for Continuous Fine-Grained Action Segmentation](#paper-2019-wacv-coupled-generative-adversarial-network-continuous)
+- [Fine-grained Action Segmentation using the Semi-Supervised Action GAN](#paper-2019-pattern-recognition-fine-grained-using-semi-supervised)
 - [MS-TCN: Multi-Stage Temporal Convolutional Network for Action Segmentation](#paper-2019-cvpr-ms-tcn-multi-stage-convolutional)
 
 ### Surgical Workflow
@@ -653,6 +695,7 @@
 ### Online and Streaming
 
 - [Pose-Aware Weakly-Supervised Action Segmentation](#paper-2025-cvpr-workshop-pose-aware-weakly-supervised)
+- [O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation](#paper-2024-tahri-o-talc-steps-towards-combating)
 - [OnlineTAS: An Online Baseline for Temporal Action Segmentation](#paper-2024-neurips-onlinetas-online-baseline)
 - [Progress-Aware Online Action Segmentation for Egocentric Procedural Task Videos](#paper-2024-cvpr-progress-aware-online-egocentric-procedural)
 - [Weakly-Supervised Action Segmentation and Unseen Error Detection in Anomalous Instructional Videos](#paper-2023-iccv-weakly-supervised-unseen-error-detection)
@@ -660,63 +703,6 @@
 - [Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering](#paper-2022-cvpr-unsupervised-by-joint-representation-learning)
 - [Weakly-Supervised Online Action Segmentation in Multi-View Instructional Videos](#paper-2022-cvpr-weakly-supervised-online-multi-view)
 - [NeuralNetwork-Viterbi: A Framework for Weakly Supervised Video Learning](#paper-2018-cvpr-neuralnetwork-viterbi-framework-weakly-supervised)
-
-## Conference / Journal Claims Pending Official Verification
-
-<a id="paper-2026-eccv-adaptive-latent-trajectory-anchoring-dataset"></a>
-- **Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation** — Artheme Gauthier-Villar, Guodong Ding, Angela Yao, ECCV 2026.
-  [PDF](https://arxiv.org/pdf/2607.09081) [arXiv](https://arxiv.org/abs/2607.09081)
-  `fully-supervised` `diffusion` `dataset-condensation` `unknown` `Breakfast`
-  _Publication metadata:_ ECCV 2026; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2607.09081; comment states 16 pages, 5 figures, accepted to ECCV 2026. Classified under ECCV rather than Preprint; official publication verification is still pending.
-<a id="paper-2026-icra-exploring-vision-language-models-open"></a>
-- **Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation** — Asim Unmesh, Kaki Ramesh, Mayank Patel, et al., ICRA 2026.
-  [PDF](https://arxiv.org/pdf/2602.21406) [arXiv](https://arxiv.org/abs/2602.21406)
-  `zero-shot` `unknown` `video-language`
-  _Publication metadata:_ ICRA 2026; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2602.21406; comment states ICRA 2026. Classified under ICRA rather than Preprint; official publication verification is still pending.
-<a id="paper-2024-tahri-o-talc-steps-towards-combating"></a>
-- **O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation** — Matthew Kent Myers, Nick Wright, A. Stephen McGough, et al., TAHRI 2024.
-  [PDF](https://arxiv.org/pdf/2404.06894) [arXiv](https://arxiv.org/abs/2404.06894)
-  `fully-supervised` `boundary-modeling` `unknown`
-  _Publication metadata:_ TAHRI; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2404.06894; comment states 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference. Classified under TAHRI rather than Preprint; official publication verification is still pending.
-<a id="paper-2023-ego4d-epic-workshop-enhancing-transformer-backbone-egocentric"></a>
-- **Enhancing Transformer Backbone for Egocentric Video Action Segmentation** — Sakib Reza, Balaji Sundareshan, Mohsen Moghaddam, et al., Ego4D/EPIC Workshop 2023.
-  [PDF](https://arxiv.org/pdf/2305.11365) [arXiv](https://arxiv.org/abs/2305.11365)
-  `fully-supervised` `Transformer` `unknown` `GTEA`
-  _Publication metadata:_ Ego4D/EPIC Workshop 2023; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2305.11365; comment states Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023. Classified under Ego4D/EPIC Workshop rather than Preprint; official publication verification is still pending.
-<a id="paper-2023-ieee-tpami-analysis-modern-techniques"></a>
-- **Temporal Action Segmentation: An Analysis of Modern Techniques** — Guodong Ding, Fadime Sener, Angela Yao, IEEE TPAMI 2023.
-  [PDF](https://arxiv.org/pdf/2210.10352) [arXiv](https://arxiv.org/abs/2210.10352)
-  `fully-supervised` `unknown` `unknown`
-  _Publication metadata:_ IEEE TPAMI 2023; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2210.10352; comment states 19 pages, 9 figures, 8 tables, TPAMI 2023. Classified under IEEE TPAMI rather than Preprint; official publication verification is still pending.
-<a id="paper-2023-ieee-transactions-on-multimedia-smc-nca-semantic-guided-multi"></a>
-- **SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation** — Feixiang Zhou, Zheheng Jiang, Huiyu Zhou, et al., IEEE Transactions on Multimedia 2023.
-  [PDF](https://arxiv.org/pdf/2312.12347) [arXiv](https://arxiv.org/abs/2312.12347)
-  `semi-supervised` `unknown` `unknown`
-  _Publication metadata:_ IEEE Transactions on Multimedia; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2312.12347; comment states Accepted to IEEE Transactions on Multimedia. Classified under IEEE Transactions on Multimedia rather than Preprint; official publication verification is still pending.
-<a id="paper-2021-luv-workshop-unsupervised-instructional-videos"></a>
-- **Unsupervised Action Segmentation for Instructional Videos** — AJ Piergiovanni, Anelia Angelova, Michael S. Ryoo, et al., LUV Workshop 2021.
-  [PDF](https://arxiv.org/pdf/2106.03738) [arXiv](https://arxiv.org/abs/2106.03738)
-  `unsupervised` `unknown` `unknown`
-  _Publication metadata:_ LUV Workshop; `venue-mentioned`; `unverified-author-metadata`.
-  _Status:_ arXiv 2106.03738; comment states 4 page abstract for LUV workshop. Classified under LUV Workshop rather than Preprint; official publication verification is still pending.
-<a id="paper-2020-pattern-recognition-letters-hierarchical-attention-network"></a>
-- **Hierarchical Attention Network for Action Segmentation** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Pattern Recognition Letters 2020.
-  [PDF](https://arxiv.org/pdf/2005.03209) [arXiv](https://arxiv.org/abs/2005.03209)
-  `fully-supervised` `unknown` `unknown`
-  _Publication metadata:_ Pattern Recognition Letters; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 2005.03209; comment states Published in Pattern Recognition Letters. Classified under Pattern Recognition Letters rather than Preprint; official publication verification is still pending.
-<a id="paper-2019-pattern-recognition-fine-grained-using-semi-supervised"></a>
-- **Fine-grained Action Segmentation using the Semi-Supervised Action GAN** — Harshala Gammulle, Simon Denman, Sridha Sridharan, et al., Pattern Recognition 2019.
-  [PDF](https://arxiv.org/pdf/1909.09269) [arXiv](https://arxiv.org/abs/1909.09269)
-  `semi-supervised` `unknown` `unknown`
-  _Publication metadata:_ Pattern Recognition; `author-claimed-accepted`; `unverified-author-metadata`.
-  _Status:_ arXiv 1909.09269; comment states Published in Pattern Recognition Journal. Classified under Pattern Recognition rather than Preprint; official publication verification is still pending.
 
 ## Preprints / No Accepted Venue Claim
 

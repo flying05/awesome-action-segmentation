@@ -20,10 +20,18 @@ def test_readme_count_and_doc_ids():
     papers = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text(encoding="utf-8"))
     formal = [
         p for p in papers
-        if p.get("metadata_verified")
+        if p.get("publication_type") != "preprint"
         and p["venue_tier"] != "Related-but-not-core"
     ]
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    count = int(re.search(r"\*\*Verified conference papers:\*\*\s*(\d+)", readme).group(1))
+    count = int(re.search(r"\*\*Conference / journal papers:\*\*\s*(\d+)", readme).group(1))
     assert count == len(formal)
     assert all(f'paper-{paper["id"]}' in readme for paper in papers)
+    assert "Claims Pending Official Verification" not in readme
+    claimed = next(
+        paper for paper in papers
+        if paper.get("publication_type") == "conference-claimed"
+    )
+    assert readme.index(f'paper-{claimed["id"]}') < readme.index(
+        "## Preprints / No Accepted Venue Claim"
+    )

@@ -78,12 +78,8 @@ def render() -> str:
     papers = load_papers()
     formal = [
         p for p in papers
-        if p.get("metadata_verified")
+        if p.get("publication_type") != "preprint"
         and p["venue_tier"] != "Related-but-not-core"
-    ]
-    claims = [
-        p for p in papers
-        if p.get("publication_type") in {"conference-claimed", "journal-claimed"}
     ]
     preprints = [p for p in papers if p.get("publication_type") == "preprint"]
     related = [p for p in papers if p["venue_tier"] == "Related-but-not-core"]
@@ -96,8 +92,7 @@ def render() -> str:
         "TAS 在长视频、骨架或多模态序列上预测逐帧/逐时间步动作类别，并同时确定连续动作片段的边界。",
         "",
         f"- **Data cutoff:** {CUTOFF_DATE}",
-        f"- **Verified conference papers:** {len(formal)}",
-        f"- **Conference/journal claims pending verification:** {len(claims)}",
+        f"- **Conference / journal papers:** {len(formal)}",
         f"- **Preprints without an accepted venue claim:** {len(preprints)}",
         f"- **Related benchmark or boundary papers:** {len(related)}",
         "",
@@ -109,9 +104,9 @@ def render() -> str:
         "proceedings、学会数字图书馆或正式论文页作为验证来源。",
         "",
         "会议范围包括 CVPR、ICCV、NeurIPS、ICML、AAAI、IJCAI、ACM MM，以及 ECCV、WACV、"
-        "BMVC；与 TAS 直接相关的 MICCAI、IROS 等工作置于扩展类别。2026 年只收录在截点前已能"
-        "由正式 proceedings 确认的论文。comment/journal_ref 已声明会议或期刊的记录按该 venue 分类并"
-        "标记为待核验；未声明发表去向的 arXiv-only 工作置于独立预印本区。",
+        "BMVC；与 TAS 直接相关的 MICCAI、IROS 等工作置于扩展类别。正式论文页、proceedings，或"
+        "arXiv comment/journal_ref 明确声明会议或期刊去向的记录，均直接归入对应 venue 的主论文"
+        "索引；未声明发表去向的 arXiv-only 工作置于独立预印本区。",
         "",
         "## Statistics",
         "",
@@ -160,24 +155,7 @@ def render() -> str:
         ("embodied", "Robotics and Embodied Agents"),
         ("streaming", "Online and Streaming"),
     ]))
-    lines.extend(["## Conference / Journal Claims Pending Official Verification", ""])
-    for paper in sorted(claims, key=lambda p: (-p["year"], p["venue"], p["title"])):
-        lines.extend(paper_entry(paper))
-        claim = paper.get("publication_claim", {})
-        if claim:
-            claimed_venue = " ".join(
-                str(value) for value in [claim.get("venue"), claim.get("year")]
-                if value
-            )
-            lines.append(
-                f"  _Publication metadata:_ {claimed_venue}; "
-                f"`{claim.get('status', 'venue-mentioned')}`; "
-                f"`{claim.get('verification', 'unverified-author-metadata')}`."
-            )
-        lines.append(f"  _Status:_ {paper['notes']}")
-    if not claims:
-        lines.append("- None.")
-    lines.extend(["", "## Preprints / No Accepted Venue Claim", ""])
+    lines.extend(["## Preprints / No Accepted Venue Claim", ""])
     for paper in sorted(preprints, key=lambda p: (-p["year"], p["title"])):
         lines.extend(paper_entry(paper))
         lines.append(f"  _Status:_ {paper['notes']}")

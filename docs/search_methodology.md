@@ -13,18 +13,18 @@ MICCAI and IROS records are kept separate.
 2. Official proceedings title scans by venue and year.
 3. Live arXiv Atom API searches for exact TAS/action-segmentation/action-parsing phrases. Results are
    deduplicated by arXiv ID, filtered by first-submission cutoff, and written to
-   `data/arxiv_candidates.yaml` with an inclusion or exclusion reason. Direct title matches enter
-   `Preprints / Pending Verification`; ambiguous hits stay in the candidate audit log. The pipeline
-   also parses `arxiv:comment`, `arxiv:journal_ref`, and DOI metadata into a structured
-   `publication_claim` containing venue, year, evidence field, claim status, and verification state.
+   `data/arxiv_candidates.yaml` with an inclusion or exclusion reason. The pipeline parses
+   `arxiv:comment`, `arxiv:journal_ref`, and DOI metadata into a structured `publication_claim`.
+   Direct title matches with a stated publication venue enter that venue in the main paper index;
+   matches without a venue stay in the preprint section. Ambiguous hits remain in the candidate audit log.
 4. Backward, forward and author snowballing from MS-TCN, ASFormer, DiffAct, FACT, ASOT and the TAS survey.
 5. Reverse searches from Breakfast, 50Salads, GTEA, Assembly101, COIN, CrossTask and surgical datasets.
 
-Discovery indexes and search engines are candidate generators only. A formal record requires a first-party
-proceedings, publisher, society, or official accepted-paper/program page. An arXiv comment is treated as an
-author-supplied claim, not proof: independently confirmed records are upgraded. A non-submission comment that
-names a venue is classified under that venue with `conference-claimed` or `journal-claimed`, rather than under
-`Preprint`, while remaining visibly unverified. `submitted` and `under review` stay as preprints. Officially
+Discovery indexes and search engines are candidate generators only. First-party proceedings, publisher,
+society, and official accepted-paper/program pages are preferred verification sources. Under this repository's
+classification policy, an arXiv `comment` or `journal_ref` that names a non-submission publication destination
+also places the paper directly under that venue in the main index; its structured `publication_claim` preserves
+the exact evidence and independent-match state. `submitted` and `under review` stay as preprints. Officially
 accepted but not yet published records use `conference-accepted` and state that proceedings are pending. Every
 candidate is judged from title, abstract, output form, datasets and metrics; keyword coincidence alone is
 insufficient.

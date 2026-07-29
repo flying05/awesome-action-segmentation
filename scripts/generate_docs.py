@@ -72,7 +72,7 @@ def paper_link(paper: dict) -> str:
 def write_timeline(papers: list[dict]) -> None:
     formal = [
         p for p in papers
-        if p.get("metadata_verified")
+        if p.get("publication_type") != "preprint"
         and p["venue_tier"] != "Related-but-not-core"
     ]
     lines = ["# History Timeline", ""]
@@ -231,18 +231,18 @@ MICCAI and IROS records are kept separate.
 2. Official proceedings title scans by venue and year.
 3. Live arXiv Atom API searches for exact TAS/action-segmentation/action-parsing phrases. Results are
    deduplicated by arXiv ID, filtered by first-submission cutoff, and written to
-   `data/arxiv_candidates.yaml` with an inclusion or exclusion reason. Direct title matches enter
-   `Preprints / Pending Verification`; ambiguous hits stay in the candidate audit log. The pipeline
-   also parses `arxiv:comment`, `arxiv:journal_ref`, and DOI metadata into a structured
-   `publication_claim` containing venue, year, evidence field, claim status, and verification state.
+   `data/arxiv_candidates.yaml` with an inclusion or exclusion reason. The pipeline parses
+   `arxiv:comment`, `arxiv:journal_ref`, and DOI metadata into a structured `publication_claim`.
+   Direct title matches with a stated publication venue enter that venue in the main paper index;
+   matches without a venue stay in the preprint section. Ambiguous hits remain in the candidate audit log.
 4. Backward, forward and author snowballing from MS-TCN, ASFormer, DiffAct, FACT, ASOT and the TAS survey.
 5. Reverse searches from Breakfast, 50Salads, GTEA, Assembly101, COIN, CrossTask and surgical datasets.
 
-Discovery indexes and search engines are candidate generators only. A formal record requires a first-party
-proceedings, publisher, society, or official accepted-paper/program page. An arXiv comment is treated as an
-author-supplied claim, not proof: independently confirmed records are upgraded. A non-submission comment that
-names a venue is classified under that venue with `conference-claimed` or `journal-claimed`, rather than under
-`Preprint`, while remaining visibly unverified. `submitted` and `under review` stay as preprints. Officially
+Discovery indexes and search engines are candidate generators only. First-party proceedings, publisher,
+society, and official accepted-paper/program pages are preferred verification sources. Under this repository's
+classification policy, an arXiv `comment` or `journal_ref` that names a non-submission publication destination
+also places the paper directly under that venue in the main index; its structured `publication_claim` preserves
+the exact evidence and independent-match state. `submitted` and `under review` stay as preprints. Officially
 accepted but not yet published records use `conference-accepted` and state that proceedings are pending. Every
 candidate is judged from title, abstract, output form, datasets and metrics; keyword coincidence alone is
 insufficient.
@@ -283,9 +283,10 @@ def write_unresolved() -> None:
 def write_verification(papers: list[dict]) -> None:
     formal = [
         p for p in papers
-        if p.get("metadata_verified")
+        if p.get("publication_type") != "preprint"
         and p["venue_tier"] != "Related-but-not-core"
     ]
+    independently_verified = [p for p in formal if p.get("metadata_verified")]
     extended = [p for p in formal if p["venue_tier"] in {"Extended-Vision", "Medical", "Robotics-Embodied"}]
     claims = [
         p for p in papers
@@ -330,9 +331,10 @@ def write_verification(papers: list[dict]) -> None:
         "# Verification Report", "",
         "| Item | Count |", "|---|---:|",
         f"| Candidate records | {len(papers)} |",
-        f"| Verified formal core + extension | {len(formal)} |",
+        f"| Conference/journal core + extension | {len(formal)} |",
+        f"| Independently matched to official publication pages | {len(independently_verified)} |",
         f"| Extended venue papers | {len(extended)} |",
-        f"| Conference/journal claims pending official verification | {len(claims)} |",
+        f"| Records merged by arXiv comment/journal_ref venue metadata | {len(claims)} |",
         f"| Preprints without an accepted venue claim | {len(preprints)} |",
         f"| Related-but-not-core / excluded from core count | {len(related)} |",
         f"| Duplicate records merged in last report | {duplicates} |",
@@ -345,20 +347,21 @@ def write_verification(papers: list[dict]) -> None:
         f"| arXiv publication claims extracted from comment/journal_ref | {len(publication_claims)} |",
         f"| Publication claims matched to official records | {verified_claims} |",
         f"| Unmatched claims across the full candidate audit | {unverified_claims} |",
-        f"| Venue-classified unverified publication claims | {len(claims)} |", "",
+        f"| Venue-classified publication metadata records | {len(claims)} |", "",
         "## Venue and year statistics", "",
         f"- Venues: {'; '.join(f'{k}: {v}' for k, v in sorted(by_venue.items()))}",
         f"- Years: {'; '.join(f'{k}: {v}' for k, v in sorted(by_year.items()))}", "",
         "## Verification rules", "",
-        "正式记录必须有一手来源；会议/期刊声明按 venue 分类，但不进入 verified 正式计数。"
-        "纯预印本同样不进入正式计数。验证失败不会中止流水线，也不会伪造本地路径。"
+        "正式论文页、proceedings 或 arXiv comment/journal_ref 中明确的非投稿性会议/期刊去向，"
+        "都直接进入对应 venue 的主论文计数；纯预印本不进入该计数。验证失败不会中止流水线，"
+        "也不会伪造本地路径。"
         "PDF 存在时会重新计算 SHA256 并尝试解析。截止日期后的记录不得进入正式结果。", "",
         "## Remaining possible omissions", "",
         "- 旧版 ACM MM、BMVC 和 WACV 搜索界面的全文召回可能不完整。",
         "- 标题不含 segmentation、但摘要定义了逐帧程序解析的工作仍可能漏检。",
         "- MICCAI 手术 phase/step 工作数量很大，本快照仅收录直接采用 TAS 式密集工作流建模的代表项。",
-        "- 2026 ECCV/AAAI/IJCAI 等 comment 中的录用信息会进入结构化核验队列；"
-        "只有匹配到官方论文集、出版方页面或官方录用名单后才升级，不能把作者自述直接当作正式发表。",
+        "- 2026 ECCV/AAAI/IJCAI 等 comment 中的录用信息会直接归入对应 venue，同时保留"
+        "结构化声明和独立官方页面匹配状态，方便后续追溯与升级。",
         "",
         "Retry: `python scripts/update_repository.py --cutoff-date 2026-07-28 "
         "--only-unverified --retry-failures`。", "",

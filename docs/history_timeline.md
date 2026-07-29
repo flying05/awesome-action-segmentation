@@ -13,6 +13,10 @@
 
 - [Combining Boundary Supervision and Segment-Level Regularization for Fine-Grained Action Segmentation](https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/html/Mitsuoka_Combining_Boundary_Supervision_and_Segment-Level_Regularization_for_Fine-Grained_Action_Segmentation_CVPRW_2026_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
+### ECCV
+
+- [Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation](https://arxiv.org/abs/2607.09081) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
 ### ICPR
 
 - [Deep Kernel Video Approximation for Unsupervised Action Segmentation](https://icpr2026.org/acceptedPapers.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
@@ -20,6 +24,7 @@
 
 ### ICRA
 
+- [Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation](https://arxiv.org/abs/2602.21406) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [M2R2: MultiModal Robotic Representation for Temporal Action Segmentation](https://dsliwowski1.github.io/) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
 ### WACV
@@ -92,6 +97,10 @@
 - [Efficient Temporal Action Segmentation via Boundary-aware Query Voting](https://proceedings.neurips.cc/paper_files/paper/2024/hash/42770daf4a3384b712ea9c36e9279998-Abstract-Conference.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [OnlineTAS: An Online Baseline for Temporal Action Segmentation](https://papers.nips.cc/paper_files/paper/2024/hash/6c6c5fccf3c8661fcae219be7ca226f7-Abstract-Conference.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
+### TAHRI
+
+- [O-TALC: Steps Towards Combating Oversegmentation within Online Action Segmentation](https://arxiv.org/abs/2404.06894) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
 ### WACV
 
 - [OTAS: Unsupervised Boundary Detection for Object-Centric Temporal Action Segmentation](https://openaccess.thecvf.com/content/WACV2024/html/Li_OTAS_Unsupervised_Boundary_Detection_for_Object-Centric_Temporal_Action_Segmentation_WACV_2024_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
@@ -114,6 +123,10 @@
 
 - [TAEC: Unsupervised Action Segmentation with Temporal-Aware Embedding and Clustering](https://ceur-ws.org/Vol-3349/) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
+### Ego4D/EPIC Workshop
+
+- [Enhancing Transformer Backbone for Egocentric Video Action Segmentation](https://arxiv.org/abs/2305.11365) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
 ### ICCV
 
 - [Diffusion Action Segmentation](https://openaccess.thecvf.com/content/ICCV2023/html/Liu_Diffusion_Action_Segmentation_ICCV_2023_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
@@ -122,6 +135,14 @@
 - [Markov Game Video Augmentation for Action Segmentation](https://openaccess.thecvf.com/content/ICCV2023/html/Aziere_Markov_Game_Video_Augmentation_for_Action_Segmentation_ICCV_2023_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [Video Action Segmentation via Contextually Refined Temporal Keypoints](https://openaccess.thecvf.com/content/ICCV2023/html/Jiang_Video_Action_Segmentation_via_Contextually_Refined_Temporal_Keypoints_ICCV_2023_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [Weakly-Supervised Action Segmentation and Unseen Error Detection in Anomalous Instructional Videos](https://openaccess.thecvf.com/content/ICCV2023/html/Ghoddoosian_Weakly-Supervised_Action_Segmentation_and_Unseen_Error_Detection_in_Anomalous_Instructional_ICCV_2023_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
+### IEEE TPAMI
+
+- [Temporal Action Segmentation: An Analysis of Modern Techniques](https://arxiv.org/abs/2210.10352) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
+### IEEE Transactions on Multimedia
+
+- [SMC-NCA: Semantic-guided Multi-level Contrast for Semi-supervised Temporal Action Segmentation](https://arxiv.org/abs/2312.12347) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
 ### IJCAI
 
@@ -206,6 +227,10 @@
 - [Refining Action Segmentation With Hierarchical Video Representations](https://openaccess.thecvf.com/content/ICCV2021/html/Ahn_Refining_Action_Segmentation_With_Hierarchical_Video_Representations_ICCV_2021_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [Weakly-Supervised Action Segmentation and Alignment via Transcript-Aware Union-of-Subspaces Learning](https://openaccess.thecvf.com/content/ICCV2021/html/Lu_Weakly-Supervised_Action_Segmentation_and_Alignment_via_Transcript-Aware_Union-of-Subspaces_Learning_ICCV_2021_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
+### LUV Workshop
+
+- [Unsupervised Action Segmentation for Instructional Videos](https://arxiv.org/abs/2106.03738) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
 ### WACV
 
 - [Joint Visual-Temporal Embedding for Unsupervised Learning of Actions in Untrimmed Sequences](https://openaccess.thecvf.com/content/WACV2021/html/VidalMata_Joint_Visual-Temporal_Embedding_for_Unsupervised_Learning_of_Actions_in_Untrimmed_WACV_2021_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
@@ -230,6 +255,10 @@
 
 - [TeCNO: Surgical Phase Recognition with Multi-Stage Temporal Convolutional Networks](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_33) — The method assigns a surgical workflow phase to every video frame; it is included in the separate medical extension.
 
+### Pattern Recognition Letters
+
+- [Hierarchical Attention Network for Action Segmentation](https://arxiv.org/abs/2005.03209) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
 ### WACV
 
 - [Action Segmentation with Mixed Temporal Domain Adaptation](https://openaccess.thecvf.com/content_WACV_2020/html/Chen_Action_Segmentation_with_Mixed_Temporal_Domain_Adaptation_WACV_2020_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
@@ -247,6 +276,10 @@
 
 - [Unsupervised Procedure Learning via Joint Dynamic Summarization](https://openaccess.thecvf.com/content_ICCV_2019/html/Elhamifar_Unsupervised_Procedure_Learning_via_Joint_Dynamic_Summarization_ICCV_2019_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 - [Weakly Supervised Energy-Based Learning for Action Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/html/Li_Weakly_Supervised_Energy-Based_Learning_for_Action_Segmentation_ICCV_2019_paper.html) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+
+### Pattern Recognition
+
+- [Fine-grained Action Segmentation using the Semi-Supervised Action GAN](https://arxiv.org/abs/1909.09269) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
 ### WACV
 
@@ -303,8 +336,8 @@
 
 | Dimension | Counts / first year |
 |---|---|
-| Papers per year | 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 6; 2020: 11; 2021: 11; 2022: 17; 2023: 14; 2024: 17; 2025: 12; 2026: 10 |
-| Papers per venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 11; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 2; IJCAI: 3; IROS: 3; ISKE: 1; MICCAI: 1; NeurIPS: 5; WACV: 13 |
-| Supervision | few-shot: 1; fully-supervised: 50; self-supervised: 6; semi-supervised: 3; timestamp-supervised: 10; unsupervised: 19; weakly-supervised: 22 |
+| Papers per year | 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 7; 2020: 12; 2021: 12; 2022: 17; 2023: 17; 2024: 18; 2025: 12; 2026: 12 |
+| Papers per venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 12; Ego4D/EPIC Workshop: 1; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 3; IEEE TPAMI: 1; IEEE Transactions on Multimedia: 1; IJCAI: 3; IROS: 3; ISKE: 1; LUV Workshop: 1; MICCAI: 1; NeurIPS: 5; Pattern Recognition: 1; Pattern Recognition Letters: 1; TAHRI: 1; WACV: 13 |
+| Supervision | few-shot: 1; fully-supervised: 55; self-supervised: 6; semi-supervised: 5; timestamp-supervised: 10; unsupervised: 20; weakly-supervised: 22; zero-shot: 1 |
 | First observed method-family year | GAN: 2019; HOI: 2023; TCN: 2016; Transformer: 2020; VQ-tokenization: 2024; boundary-modeling: 2018; causal-model: 2023; clustering: 2016; contrastive-learning: 2022; cross-attention: 2024; dataset-condensation: 2025; diffusion: 2023; duration-modeling: 2017; graphical-model: 2021; hypernetwork: 2023; language-model: 2024; multi-stage-TCN: 2019; multimodal: 2019; optimal-transport: 2022; prototype-learning: 2021; self-supervised: 2021; skeleton: 2025; structured-decoding: 2016; teacher-student: 2022; uncertainty-modeling: 2022; unknown: 2014 |
-| Dataset mentions | Breakfast: 39; 50Salads: 20; GTEA: 15; IKEA ASM: 2; LARa: 1; CrossTask: 1; Assembly101: 1; PKU-MMD: 1; Cholec80: 1 |
+| Dataset mentions | Breakfast: 40; 50Salads: 20; GTEA: 16; IKEA ASM: 2; LARa: 1; CrossTask: 1; Assembly101: 1; PKU-MMD: 1; Cholec80: 1 |

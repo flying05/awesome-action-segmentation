@@ -89,10 +89,10 @@ def validate() -> list[str]:
     readme = (ROOT / "README.md").read_text(encoding="utf-8") if (ROOT / "README.md").exists() else ""
     formal_count = sum(
         1 for p in papers
-        if p.get("metadata_verified")
+        if p.get("publication_type") != "preprint"
         and p["venue_tier"] != "Related-but-not-core"
     )
-    marker = re.search(r"\*\*Verified conference papers:\*\*\s*(\d+)", readme)
+    marker = re.search(r"\*\*Conference / journal papers:\*\*\s*(\d+)", readme)
     if not marker or int(marker.group(1)) != formal_count:
         errors.append("README formal paper count does not match metadata")
     bib = (DATA / "papers.bib").read_text(encoding="utf-8") if (DATA / "papers.bib").exists() else ""

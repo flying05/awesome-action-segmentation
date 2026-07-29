@@ -423,6 +423,81 @@
     source_field: comment
     evidence: 16 pages, 5 figures, accepted to ECCV 2026
     verification: unverified-author-metadata
+- id: 2026-eccv-learning-probabilistic-embeddings-unsupervised
+  title: Learning Probabilistic Embeddings for Unsupervised Action Segmentation
+  authors:
+  - Shuai Li
+  - Duc Manh Vu
+  - Juergen Gall
+  year: 2026
+  venue: ECCV
+  venue_tier: Top-Vision
+  publication_type: conference-claimed
+  official_publication_url: ''
+  official_pdf_url: https://arxiv.org/pdf/2607.05263
+  arxiv_url: https://arxiv.org/abs/2607.05263
+  doi: ''
+  code_url: ''
+  project_url: ''
+  abstract: This paper concerns the problem of unsupervised temporal action segmentation for long, untrimmed videos. Recent
+    successful approaches follow a joint representation learning and clustering paradigm, where optimal transport (OT) is
+    adopted to produce pseudo labels for learning frame representations. These approaches alternate between estimating pseudo
+    labels using OT and optimizing the parameters with gradient descent during training, where OT is used for obtaining the
+    final temporal action segmentation. A major limitation of these works is that they learn a deterministic embedding for
+    frame representations. The iterative procedure between learning deterministic embeddings based on pseudo labels and estimating
+    pseudo labels from the learned embedding can thus get quickly stuck in a local optimum. As an alternative, we thus propose
+    to learn a probabilistic embedding for frame representations. The embeddings are modeled by Gaussian distributions and
+    we sample from the distributions before estimating the pseudo labels. We evaluate our approach on several challenging
+    temporal action segmentation datasets and achieve results comparable to, and in some cases, better than the state of the
+    art. Compared to baselines with deterministic embeddings, our approach improves MoF up to 20.7\% and F1-score up to 19.0\%.
+    Our code is available at https://github.com/derkbreeze/PEOT.
+  keywords:
+  - temporal action segmentation
+  task_categories:
+  - Temporal Action Segmentation
+  supervision:
+  - unsupervised
+  modality:
+  - IMU
+  setting:
+  - offline
+  - long-video
+  method_family:
+  - optimal-transport
+  - clustering
+  backbone: unknown
+  datasets: []
+  metrics:
+  - Edit
+  - F1@10
+  - F1@25
+  - F1@50
+  - frame accuracy
+  main_contributions: []
+  limitations:
+  - See the original paper for scope and assumptions.
+  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
+    temporal segmentation.
+  related_to_core_tas: true
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2026_Preprint_Li_learning_probabilistic_embeddings_for_unsupervised_acti.pdf
+  pdf_sha256: d3a57f49c857eb00e84e25a2ced21a8f5cdfeb8585bdccf7625fd6799267e361
+  metadata_verified: false
+  verification_sources:
+  - https://arxiv.org/abs/2607.05263
+  verification_date: '2026-07-28'
+  notes: arXiv 2607.05263; comment states ECCV2026. Classified under ECCV rather than Preprint; official publication verification
+    is still pending.
+  needs_manual_review: true
+  review_reason: arXiv comment names ECCV 2026 (venue-mentioned); no matching first-party publication record has yet been
+    attached.
+  publication_claim:
+    venue: ECCV
+    year: 2026
+    status: venue-mentioned
+    source_field: comment
+    evidence: ECCV2026
+    verification: unverified-author-metadata
 - id: 2026-icpr-deep-kernel-approximation-unsupervised
   title: Deep Kernel Video Approximation for Unsupervised Action Segmentation
   authors:
@@ -455,12 +530,13 @@
   supervision:
   - unsupervised
   modality:
-  - IMU
+  - unknown
   setting:
   - offline
   - long-video
   method_family:
-  - optimal-transport
+  - kernel-method
+  - MMD
   backbone: unknown
   datasets: []
   metrics:
@@ -519,16 +595,15 @@
   task_categories:
   - Temporal Action Segmentation
   supervision:
-  - semi-supervised
+  - fully-supervised
   modality:
   - unknown
   setting:
   - offline
   - long-video
   method_family:
-  - boundary-modeling
-  - duration-modeling
   - structured-decoding
+  - boundary-modeling
   backbone: unknown
   datasets: []
   metrics:
@@ -1118,73 +1193,6 @@
     at https://github.com/BanzQians/IMPACT_AS; journal_ref=none. No formal conference proceedings placement has been verified.
   needs_manual_review: true
   review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
-- id: 2026-preprint-learning-probabilistic-embeddings-unsupervised
-  title: Learning Probabilistic Embeddings for Unsupervised Action Segmentation
-  authors:
-  - Shuai Li
-  - Duc Manh Vu
-  - Juergen Gall
-  year: 2026
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
-  official_publication_url: ''
-  official_pdf_url: https://arxiv.org/pdf/2607.05263
-  arxiv_url: https://arxiv.org/abs/2607.05263
-  doi: ''
-  code_url: ''
-  project_url: ''
-  abstract: This paper concerns the problem of unsupervised temporal action segmentation for long, untrimmed videos. Recent
-    successful approaches follow a joint representation learning and clustering paradigm, where optimal transport (OT) is
-    adopted to produce pseudo labels for learning frame representations. These approaches alternate between estimating pseudo
-    labels using OT and optimizing the parameters with gradient descent during training, where OT is used for obtaining the
-    final temporal action segmentation. A major limitation of these works is that they learn a deterministic embedding for
-    frame representations. The iterative procedure between learning deterministic embeddings based on pseudo labels and estimating
-    pseudo labels from the learned embedding can thus get quickly stuck in a local optimum. As an alternative, we thus propose
-    to learn a probabilistic embedding for frame representations. The embeddings are modeled by Gaussian distributions and
-    we sample from the distributions before estimating the pseudo labels. We evaluate our approach on several challenging
-    temporal action segmentation datasets and achieve results comparable to, and in some cases, better than the state of the
-    art. Compared to baselines with deterministic embeddings, our approach improves MoF up to 20.7\% and F1-score up to 19.0\%.
-    Our code is available at https://github.com/derkbreeze/PEOT.
-  keywords:
-  - temporal action segmentation
-  task_categories:
-  - Temporal Action Segmentation
-  supervision:
-  - unsupervised
-  modality:
-  - IMU
-  setting:
-  - offline
-  - long-video
-  method_family:
-  - optimal-transport
-  - clustering
-  backbone: unknown
-  datasets: []
-  metrics:
-  - Edit
-  - F1@10
-  - F1@25
-  - F1@50
-  - frame accuracy
-  main_contributions: []
-  limitations:
-  - See the original paper for scope and assumptions.
-  inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
-    temporal segmentation.
-  related_to_core_tas: true
-  pdf_downloaded: true
-  local_pdf_path: library/pdfs/2026_Preprint_Li_learning_probabilistic_embeddings_for_unsupervised_acti.pdf
-  pdf_sha256: d3a57f49c857eb00e84e25a2ced21a8f5cdfeb8585bdccf7625fd6799267e361
-  metadata_verified: false
-  verification_sources:
-  - https://arxiv.org/abs/2607.05263
-  verification_date: '2026-07-28'
-  notes: arXiv 2607.05263; first submitted 2026-07-06; last updated 2026-07-06; comment=ECCV2026; journal_ref=none. No formal
-    conference proceedings placement has been verified.
-  needs_manual_review: true
-  review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
 - id: 2026-preprint-point-supervised-skeleton-based-human
   title: Point-Supervised Skeleton-Based Human Action Segmentation
   authors:
@@ -1283,6 +1291,7 @@
   - long-video
   method_family:
   - optimal-transport
+  - vision-language-model
   backbone: unknown
   datasets: []
   metrics:
@@ -1407,6 +1416,7 @@
   - long-video
   method_family:
   - diffusion
+  - prototype-learning
   backbone: unknown
   datasets: []
   metrics:
@@ -1534,6 +1544,7 @@
   - offline
   - long-video
   method_family:
+  - VQ-tokenization
   - clustering
   backbone: unknown
   datasets:
@@ -1600,7 +1611,6 @@
   - fully-supervised
   modality:
   - skeleton
-  - IMU
   setting:
   - offline
   - long-video
@@ -1731,9 +1741,8 @@
   modality:
   - unknown
   setting:
+  - offline
   - long-video
-  - online
-  - streaming
   method_family:
   - contrastive-learning
   - boundary-modeling
@@ -2129,6 +2138,7 @@
   - long-video
   method_family:
   - Transformer
+  - boundary-modeling
   backbone: unknown
   datasets:
   - Breakfast
@@ -2191,11 +2201,10 @@
   keywords:
   - temporal action segmentation
   task_categories:
-  - Skeleton-based Temporal Action Segmentation
+  - Temporal Action Segmentation
   supervision:
   - fully-supervised
   modality:
-  - skeleton
   - multimodal
   setting:
   - offline
@@ -2267,14 +2276,14 @@
   supervision:
   - fully-supervised
   modality:
-  - depth
+  - unknown
   setting:
+  - offline
   - embodied
   - long-video
-  - offline
-  - open-vocabulary
   method_family:
-  - clustering
+  - graphical-model
+  - open-world
   backbone: unknown
   datasets: []
   metrics:
@@ -2890,7 +2899,7 @@
   - offline
   - long-video
   method_family:
-  - duration-modeling
+  - structured-decoding
   backbone: unknown
   datasets: []
   metrics:
@@ -3333,7 +3342,7 @@
   - offline
   - long-video
   method_family:
-  - duration-modeling
+  - structured-decoding
   backbone: unknown
   datasets: []
   metrics:
@@ -3397,13 +3406,13 @@
   modality:
   - skeleton
   - multimodal
-  - RGB
   setting:
   - offline
   - embodied
   - long-video
   method_family:
   - TCN
+  - multimodal
   backbone: unknown
   datasets: []
   metrics:
@@ -3468,7 +3477,6 @@
   - long-video
   method_family:
   - diffusion
-  - VQ-tokenization
   backbone: unknown
   datasets:
   - Breakfast
@@ -3539,7 +3547,6 @@
   method_family:
   - Transformer
   - boundary-modeling
-  - VQ-tokenization
   backbone: unknown
   datasets: []
   metrics:
@@ -4164,7 +4171,6 @@
   method_family:
   - Transformer
   - optimal-transport
-  - causal-model
   backbone: unknown
   datasets:
   - Breakfast
@@ -4491,6 +4497,7 @@
   - offline
   - long-video
   method_family:
+  - contrastive-learning
   - clustering
   backbone: unknown
   datasets: []
@@ -4557,6 +4564,7 @@
   - long-video
   method_family:
   - clustering
+  - representation-learning
   backbone: unknown
   datasets: []
   metrics:
@@ -4766,7 +4774,6 @@
   - offline
   - long-video
   method_family:
-  - Transformer
   - TCN
   backbone: unknown
   datasets:
@@ -5331,6 +5338,7 @@
   - long-video
   method_family:
   - clustering
+  - prototype-learning
   backbone: unknown
   datasets: []
   metrics:
@@ -5394,8 +5402,7 @@
   supervision:
   - fully-supervised
   modality:
-  - multimodal
-  - video-language
+  - unknown
   setting:
   - offline
   - long-video
@@ -6386,8 +6393,8 @@
   - offline
   - long-video
   method_family:
+  - contrastive-learning
   - clustering
-  - TCN
   backbone: unknown
   datasets:
   - Breakfast
@@ -6987,6 +6994,7 @@
   - offline
   - long-video
   method_family:
+  - contrastive-learning
   - boundary-modeling
   backbone: unknown
   datasets: []
@@ -7110,6 +7118,7 @@
   - long-video
   method_family:
   - Transformer
+  - structured-decoding
   - duration-modeling
   backbone: unknown
   datasets: []
@@ -7828,12 +7837,12 @@
   supervision:
   - fully-supervised
   modality:
-  - multimodal
+  - unknown
   setting:
   - offline
   - long-video
   method_family:
-  - Transformer
+  - graphical-model
   backbone: unknown
   datasets:
   - 50Salads
@@ -8159,13 +8168,12 @@
   task_categories:
   - Temporal Action Segmentation
   supervision:
-  - self-supervised
+  - fully-supervised
   modality:
   - unknown
   setting:
-  - egocentric
-  - long-video
   - offline
+  - long-video
   method_family:
   - graphical-model
   - self-supervised
@@ -9462,6 +9470,7 @@
   - offline
   - long-video
   method_family:
+  - TCN
   - boundary-modeling
   backbone: unknown
   datasets: []
@@ -9639,7 +9648,6 @@
   - surgical
   - long-video
   method_family:
-  - TCN
   - multi-stage-TCN
   backbone: unknown
   datasets:
@@ -10527,14 +10535,10 @@
   supervision:
   - fully-supervised
   modality:
-  - multimodal
-  - RGB
-  - depth
-  - optical-flow
+  - unknown
   setting:
-  - egocentric
-  - long-video
   - offline
+  - long-video
   method_family:
   - GAN
   - multimodal

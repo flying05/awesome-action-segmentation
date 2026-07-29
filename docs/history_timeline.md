@@ -16,6 +16,7 @@
 ### ECCV
 
 - [Adaptive Latent Trajectory Anchoring for Action Segmentation Dataset Condensation](https://arxiv.org/abs/2607.09081) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
+- [Learning Probabilistic Embeddings for Unsupervised Action Segmentation](https://arxiv.org/abs/2607.05263) — The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates temporal segmentation.
 
 ### ICPR
 
@@ -336,8 +337,8 @@
 
 | Dimension | Counts / first year |
 |---|---|
-| Papers per year | 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 7; 2020: 12; 2021: 12; 2022: 17; 2023: 17; 2024: 18; 2025: 12; 2026: 12 |
-| Papers per venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 12; Ego4D/EPIC Workshop: 1; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 3; IEEE TPAMI: 1; IEEE Transactions on Multimedia: 1; IJCAI: 3; IROS: 3; ISKE: 1; LUV Workshop: 1; MICCAI: 1; NeurIPS: 5; Pattern Recognition: 1; Pattern Recognition Letters: 1; TAHRI: 1; WACV: 13 |
-| Supervision | few-shot: 1; fully-supervised: 55; self-supervised: 6; semi-supervised: 5; timestamp-supervised: 10; unsupervised: 20; weakly-supervised: 22; zero-shot: 1 |
-| First observed method-family year | GAN: 2019; HOI: 2023; TCN: 2016; Transformer: 2020; VQ-tokenization: 2024; boundary-modeling: 2018; causal-model: 2023; clustering: 2016; contrastive-learning: 2022; cross-attention: 2024; dataset-condensation: 2025; diffusion: 2023; duration-modeling: 2017; graphical-model: 2021; hypernetwork: 2023; language-model: 2024; multi-stage-TCN: 2019; multimodal: 2019; optimal-transport: 2022; prototype-learning: 2021; self-supervised: 2021; skeleton: 2025; structured-decoding: 2016; teacher-student: 2022; uncertainty-modeling: 2022; unknown: 2014 |
+| Papers per year | 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 7; 2020: 12; 2021: 12; 2022: 17; 2023: 17; 2024: 18; 2025: 12; 2026: 13 |
+| Papers per venue | AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 13; Ego4D/EPIC Workshop: 1; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 3; IEEE TPAMI: 1; IEEE Transactions on Multimedia: 1; IJCAI: 3; IROS: 3; ISKE: 1; LUV Workshop: 1; MICCAI: 1; NeurIPS: 5; Pattern Recognition: 1; Pattern Recognition Letters: 1; TAHRI: 1; WACV: 13 |
+| Supervision | few-shot: 1; fully-supervised: 57; self-supervised: 5; semi-supervised: 4; timestamp-supervised: 10; unsupervised: 21; weakly-supervised: 22; zero-shot: 1 |
+| First observed method-family year | GAN: 2019; HOI: 2023; MMD: 2026; TCN: 2016; Transformer: 2020; VQ-tokenization: 2024; boundary-modeling: 2018; causal-model: 2023; clustering: 2016; contrastive-learning: 2022; cross-attention: 2024; dataset-condensation: 2025; diffusion: 2023; duration-modeling: 2017; graphical-model: 2021; hypernetwork: 2023; kernel-method: 2026; language-model: 2024; multi-stage-TCN: 2019; multimodal: 2019; open-world: 2025; optimal-transport: 2022; prototype-learning: 2021; representation-learning: 2023; self-supervised: 2021; skeleton: 2025; structured-decoding: 2016; teacher-student: 2022; uncertainty-modeling: 2022; unknown: 2014 |
 | Dataset mentions | Breakfast: 40; 50Salads: 20; GTEA: 16; IKEA ASM: 2; LARa: 1; CrossTask: 1; Assembly101: 1; PKU-MMD: 1; Cholec80: 1 |

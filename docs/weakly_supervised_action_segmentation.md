@@ -23,7 +23,7 @@
 - [Random Walks for Temporal Action Segmentation With Timestamp Supervision](https://openaccess.thecvf.com/content/WACV2024/html/Hirsch_Random_Walks_for_Temporal_Action_Segmentation_With_Timestamp_Supervision_WACV_2024_paper.html) — WACV 2024; `unknown`
 - [HOI-aware Adaptive Network for Weakly-supervised Action Segmentation](https://www.ijcai.org/proceedings/2023/191) — IJCAI 2023; `hypernetwork, HOI`
 - [Reducing the Label Bias for Timestamp Supervised Temporal Action Segmentation](https://openaccess.thecvf.com/content/CVPR2023/html/Liu_Reducing_the_Label_Bias_for_Timestamp_Supervised_Temporal_Action_Segmentation_CVPR_2023_paper.html) — CVPR 2023; `unknown`
-- [Timestamp-Supervised Action Segmentation in the Perspective of Clustering](https://www.ijcai.org/proceedings/2023/77) — IJCAI 2023; `clustering`
+- [Timestamp-Supervised Action Segmentation in the Perspective of Clustering](https://www.ijcai.org/proceedings/2023/77) — IJCAI 2023; `clustering, prototype-learning`
 - [Weakly-Supervised Action Segmentation and Unseen Error Detection in Anomalous Instructional Videos](https://openaccess.thecvf.com/content/ICCV2023/html/Ghoddoosian_Weakly-Supervised_Action_Segmentation_and_Unseen_Error_Detection_in_Anomalous_Instructional_ICCV_2023_paper.html) — ICCV 2023; `structured-decoding`
 - [A Generalized & Robust Framework for Timestamp Supervision in Temporal Action Segmentation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4788_ECCV_2022_paper.php) — ECCV 2022; `TCN, uncertainty-modeling`
 - [Hierarchical Modeling for Task Recognition and Action Segmentation in Weakly-Labeled Instructional Videos](https://openaccess.thecvf.com/content/WACV2022/html/Ghoddoosian_Hierarchical_Modeling_for_Task_Recognition_and_Action_Segmentation_in_Weakly-Labeled_WACV_2022_paper.html) — WACV 2022; `unknown`
@@ -33,7 +33,7 @@
 - [Timestamp-Supervised Action Segmentation with Graph Convolutional Networks](https://doi.org/10.1109/IROS47612.2022.9981351) — IROS 2022; `graphical-model, TCN`
 - [Transformers in Action: Weakly Supervised Action Segmentation](https://arxiv.org/abs/2201.05675) — Preprint 2022; `Transformer`
 - [Turning to a Teacher for Timestamp Supervised Temporal Action Segmentation](https://doi.org/10.1109/ICME52920.2022.9859626) — ICME 2022; `teacher-student, boundary-modeling`
-- [Unified Fully and Timestamp Supervised Temporal Action Segmentation via Sequence to Sequence Translation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/3672_ECCV_2022_paper.php) — ECCV 2022; `Transformer, duration-modeling`
+- [Unified Fully and Timestamp Supervised Temporal Action Segmentation via Sequence to Sequence Translation](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/3672_ECCV_2022_paper.php) — ECCV 2022; `Transformer, structured-decoding, duration-modeling`
 - [Weakly-Supervised Online Action Segmentation in Multi-View Instructional Videos](https://openaccess.thecvf.com/content/CVPR2022/html/Ghoddoosian_Weakly-Supervised_Online_Action_Segmentation_in_Multi-View_Instructional_Videos_CVPR_2022_paper.html) — CVPR 2022; `unknown`
 - [FIFA: Fast Inference Approximation for Action Segmentation](https://arxiv.org/abs/2108.03894) — Preprint 2021; `unknown`
 - [Learning Discriminative Prototypes With Dynamic Time Warping](https://openaccess.thecvf.com/content/CVPR2021/html/Chang_Learning_Discriminative_Prototypes_With_Dynamic_Time_Warping_CVPR_2021_paper.html) — CVPR 2021; `prototype-learning`

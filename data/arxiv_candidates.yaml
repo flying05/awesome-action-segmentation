@@ -74,7 +74,13 @@
   comment: ECCV2026
   journal_ref: ''
   doi: ''
-  publication_claim: {}
+  publication_claim:
+    venue: ECCV
+    year: 2026
+    status: venue-mentioned
+    source_field: comment
+    evidence: ECCV2026
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -367,7 +373,7 @@
   doi: ''
   publication_claim:
     venue: CVPR Workshop
-    year: null
+    year: 2026
     status: author-claimed-accepted
     source_field: comment
     evidence: Accepted by CVPR2026 Workshop "AI-driven Skilled Activity Understanding, Assessment & Feedback Generation (SAUAFG)"
@@ -501,7 +507,14 @@
   comment: ''
   journal_ref: CVPR2026
   doi: ''
-  publication_claim: {}
+  publication_claim:
+    venue: CVPR
+    year: 2026
+    status: bibliographic-reference
+    source_field: journal_ref
+    evidence: CVPR2026
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -656,7 +669,14 @@
   comment: Accepted to ICCV2025
   journal_ref: ''
   doi: ''
-  publication_claim: {}
+  publication_claim:
+    venue: ICCV
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to ICCV2025
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -670,7 +690,14 @@
   comment: Accepted to ICCV2025
   journal_ref: ''
   doi: ''
-  publication_claim: {}
+  publication_claim:
+    venue: ICCV
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to ICCV2025
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -685,7 +712,14 @@
   comment: 8 pages, 3 figures, accepted in IROS25, Hangzhou, China
   journal_ref: ''
   doi: 10.1109/IROS60139.2025.11247257
-  publication_claim: {}
+  publication_claim:
+    venue: IROS
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 8 pages, 3 figures, accepted in IROS25, Hangzhou, China
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -702,7 +736,14 @@
   comment: 8 pages, 5 figures, accepted in IROS25, Hangzhou, China
   journal_ref: ''
   doi: 10.1109/IROS60139.2025.11245867
-  publication_claim: {}
+  publication_claim:
+    venue: IROS
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 8 pages, 5 figures, accepted in IROS25, Hangzhou, China
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -927,7 +968,14 @@
   comment: 10 pages, 3 figures, 5 tables, Accepted to CVPR2025
   journal_ref: ''
   doi: ''
-  publication_claim: {}
+  publication_claim:
+    venue: CVPR
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 10 pages, 3 figures, 5 tables, Accepted to CVPR2025
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1988,7 +2036,14 @@
   comment: accepted by ISKE2023
   journal_ref: ''
   doi: ''
-  publication_claim: {}
+  publication_claim:
+    venue: ISKE
+    year: 2023
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: accepted by ISKE2023
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'

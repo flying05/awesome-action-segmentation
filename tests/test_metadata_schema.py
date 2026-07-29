@@ -46,6 +46,11 @@ def test_arxiv_comment_publication_claims_are_structured():
     assert claim["year"] == 2026
     assert claim["status"] == "author-claimed-accepted"
 
+    compact = extract_publication_claim("ECCV2026", "")
+    assert compact["venue"] == "ECCV"
+    assert compact["year"] == 2026
+    assert compact["status"] == "venue-mentioned"
+
     submission = extract_publication_claim(
         "Submitted to Pattern Recognition", ""
     )
@@ -78,6 +83,15 @@ def test_unverified_venue_claims_are_not_classified_as_preprints():
     assert adaptive["venue_tier"] == "Top-Vision"
     assert adaptive["publication_type"] == "conference-claimed"
     assert adaptive["metadata_verified"] is False
+
+    compact_eccv = next(
+        paper for paper in papers
+        if paper["title"].startswith("Learning Probabilistic Embeddings")
+    )
+    assert compact_eccv["venue"] == "ECCV"
+    assert compact_eccv["year"] == 2026
+    assert compact_eccv["venue_tier"] == "Top-Vision"
+    assert compact_eccv["publication_type"] == "conference-claimed"
 
     submitted = next(
         paper for paper in papers

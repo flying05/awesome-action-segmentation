@@ -52,9 +52,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2016_ECCV_Lea_segmental_spatiotemporal_cnns_for_fine_grained_action_s.pdf
+  pdf_sha256: 8414470ccba4340f36fc74ea7804cccdc4909ad499c6906b74ef5b853d3afa33
   metadata_verified: true
   verification_sources:
   - https://link.springer.com/chapter/10.1007/978-3-319-46487-9_3
@@ -113,9 +113,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2017_DICTA_Mehrseresht_action_parsing_using_context_features.pdf
+  pdf_sha256: 34b4901a6f0e2656a0bed7570559ab8ef94242d402e443c425492846b205ce65
   metadata_verified: true
   verification_sources:
   - https://doi.org/10.1109/DICTA.2017.8227399
@@ -182,9 +182,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2018_WACV_Mavroudi_end_to_end_fine_grained_action_segmentation_and_recogni.pdf
+  pdf_sha256: 631a3490a273a43801dfbc78e683141b22454a97ac0922d4a2cd0323872eb3c6
   metadata_verified: true
   verification_sources:
   - https://doi.org/10.1109/WACV.2018.00174
@@ -250,9 +250,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2019_WACV_Gammulle_coupled_generative_adversarial_network_for_continuous_f.pdf
+  pdf_sha256: a40ebc287a248e3926ed789c54812214771818c15c4111daa83324ded5ee54bd
   metadata_verified: true
   verification_sources:
   - https://doi.org/10.1109/WACV.2019.00027
@@ -317,9 +317,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2020_CVPR_Shao_intra_and_inter_action_understanding_via_temporal_actio.pdf
+  pdf_sha256: dd98ef6dc7673be1b9a9f34929c2eb7d821dbef9da5232f760b3b067ee9571c4
   metadata_verified: true
   verification_sources:
   - https://openaccess.thecvf.com/content_CVPR_2020/html/Shao_Intra-_and_Inter-Action_Understanding_via_Temporal_Action_Parsing_CVPR_2020_paper.html
@@ -387,9 +387,9 @@
   inclusion_reason: The paper predicts temporally dense action labels or contiguous semantic action segments and evaluates
     temporal segmentation.
   related_to_core_tas: true
-  pdf_downloaded: false
-  local_pdf_path: ''
-  pdf_sha256: ''
+  pdf_downloaded: true
+  local_pdf_path: library/pdfs/2021_AAAI_Wang_temporal_relational_modeling_with_self_supervision_for.pdf
+  pdf_sha256: 7daf327e3d8060bbb8dbe81b9e74b86974b3033c3f0ce5d511491a5ab963d87f
   metadata_verified: true
   verification_sources:
   - https://ojs.aaai.org/index.php/AAAI/article/view/16377
@@ -3350,16 +3350,16 @@
     2026-07-28.
   needs_manual_review: true
   review_reason: No formal conference proceedings placement verified.
-- id: 2026-preprint-learning-probabilistic-embeddings-unsupervised
+- id: 2026-eccv-learning-probabilistic-embeddings-unsupervised
   title: Learning Probabilistic Embeddings for Unsupervised Action Segmentation
   authors:
   - Shuai Li
   - Duc Manh Vu
   - Juergen Gall
   year: 2026
-  venue: Preprint
-  venue_tier: Preprint
-  publication_type: preprint
+  venue: ECCV
+  venue_tier: Top-Vision
+  publication_type: conference-claimed
   official_publication_url: ''
   official_pdf_url: https://arxiv.org/pdf/2607.05263
   arxiv_url: https://arxiv.org/abs/2607.05263
@@ -3413,10 +3413,18 @@
   verification_sources:
   - https://arxiv.org/abs/2607.05263
   verification_date: '2026-07-28'
-  notes: arXiv 2607.05263; first submitted 2026-07-06; last updated 2026-07-06; comment=ECCV2026; journal_ref=none. No formal
-    conference proceedings placement has been verified.
+  notes: arXiv 2607.05263; comment states ECCV2026. Classified under ECCV rather than Preprint; official publication verification
+    is still pending.
   needs_manual_review: true
-  review_reason: Direct TAS arXiv hit; formal publication status requires first-party proceedings verification.
+  review_reason: arXiv comment names ECCV 2026 (venue-mentioned); no matching first-party publication record has yet been
+    attached.
+  publication_claim:
+    venue: ECCV
+    year: 2026
+    status: venue-mentioned
+    source_field: comment
+    evidence: ECCV2026
+    verification: unverified-author-metadata
 - id: 2026-preprint-ego-metas-egocentric-online-multimodal
   title: 'Ego-METAS: Egocentric online Multimodal Energy-efficient Temporal Action Segmentation benchmark'
   authors:

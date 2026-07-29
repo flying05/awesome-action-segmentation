@@ -352,6 +352,15 @@ def arxiv_is_direct(title: str) -> tuple[bool, str]:
     return False, "query hit but title does not explicitly define a TAS task"
 
 
+def _venue_acronym_pattern(*names: str) -> str:
+    """Match a venue acronym alone or compactly joined to a 2/4-digit year."""
+    alternatives = "|".join(re.escape(name) for name in names)
+    return (
+        rf"\b(?:{alternatives})"
+        rf"(?:(?:\s*[-'’_]?\s*)(?:20)?\d{{2}})?\b"
+    )
+
+
 PUBLICATION_VENUE_PATTERNS = [
     ("Pattern Recognition Letters", r"\bpattern recognition letters\b"),
     ("Pattern Recognition", r"\bpattern recognition(?: journal)?\b"),
@@ -361,22 +370,22 @@ PUBLICATION_VENUE_PATTERNS = [
     ("CVPR Workshop", r"\bCVPR(?:\s*20\d{2})?\s+workshops?\b|\bCVPRW\b"),
     ("Ego4D/EPIC Workshop", r"\bEgo4D\b.*\bEPIC\b.*\bworkshop\b"),
     ("CVWW", r"\b(?:computer vision winter workshop|CVWW)\b"),
-    ("NeurIPS", r"\b(?:NeurIPS|NIPS)\b"),
-    ("IJCAI", r"\bIJCAI\b"),
-    ("AAAI", r"\bAAAI\b"),
-    ("ECCV", r"\bECCV\b"),
-    ("ICCV", r"\bICCV\b"),
-    ("CVPR", r"\bCVPR\b"),
-    ("WACV", r"\bWACV\b"),
-    ("BMVC", r"\bBMVC\b"),
-    ("ICML", r"\bICML\b"),
-    ("ICPR", r"\bICPR\b"),
-    ("IROS", r"\bIROS\b"),
-    ("ICRA", r"\bICRA\b"),
-    ("ICME", r"\bICME\b"),
-    ("DICTA", r"\bDICTA\b|digital image computing"),
-    ("ISKE", r"\bISKE\b"),
-    ("TAHRI", r"\bTAHRI\b"),
+    ("NeurIPS", _venue_acronym_pattern("NeurIPS", "NIPS")),
+    ("IJCAI", _venue_acronym_pattern("IJCAI")),
+    ("AAAI", _venue_acronym_pattern("AAAI")),
+    ("ECCV", _venue_acronym_pattern("ECCV")),
+    ("ICCV", _venue_acronym_pattern("ICCV")),
+    ("CVPR", _venue_acronym_pattern("CVPR")),
+    ("WACV", _venue_acronym_pattern("WACV")),
+    ("BMVC", _venue_acronym_pattern("BMVC")),
+    ("ICML", _venue_acronym_pattern("ICML")),
+    ("ICPR", _venue_acronym_pattern("ICPR")),
+    ("IROS", _venue_acronym_pattern("IROS")),
+    ("ICRA", _venue_acronym_pattern("ICRA")),
+    ("ICME", _venue_acronym_pattern("ICME")),
+    ("DICTA", _venue_acronym_pattern("DICTA") + r"|digital image computing"),
+    ("ISKE", _venue_acronym_pattern("ISKE")),
+    ("TAHRI", _venue_acronym_pattern("TAHRI")),
     ("LUV Workshop", r"\bLUV workshop\b"),
 ]
 
@@ -406,7 +415,7 @@ def extract_publication_claim(comment: str, journal_ref: str) -> dict:
     if not year_match:
         year_match = re.search(
             r"\b(?:CVPR|ICCV|ECCV|WACV|BMVC|NeurIPS|NIPS|AAAI|IJCAI|"
-            r"ICML|ICPR|IROS|ICRA|ICME|ISKE)[\s'’_-]*(\d{2})\b",
+            r"ICML|ICPR|IROS|ICRA|ICME|ISKE)[\s'’_-]*(20\d{2}|\d{2})\b",
             combined,
             re.IGNORECASE,
         )

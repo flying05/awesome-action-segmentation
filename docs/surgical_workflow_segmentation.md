@@ -14,7 +14,7 @@
 
 ## 代表论文索引
 
-- [TeCNO: Surgical Phase Recognition with Multi-Stage Temporal Convolutional Networks](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_33) — MICCAI 2020; `TCN, multi-stage-TCN`
+- [TeCNO: Surgical Phase Recognition with Multi-Stage Temporal Convolutional Networks](https://link.springer.com/chapter/10.1007/978-3-030-59716-0_33) — MICCAI 2020; `multi-stage-TCN`
 
 ## 未解决问题
 

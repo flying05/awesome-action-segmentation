@@ -3,11 +3,11 @@
 | Item | Count |
 |---|---:|
 | Candidate records | 174 |
-| Conference/journal core + extension | 120 |
+| Conference/journal core + extension | 121 |
 | Independently matched to official publication pages | 111 |
 | Extended venue papers | 21 |
-| Records merged by arXiv comment/journal_ref venue metadata | 9 |
-| Preprints without an accepted venue claim | 52 |
+| Records merged by arXiv comment/journal_ref venue metadata | 10 |
+| Preprints without an accepted venue claim | 51 |
 | Related-but-not-core / excluded from core count | 2 |
 | Duplicate records merged in last report | 186 |
 | PDFs downloaded and parsed | 168 |
@@ -17,15 +17,15 @@
 | arXiv API unique candidates audited | 166 |
 | arXiv direct TAS hits before deduplication | 134 |
 | arXiv ambiguous/excluded candidates retained in audit | 32 |
-| arXiv publication claims extracted from comment/journal_ref | 80 |
-| Publication claims matched to official records | 59 |
-| Unmatched claims across the full candidate audit | 21 |
-| Venue-classified publication metadata records | 9 |
+| arXiv publication claims extracted from comment/journal_ref | 88 |
+| Publication claims matched to official records | 66 |
+| Unmatched claims across the full candidate audit | 22 |
+| Venue-classified publication metadata records | 10 |
 
 ## Venue and year statistics
 
-- Venues: AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 12; Ego4D/EPIC Workshop: 1; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 3; IEEE TPAMI: 1; IEEE Transactions on Multimedia: 1; IJCAI: 3; IROS: 3; ISKE: 1; LUV Workshop: 1; MICCAI: 1; NeurIPS: 5; Pattern Recognition: 1; Pattern Recognition Letters: 1; TAHRI: 1; WACV: 13
-- Years: 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 7; 2020: 12; 2021: 12; 2022: 17; 2023: 17; 2024: 18; 2025: 12; 2026: 12
+- Venues: AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 13; Ego4D/EPIC Workshop: 1; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 3; IEEE TPAMI: 1; IEEE Transactions on Multimedia: 1; IJCAI: 3; IROS: 3; ISKE: 1; LUV Workshop: 1; MICCAI: 1; NeurIPS: 5; Pattern Recognition: 1; Pattern Recognition Letters: 1; TAHRI: 1; WACV: 13
+- Years: 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 7; 2020: 12; 2021: 12; 2022: 17; 2023: 17; 2024: 18; 2025: 12; 2026: 13
 
 ## Verification rules
 

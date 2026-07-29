@@ -52,6 +52,8 @@ CORE_VENUES = {
     "FG": "Extended-Vision", "3DV": "Extended-Vision",
     "MICCAI": "Medical", "ICRA": "Robotics-Embodied",
     "IROS": "Robotics-Embodied", "CoRL": "Robotics-Embodied",
+    "ISKE": "Extended-Vision", "DICTA": "Extended-Vision",
+    "CVWW": "Extended-Vision",
 }
 
 
@@ -263,6 +265,24 @@ def sha256_file(path: Path) -> str:
 
 
 def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[tuple[str, str, str]]]:
+    def merge_complementary(keeper: dict[str, Any], other: dict[str, Any]) -> None:
+        """Preserve provenance and local artifacts when identities merge."""
+        for field in [
+            "arxiv_url", "doi", "code_url", "project_url", "abstract",
+        ]:
+            if not keeper.get(field) and other.get(field):
+                keeper[field] = other[field]
+        for field in ["datasets", "verification_sources"]:
+            values = [
+                *keeper.get(field, []),
+                *other.get(field, []),
+            ]
+            keeper[field] = list(dict.fromkeys(value for value in values if value))
+        if other.get("pdf_downloaded") and not keeper.get("pdf_downloaded"):
+            keeper["pdf_downloaded"] = True
+            keeper["local_pdf_path"] = other.get("local_pdf_path", "")
+            keeper["pdf_sha256"] = other.get("pdf_sha256", "")
+
     kept: list[dict[str, Any]] = []
     seen: dict[str, dict[str, Any]] = {}
     duplicates: list[tuple[str, str, str]] = []
@@ -280,6 +300,7 @@ def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]]
             # Prefer a verified formal publication over a preprint.
             if (record.get("metadata_verified") and
                     duplicate.get("venue_tier") == "Preprint"):
+                merge_complementary(record, duplicate)
                 kept.remove(duplicate)
                 kept.append(record)
                 duplicates.append((record["id"], duplicate["id"], "formal-over-preprint"))
@@ -287,6 +308,7 @@ def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]]
                     if value is duplicate:
                         seen[key] = record
             else:
+                merge_complementary(duplicate, record)
                 duplicates.append((duplicate["id"], record["id"], "identity-key"))
             continue
         kept.append(record)
@@ -304,7 +326,9 @@ def save_serializations(records: list[dict[str, Any]]) -> None:
     with (DATA / "papers.jsonl").open("w", encoding="utf-8", newline="\n") as handle:
         for record in records:
             handle.write(json.dumps(record, ensure_ascii=False) + "\n")
-    columns = REQUIRED_FIELDS + ["needs_manual_review", "review_reason"]
+    columns = REQUIRED_FIELDS + [
+        "needs_manual_review", "review_reason", "publication_claim",
+    ]
     with (DATA / "papers.csv").open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=columns, extrasaction="ignore")
         writer.writeheader()

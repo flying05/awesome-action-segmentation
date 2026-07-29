@@ -14,14 +14,18 @@ MICCAI and IROS records are kept separate.
 3. Live arXiv Atom API searches for exact TAS/action-segmentation/action-parsing phrases. Results are
    deduplicated by arXiv ID, filtered by first-submission cutoff, and written to
    `data/arxiv_candidates.yaml` with an inclusion or exclusion reason. Direct title matches enter
-   `Preprints / Pending Verification`; ambiguous hits stay in the candidate audit log.
+   `Preprints / Pending Verification`; ambiguous hits stay in the candidate audit log. The pipeline
+   also parses `arxiv:comment`, `arxiv:journal_ref`, and DOI metadata into a structured
+   `publication_claim` containing venue, year, evidence field, claim status, and verification state.
 4. Backward, forward and author snowballing from MS-TCN, ASFormer, DiffAct, FACT, ASOT and the TAS survey.
 5. Reverse searches from Breakfast, 50Salads, GTEA, Assembly101, COIN, CrossTask and surgical datasets.
 
 Discovery indexes and search engines are candidate generators only. A formal record requires a first-party
-proceedings or society page. arXiv-only records remain `Preprint` even when an author claims acceptance,
-until the claim is independently verifiable. Every candidate is judged from title, abstract, output form,
-datasets and metrics; keyword coincidence alone is insufficient.
+proceedings, publisher, society, or official accepted-paper/program page. An arXiv comment is treated as an
+author-supplied claim, not proof: independently confirmed records are upgraded, while unmatched claims remain
+`Preprint` and are displayed explicitly for follow-up. Officially accepted but not yet published records use
+`conference-accepted` and state that proceedings are pending. Every candidate is judged from title, abstract,
+output form, datasets and metrics; keyword coincidence alone is insufficient.
 
 ## Known retrieval limitations
 

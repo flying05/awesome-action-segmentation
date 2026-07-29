@@ -23,6 +23,7 @@ from _common import (
     dump_yaml,
     infer_fields,
     load_yaml,
+    normalize_title,
     request,
     save_serializations,
     setup_logging,
@@ -89,6 +90,7 @@ EXCLUSIONS = [
     "referring video object segmentation",
     "action recognition",
     "semantic segmentation",
+    "supervoxel",
 ]
 
 ARXIV_QUERIES = [
@@ -134,27 +136,44 @@ CODE_URLS = {
 }
 
 FORMAL_ARXIV_IDS = {
+    "Segmental Spatiotemporal CNNs for Fine-Grained Action Segmentation": "1602.02995",
     "Temporal Convolutional Networks for Action Segmentation and Detection": "1611.05267",
+    "End-to-End Fine-Grained Action Segmentation and Recognition Using Conditional Random Field Models and Discriminative Sparse Coding": "1801.09571",
+    "Coupled Generative Adversarial Network for Continuous Fine-Grained Action Segmentation": "1909.09283",
     "MS-TCN: Multi-Stage Temporal Convolutional Network for Action Segmentation": "1903.01945",
+    "Intra- and Inter-Action Understanding via Temporal Action Parsing": "2005.10229",
+    "Temporal Relational Modeling with Self-Supervision for Action Segmentation": "2012.07508",
     "Alleviating Over-Segmentation Errors by Detecting Action Boundaries": "2007.06866",
     "SCT: Set Constrained Temporal Transformer for Set Supervised Action Segmentation": "2003.14266",
     "Temporal Action Segmentation From Timestamp Supervision": "2103.06669",
     "SSCAP: Self-Supervised Co-Occurrence Action Parsing for Unsupervised Temporal Action Segmentation": "2105.14158",
     "ASFormer: Transformer for Action Segmentation": "2110.08568",
     "Timestamp-Supervised Action Segmentation in the Perspective of Clustering": "2212.11694",
+    "Turning to a Teacher for Timestamp Supervised Temporal Action Segmentation": "2207.00712",
+    "Streaming Video Temporal Action Segmentation in Real Time": "2209.13808",
+    "Action Parsing Using Context Features": "2205.10008",
     "Diffusion Action Segmentation": "2303.17959",
+    "TAEC: Unsupervised Action Segmentation with Temporal-Aware Embedding and Clustering": "2303.05166",
+    "HOI-aware Adaptive Network for Weakly-supervised Action Segmentation": "2604.26227",
+    "Action Segmentation Using 2D Skeleton Heatmaps and Multi-Modality Fusion": "2309.06462",
+    "Permutation-Aware Activity Segmentation via Unsupervised Frame-To-Segment Alignment": "2305.19478",
     "How Much Temporal Long-Term Context is Needed for Action Segmentation?": "2308.11358",
     "Activity Grammars for Temporal Action Segmentation": "2312.04266",
     "OnlineTAS: An Online Baseline for Temporal Action Segmentation": "2411.01122",
     "Efficient Temporal Action Segmentation via Boundary-aware Query Voting": "2405.15995",
     "ActFusion: a Unified Diffusion Model for Action Segmentation and Anticipation": "2412.04353",
     "Hierarchical Vector Quantization for Unsupervised Action Segmentation": "2412.17640",
+    "Stitch, Contrast, and Segment: Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos": "2412.14988",
     "Long-Tail Temporal Action Segmentation with Group-wise Temporal Logit Adjustment": "2408.09919",
     "Cost-Sensitive Learning for Long-Tailed Temporal Action Segmentation": "2503.18358",
     "3D Pose-Based Temporal Action Segmentation for Figure Skating: A Fine-Grained and Jump Procedure-Aware Annotation Approach": "2408.16638",
     "M2R2: MultiModal Robotic Representation for Temporal Action Segmentation": "2504.18662",
+    "Multi-Modal Graph Convolutional Network with Sinusoidal Encoding for Robust Human Action Segmentation": "2507.00752",
+    "Towards Open-World Human Action Segmentation Using Graph Convolutional Networks": "2507.00756",
     "Learning Action Hierarchies via Hybrid Geometric Diffusion": "2601.01914",
     "Combining Boundary Supervision and Segment-Level Regularization for Fine-Grained Action Segmentation": "2604.01859",
+    "Deep Kernel Video Approximation for Unsupervised Action Segmentation": "2604.21572",
+    "Improving Temporal Action Segmentation via Constraint-Aware Decoding": "2605.10149",
 }
 
 ARXIV_SUPERSEDED_BY_FORMAL = {
@@ -331,6 +350,91 @@ def arxiv_is_direct(title: str) -> tuple[bool, str]:
     return False, "query hit but title does not explicitly define a TAS task"
 
 
+PUBLICATION_VENUE_PATTERNS = [
+    ("Pattern Recognition Letters", r"\bpattern recognition letters\b"),
+    ("Pattern Recognition", r"\bpattern recognition(?: journal)?\b"),
+    ("IEEE Transactions on Multimedia", r"\b(?:ieee )?transactions on multimedia\b|\bTMM\b"),
+    ("IEEE TPAMI", r"\b(?:ieee )?(?:transactions on pattern analysis and machine intelligence|TPAMI)\b"),
+    ("IEEE TNNLS", r"\b(?:ieee )?(?:transactions on neural networks and learning systems|TNNLS)\b"),
+    ("CVPR Workshop", r"\bCVPR(?:\s*20\d{2})?\s+workshops?\b|\bCVPRW\b"),
+    ("Ego4D/EPIC Workshop", r"\bEgo4D\b.*\bEPIC\b.*\bworkshop\b"),
+    ("CVWW", r"\b(?:computer vision winter workshop|CVWW)\b"),
+    ("NeurIPS", r"\b(?:NeurIPS|NIPS)\b"),
+    ("IJCAI", r"\bIJCAI\b"),
+    ("AAAI", r"\bAAAI\b"),
+    ("ECCV", r"\bECCV\b"),
+    ("ICCV", r"\bICCV\b"),
+    ("CVPR", r"\bCVPR\b"),
+    ("WACV", r"\bWACV\b"),
+    ("BMVC", r"\bBMVC\b"),
+    ("ICML", r"\bICML\b"),
+    ("ICPR", r"\bICPR\b"),
+    ("IROS", r"\bIROS\b"),
+    ("ICRA", r"\bICRA\b"),
+    ("ICME", r"\bICME\b"),
+    ("DICTA", r"\bDICTA\b|digital image computing"),
+    ("ISKE", r"\bISKE\b"),
+    ("TAHRI", r"\bTAHRI\b"),
+    ("LUV Workshop", r"\bLUV workshop\b"),
+]
+
+
+def extract_publication_claim(comment: str, journal_ref: str) -> dict:
+    """Turn free-form arXiv publication notes into an auditable claim."""
+    fields = [("journal_ref", journal_ref), ("comment", comment)]
+    combined = " | ".join(value for _, value in fields if value)
+    if not combined:
+        return {}
+    venue = ""
+    for canonical, pattern in PUBLICATION_VENUE_PATTERNS:
+        if re.search(pattern, combined, re.IGNORECASE):
+            venue = canonical
+            break
+    if not venue:
+        return {}
+    year_match = re.search(r"\b(20\d{2})\b", combined)
+    if not year_match:
+        year_match = re.search(
+            r"\b(?:CVPR|ICCV|ECCV|WACV|BMVC|NeurIPS|NIPS|AAAI|IJCAI|"
+            r"ICML|ICPR|IROS|ICRA|ICME|ISKE)[\s'’_-]*(\d{2})\b",
+            combined,
+            re.IGNORECASE,
+        )
+    year = 0
+    if year_match:
+        raw_year = int(year_match.group(1))
+        year = raw_year if raw_year >= 2000 else 2000 + raw_year
+    lowered = combined.casefold()
+    if re.search(r"\b(submit(?:ted)? to|under review|possible publication|journal submission|preprint for)\b", lowered):
+        status = "submission-only"
+    elif journal_ref:
+        status = "bibliographic-reference"
+    elif re.search(
+        r"\b(accepted|camera[- ]ready|published|proceedings|appearing|"
+        r"presented|oral|poster)\b",
+        lowered,
+    ):
+        status = "author-claimed-accepted"
+    else:
+        status = "venue-mentioned"
+    source_field, evidence = next(
+        (field, value)
+        for field, value in fields
+        if value and re.search(
+            next(pattern for canonical, pattern in PUBLICATION_VENUE_PATTERNS if canonical == venue),
+            value,
+            re.IGNORECASE,
+        )
+    )
+    return {
+        "venue": venue,
+        "year": year or None,
+        "status": status,
+        "source_field": source_field,
+        "evidence": evidence,
+    }
+
+
 def parse_arxiv_entry(entry: ET.Element, cutoff_date: str) -> tuple[dict, dict]:
     title = _atom_text(entry, "atom:title")
     abstract = _atom_text(entry, "atom:summary")
@@ -353,6 +457,13 @@ def parse_arxiv_entry(entry: ET.Element, cutoff_date: str) -> tuple[dict, dict]:
     comment = _atom_text(entry, "arxiv:comment")
     journal_ref = _atom_text(entry, "arxiv:journal_ref")
     doi = _atom_text(entry, "arxiv:doi")
+    publication_claim = extract_publication_claim(comment, journal_ref)
+    if publication_claim:
+        publication_claim["verification"] = (
+            "officially-verified"
+            if arxiv_id in set(FORMAL_ARXIV_IDS.values())
+            else "unverified-author-metadata"
+        )
     candidate = {
         "arxiv_id": arxiv_id,
         "title": title,
@@ -362,6 +473,7 @@ def parse_arxiv_entry(entry: ET.Element, cutoff_date: str) -> tuple[dict, dict]:
         "comment": comment,
         "journal_ref": journal_ref,
         "doi": doi,
+        "publication_claim": publication_claim,
         "decision": decision,
         "decision_reason": reason,
         "verification_date": cutoff_date,
@@ -395,6 +507,19 @@ def parse_arxiv_entry(entry: ET.Element, cutoff_date: str) -> tuple[dict, dict]:
             "first-party proceedings verification."
         ),
     })
+    if publication_claim:
+        record["publication_claim"] = publication_claim
+        claimed = " ".join(
+            str(value) for value in [
+                publication_claim["venue"], publication_claim.get("year"),
+            ] if value
+        )
+        if publication_claim["verification"] != "officially-verified":
+            record["review_reason"] = (
+                f"arXiv {publication_claim['source_field']} names {claimed} "
+                f"({publication_claim['status']}); no matching first-party "
+                "publication record has yet been attached."
+            )
     infer_fields(record)
     for dataset in [
         "Breakfast", "50Salads", "GTEA", "Assembly101", "IKEA ASM",
@@ -460,6 +585,35 @@ def scan_arxiv(
     return records, candidates
 
 
+def verify_arxiv_claim_matches(
+    candidates: list[dict], formal_records: list[dict],
+) -> None:
+    """Mark claims whose identity matches a first-party formal record."""
+    formal_titles = {
+        normalize_title(record["title"]) for record in formal_records
+        if record.get("metadata_verified")
+    }
+    formal_dois = {
+        record["doi"].casefold().strip() for record in formal_records
+        if record.get("metadata_verified") and record.get("doi")
+    }
+    formal_arxiv_ids = set(FORMAL_ARXIV_IDS.values())
+    for candidate in candidates:
+        claim = candidate.get("publication_claim")
+        if not claim:
+            continue
+        matched_by = ""
+        if candidate["arxiv_id"] in formal_arxiv_ids:
+            matched_by = "arxiv-id"
+        elif candidate.get("doi", "").casefold().strip() in formal_dois:
+            matched_by = "doi"
+        elif normalize_title(candidate["title"]) in formal_titles:
+            matched_by = "normalized-title"
+        if matched_by:
+            claim["verification"] = "officially-verified"
+            claim["matched_by"] = matched_by
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--start-year", type=int, default=2010)
@@ -501,23 +655,52 @@ def main() -> int:
     papers_path = DATA / "papers.yaml"
     if papers_path.exists():
         existing = load_yaml(papers_path) or []
+    # Remove previously discovered CVF false positives when the inclusion
+    # rules are tightened; otherwise merge-only updates would preserve them.
+    existing = [
+        paper for paper in existing
+        if not (
+            "openaccess.thecvf.com" in paper.get("official_publication_url", "")
+            and any(
+                term in paper.get("title", "").casefold()
+                for term in EXCLUSIONS
+            )
+        )
+    ]
     # Rebuild API-managed preprints from the current auditable candidate set.
     # This lets rule fixes remove false positives without deleting hand-curated
     # or formally verified records.
     api_arxiv_ids = {item["arxiv_id"] for item in arxiv_candidates}
+    api_existing_runtime: list[dict] = []
     if api_arxiv_ids:
         def is_api_preprint(paper: dict) -> bool:
             if paper.get("venue_tier") != "Preprint":
                 return False
             match = re.search(r"(\d{4}\.\d{4,5})", paper.get("arxiv_url", ""))
             return bool(match and match.group(1) in api_arxiv_ids)
+        included_arxiv_ids = {
+            item["arxiv_id"] for item in arxiv_candidates
+            if item["decision"] == "include-pending-verification"
+        }
+        api_existing_runtime = [
+            paper for paper in existing
+            if is_api_preprint(paper)
+            and re.search(
+                r"(\d{4}\.\d{4,5})", paper.get("arxiv_url", "")
+            ).group(1) in included_arxiv_ids
+        ]
         existing = [paper for paper in existing if not is_api_preprint(paper)]
     for paper in [*cvf_records, *FORMAL, *existing]:
         arxiv_id = FORMAL_ARXIV_IDS.get(paper.get("title", ""))
         if arxiv_id:
             paper["arxiv_url"] = f"https://arxiv.org/abs/{arxiv_id}"
+    verify_arxiv_claim_matches(
+        arxiv_candidates,
+        [*cvf_records, *FORMAL, *existing],
+    )
     records, duplicates = deduplicate([
-        *cvf_records, *FORMAL, *PREPRINTS, *arxiv_records, *existing,
+        *cvf_records, *FORMAL, *PREPRINTS, *arxiv_records,
+        *api_existing_runtime, *existing,
     ])
     logging.info(
         "[Search] discovered=%s official-CVF=%s curated-first-party=%s preprints=%s",

@@ -38,6 +38,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -52,6 +53,13 @@
   comment: 16 pages, 5 figures, accepted to ECCV 2026
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ECCV
+    year: 2026
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 16 pages, 5 figures, accepted to ECCV 2026
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -66,6 +74,7 @@
   comment: ECCV2026
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -84,6 +93,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -100,6 +110,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -116,6 +127,14 @@
   comment: CVPR 2026
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2026
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2026
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -132,6 +151,7 @@
   comment: 'Project Page: https://maria-sanvil.github.io/Ego-METAS-website/'
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -150,6 +170,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -166,6 +187,14 @@
   comment: accepted to ICPR 2026
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICPR
+    year: 2026
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: accepted to ICPR 2026
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -191,6 +220,7 @@
   comment: 7 pages, 4 figures. Code is available at https://github.com/BanzQians/IMPACT_AS
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -208,6 +238,14 @@
   comment: Accepted to IJCAI 2023
   journal_ref: ''
   doi: 10.24963/ijcai.2023/191
+  publication_claim:
+    venue: IJCAI
+    year: 2023
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to IJCAI 2023
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -222,6 +260,7 @@
   comment: 7 pages, 2 figures, 2 tables
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -235,6 +274,14 @@
   comment: Accepted at ICPR 2026
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICPR
+    year: 2026
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted at ICPR 2026
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -252,6 +299,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -265,6 +313,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -280,6 +329,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -301,6 +351,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -314,6 +365,14 @@
   comment: Accepted by CVPR2026 Workshop "AI-driven Skilled Activity Understanding, Assessment & Feedback Generation (SAUAFG)"
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR Workshop
+    year: null
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted by CVPR2026 Workshop "AI-driven Skilled Activity Understanding, Assessment & Feedback Generation (SAUAFG)"
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -335,6 +394,14 @@
   comment: CVPR Conference
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: null
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR Conference
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -354,6 +421,14 @@
   comment: CVPR Conference
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: null
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR Conference
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -374,6 +449,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -389,6 +465,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -404,6 +481,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -423,6 +501,7 @@
   comment: ''
   journal_ref: CVPR2026
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -439,6 +518,13 @@
   comment: ICRA 2026
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICRA
+    year: 2026
+    status: venue-mentioned
+    source_field: comment
+    evidence: ICRA 2026
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -456,6 +542,13 @@
   comment: accepted to the Computer Vision for Education (CV4Edu) workshop, CVPR 2026
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2026
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: accepted to the Computer Vision for Education (CV4Edu) workshop, CVPR 2026
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'
@@ -470,6 +563,14 @@
   comment: Accepted at WACV-26
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2026
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted at WACV-26
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -485,6 +586,7 @@
   comment: Journal Submission
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -498,6 +600,14 @@
   comment: ICCV 2025 accepted paper
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: ICCV 2025 accepted paper
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -512,6 +622,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -529,6 +640,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -544,6 +656,7 @@
   comment: Accepted to ICCV2025
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -557,6 +670,7 @@
   comment: Accepted to ICCV2025
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -571,6 +685,7 @@
   comment: 8 pages, 3 figures, accepted in IROS25, Hangzhou, China
   journal_ref: ''
   doi: 10.1109/IROS60139.2025.11247257
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -587,6 +702,7 @@
   comment: 8 pages, 5 figures, accepted in IROS25, Hangzhou, China
   journal_ref: ''
   doi: 10.1109/IROS60139.2025.11245867
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -609,6 +725,13 @@
   comment: Accepted to NeurIPS 2025. The dataset and code are available at https://github.com/KPeng9510/HopaDIFF
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: NeurIPS
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to NeurIPS 2025. The dataset and code are available at https://github.com/KPeng9510/HopaDIFF
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'
@@ -624,6 +747,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -642,6 +766,7 @@
   comment: 4 pages, 1 figure, 4 tables. Full paper is available at arXiv:2503.21055
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -656,6 +781,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -669,6 +795,7 @@
   comment: 8 pages, 6 figures, 2 tables
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -685,6 +812,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -700,6 +828,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -717,6 +846,13 @@
   comment: 16 pages, 4 figures
   journal_ref: International Conference on Computer Vision, ICCV 2025
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2025
+    status: bibliographic-reference
+    source_field: journal_ref
+    evidence: International Conference on Computer Vision, ICCV 2025
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -732,6 +868,7 @@
   comment: BMCV 2024
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -749,6 +886,14 @@
   comment: Accepted to ICCV 2025
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to ICCV 2025
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -767,6 +912,7 @@
   comment: ''
   journal_ref: ''
   doi: 10.1109/TIP.2025.3624581
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -781,6 +927,7 @@
   comment: 10 pages, 3 figures, 5 tables, Accepted to CVPR2025
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -794,6 +941,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -809,6 +957,7 @@
   comment: 13 pages, 5 figures
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -823,6 +972,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -838,6 +988,14 @@
   comment: To be published in Conference on Artificial Intelligence (AAAI) 2025
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: AAAI
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: To be published in Conference on Artificial Intelligence (AAAI) 2025
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -851,6 +1009,14 @@
   comment: Accepted at AAAI 2025
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: AAAI
+    year: 2025
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted at AAAI 2025
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -864,6 +1030,7 @@
   comment: ''
   journal_ref: vol 15332, year 2024, pp 380-395
   doi: 10.1007/978-3-031-78125-4_26
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -878,6 +1045,14 @@
   comment: Accepted to NeurIPS 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: NeurIPS
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to NeurIPS 2024
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -894,6 +1069,7 @@
   comment: Accepted to ACL 2026
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -908,6 +1084,14 @@
   comment: 16 pages, 4 figures, 12 tables. Accepted to NeurIPS 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: NeurIPS
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 16 pages, 4 figures, 12 tables. Accepted to NeurIPS 2024
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -927,6 +1111,7 @@
   comment: 'NAACL2025, Code and Data: https://github.com/kimihiroh/promqa'
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -946,6 +1131,7 @@
   comment: This work has been submitted to the IEEE for possible publication
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -961,6 +1147,7 @@
   comment: Accepted by CVIU
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -976,6 +1163,7 @@
   comment: 10 pages, 7th ACM International Workshop on Multimedia Content Analysis in Sports
   journal_ref: ''
   doi: 10.1145/3689061.3689077
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -991,6 +1179,14 @@
   comment: Accepted by ECCV 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ECCV
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted by ECCV 2024
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1009,6 +1205,7 @@
   comment: 25 pages, 6 figures
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1027,6 +1224,7 @@
   comment: 33 pages, 15 figures
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1043,6 +1241,7 @@
   comment: 17 pages, 8 figures, 11 tables
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1058,6 +1257,13 @@
   comment: 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: TAHRI
+    year: null
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 5 pages, 3 figures. Accepted as a short (unindexed) paper at the TAHRI conference
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1071,6 +1277,14 @@
   comment: Accepted to CVPR 2024 (Oral)
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to CVPR 2024 (Oral)
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1084,6 +1298,14 @@
   comment: Accepted to CVPR 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to CVPR 2024
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1098,6 +1320,14 @@
   comment: 10 pages, 6 figures, 5 tables, accepted to CVPR 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 10 pages, 6 figures, 5 tables, accepted to CVPR 2024
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1113,6 +1343,13 @@
   comment: Accepted at ICRA 2024
   journal_ref: ''
   doi: 10.1109/ICRA57147.2024.10610143
+  publication_claim:
+    venue: ICRA
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted at ICRA 2024
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -1130,6 +1367,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1144,6 +1382,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1159,6 +1398,13 @@
   comment: Accepted to IEEE Transactions on Multimedia
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IEEE Transactions on Multimedia
+    year: null
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to IEEE Transactions on Multimedia
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1176,6 +1422,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1192,6 +1439,14 @@
   comment: Accepted to NeurIPS 2023
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: NeurIPS
+    year: 2023
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to NeurIPS 2023
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1209,6 +1464,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1225,6 +1481,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1240,6 +1497,7 @@
     withdraw the current version
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1257,6 +1515,13 @@
   comment: submit to TNNLS
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IEEE TNNLS
+    year: null
+    status: submission-only
+    source_field: comment
+    evidence: submit to TNNLS
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1271,6 +1536,14 @@
   comment: Accepted to WACV 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to WACV 2024
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1290,6 +1563,14 @@
   comment: Accepted to ICRA 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICRA
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to ICRA 2024
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1315,6 +1596,7 @@
   comment: Transformer for Cardiopulmonary Resuscitation
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1333,6 +1615,14 @@
   comment: ICCV 2023
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: ICCV 2023
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1346,6 +1636,7 @@
   comment: 9 pages, 6 figures
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1360,6 +1651,14 @@
   comment: ICCV 2023
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: ICCV 2023
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1375,6 +1674,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1393,6 +1693,14 @@
   comment: Accepted to WACV 2024
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2024
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to WACV 2024
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1408,6 +1716,13 @@
   comment: Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: Ego4D/EPIC Workshop
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: Joint 3rd Ego4D and 11th EPIC Workshop on Egocentric Vision at CVPR 2023
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1422,6 +1737,15 @@
   comment: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2023, pp. 4921-4929
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: Pattern Recognition
+    year: 2023
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2023, pp.
+      4921-4929
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1435,6 +1759,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1452,6 +1777,14 @@
   comment: ICCV 2023
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: ICCV 2023
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1469,6 +1802,13 @@
   comment: 41 pages, 7 figures. Submitted to Pattern Recognition
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: Pattern Recognition
+    year: null
+    status: submission-only
+    source_field: comment
+    evidence: 41 pages, 7 figures. Submitted to Pattern Recognition
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1485,6 +1825,14 @@
   comment: Computer Vision Winter Workshop 2023
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVWW
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: Computer Vision Winter Workshop 2023
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1504,6 +1852,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1520,6 +1869,14 @@
   comment: Accepted as a conference paper to the 32nd International Joint Conference on Artificial Intelligence (IJCAI-23)
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IJCAI
+    year: 2023
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted as a conference paper to the 32nd International Joint Conference on Artificial Intelligence (IJCAI-23)
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1534,6 +1891,7 @@
   comment: 'arXiv admin note: text overlap with arXiv:2112.01402'
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1550,6 +1908,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1566,6 +1925,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1580,6 +1940,13 @@
   comment: 19 pages, 9 figures, 8 tables, TPAMI 2023
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IEEE TPAMI
+    year: 2023
+    status: venue-mentioned
+    source_field: comment
+    evidence: 19 pages, 9 figures, 8 tables, TPAMI 2023
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1596,6 +1963,14 @@
   comment: BMVC 2022
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: BMVC
+    year: 2022
+    status: venue-mentioned
+    source_field: comment
+    evidence: BMVC 2022
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1613,6 +1988,7 @@
   comment: accepted by ISKE2023
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1627,6 +2003,7 @@
   comment: 13 pages, 3 figures, 9 tables. Published on Applied Intelligence
   journal_ref: Applied Intelligence(2024)
   doi: 10.1007/s10489-023-05259-z
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1643,6 +2020,14 @@
   comment: ECCV 2022 (Main Conference)
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ECCV
+    year: 2022
+    status: venue-mentioned
+    source_field: comment
+    evidence: ECCV 2022 (Main Conference)
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1658,6 +2043,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1673,6 +2059,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1686,6 +2073,7 @@
   comment: 16 pages, 5 figures
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1699,6 +2087,14 @@
   comment: 6 pages, ICME 2022 oral
   journal_ref: ''
   doi: 10.1109/ICME52920.2022.9859626
+  publication_claim:
+    venue: ICME
+    year: 2022
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 6 pages, ICME 2022 oral
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1717,6 +2113,14 @@
   comment: Accepted to IROS 2022
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IROS
+    year: 2022
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted to IROS 2022
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1733,6 +2137,13 @@
   comment: Accepted by TPAMI. This paper is a journal extension of our CVPR 2021 paper (arXiv:2101.00910)
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IEEE TPAMI
+    year: 2021
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted by TPAMI. This paper is a journal extension of our CVPR 2021 paper (arXiv:2101.00910)
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -1750,6 +2161,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1762,6 +2174,14 @@
   comment: ''
   journal_ref: 'International Conference on Digital Image Computing: Techniques and Applications (DICTA), 2017, pp. 1-7'
   doi: 10.1109/DICTA.2017.8227399
+  publication_claim:
+    venue: DICTA
+    year: 2017
+    status: bibliographic-reference
+    source_field: journal_ref
+    evidence: 'International Conference on Digital Image Computing: Techniques and Applications (DICTA), 2017, pp. 1-7'
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1777,6 +2197,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1793,6 +2214,14 @@
   comment: Accepted CVPR 2022
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2022
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted CVPR 2022
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1811,6 +2240,7 @@
   comment: 'Accepted by IEEE ISCAS 2022, 5 pages, 2 figures. arXiv admin note: text overlap with arXiv:2110.03368'
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'
@@ -1825,6 +2255,7 @@
   comment: ''
   journal_ref: ''
   doi: 10.1109/TETC.2022.3230912
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1841,6 +2272,7 @@
   comment: Under Review
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1855,6 +2287,14 @@
   comment: AAAI-2022
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: AAAI
+    year: 2022
+    status: venue-mentioned
+    source_field: comment
+    evidence: AAAI-2022
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1871,6 +2311,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'
@@ -1885,6 +2326,14 @@
   comment: Accepted by BMVC 2021
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: BMVC
+    year: 2021
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted by BMVC 2021
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1899,6 +2348,14 @@
   comment: Accepted in WACV 2022
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2022
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted in WACV 2022
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1916,6 +2373,14 @@
     2021
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2021
+    status: venue-mentioned
+    source_field: comment
+    evidence: 4 pages, 1 figures, ICCV 2021 Challenge, 2nd place solution for Kinetics-TPS Track in ICCV DeeperAction Workshop
+      2021
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'
@@ -1929,6 +2394,7 @@
   comment: 12 pages, 6 figures
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1945,6 +2411,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1960,6 +2427,13 @@
   comment: 4 page abstract for LUV workshop
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: LUV Workshop
+    year: null
+    status: venue-mentioned
+    source_field: comment
+    evidence: 4 page abstract for LUV workshop
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1978,6 +2452,14 @@
   comment: WACV 2022 camera ready
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2022
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: WACV 2022 camera ready
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -1995,6 +2477,14 @@
   comment: Presented at CVPR 2022
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2022
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Presented at CVPR 2022
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2010,6 +2500,14 @@
   comment: 'Winter Conference on Applications of Computer Vision (WACV) 2020. Website: https://minhungchen.netlify.app/publication/mtda'
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2020
+    status: venue-mentioned
+    source_field: comment
+    evidence: 'Winter Conference on Applications of Computer Vision (WACV) 2020. Website: https://minhungchen.netlify.app/publication/mtda'
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2023,6 +2521,14 @@
   comment: CVPR 2021
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2021
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2021
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2036,6 +2542,14 @@
   comment: CVPR 2021
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2021
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2021
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2053,6 +2567,14 @@
   comment: CVPR 2021
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2021
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2021
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2067,6 +2589,14 @@
   comment: CVPR 2021
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2021
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2021
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2084,6 +2614,14 @@
   comment: 'Accepted by CVPR 2021. Source code: https://github.com/ShangHua-Gao/G2L-search'
   journal_ref: CVPR 2021
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2021
+    status: bibliographic-reference
+    source_field: journal_ref
+    evidence: CVPR 2021
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2099,6 +2637,14 @@
   comment: Accepted by the Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI-21)
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: AAAI
+    year: 2021
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted by the Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI-21)
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2111,6 +2657,7 @@
   comment: 'PhD thesis, Oxford Brookes University, Examiners: Dr. Andrea Vedaldi and Dr. Fridolin Wild, 172 pages'
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'
@@ -2126,6 +2673,7 @@
   comment: under review
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -2143,6 +2691,15 @@
     arXiv:1903.01945'
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IEEE TPAMI
+    year: null
+    status: venue-mentioned
+    source_field: comment
+    evidence: 'IEEE Transactions on Pattern Analysis and Machine Intelligence. arXiv admin note: substantial text overlap
+      with arXiv:1903.01945'
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2158,6 +2715,14 @@
   comment: 'CVPR 2020 Poster; Project page: https://sdolivia.github.io/TAPOS/'
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2020
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: 'CVPR 2020 Poster; Project page: https://sdolivia.github.io/TAPOS/'
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2173,6 +2738,7 @@
   comment: Technical Report
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2188,6 +2754,13 @@
   comment: Published in Pattern Recognition Letters
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: Pattern Recognition Letters
+    year: null
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Published in Pattern Recognition Letters
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2201,6 +2774,14 @@
   comment: CVPR 2020
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2020
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2020
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2216,6 +2797,13 @@
   comment: '11 pages, 8 figures, cvpr-2020 supplementary video: https://youtu.be/CX1hEOV9tlo'
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2020
+    status: venue-mentioned
+    source_field: comment
+    evidence: '11 pages, 8 figures, cvpr-2020 supplementary video: https://youtu.be/CX1hEOV9tlo'
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'
@@ -2231,6 +2819,7 @@
   comment: Will appear in IWSDS2020
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -2247,6 +2836,14 @@
   comment: 'CVPR 2020. Source code: https://github.com/cmhungsteve/SSTDA'
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2020
+    status: venue-mentioned
+    source_field: comment
+    evidence: 'CVPR 2020. Source code: https://github.com/cmhungsteve/SSTDA'
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2260,6 +2857,14 @@
   comment: CVPR 2020 conference paper
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2020
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2020 conference paper
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2274,6 +2879,14 @@
   comment: ICCV 2019 Oral paper
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ICCV
+    year: 2019
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: ICCV 2019 Oral paper
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2289,6 +2902,13 @@
   comment: Published in Pattern Recognition Journal
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: Pattern Recognition
+    year: null
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Published in Pattern Recognition Journal
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2305,6 +2925,14 @@
   comment: WACV 2019
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2019
+    status: venue-mentioned
+    source_field: comment
+    evidence: WACV 2019
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2319,6 +2947,7 @@
   comment: Submitted to IEEE Robotics and Automation Letters
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -2335,6 +2964,7 @@
   comment: 19 pages (4 pages appendix), 3 figures. Revised theories and models, new experiments
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2350,6 +2980,14 @@
     substantial text overlap with arXiv:1703.08132'
   journal_ref: ''
   doi: 10.1109/TPAMI.2018.2884469
+  publication_claim:
+    venue: IEEE TPAMI
+    year: null
+    status: submission-only
+    source_field: comment
+    evidence: '15 pages, preprint for IEEE TPAMI https://ieeexplore.ieee.org/document/8585084 (open access). arXiv admin note:
+      substantial text overlap with arXiv:1703.08132'
+    verification: unverified-author-metadata
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2367,6 +3005,15 @@
     two authors contributed equally
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: IEEE TPAMI
+    year: 2021
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Accepted for publication at TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence) in 2021.
+      First two authors contributed equally
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2380,6 +3027,14 @@
   comment: CVPR 2019 Camera Ready
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2019
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: CVPR 2019 Camera Ready
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2396,6 +3051,7 @@
   comment: 11 pages, 2 figures. Cam.R
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2411,6 +3067,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2431,6 +3088,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -2448,6 +3106,7 @@
   comment: Accepted at the Workshop on Context-Aware Operating Theaters (OR 2.0), a MICCAI satellite event
   journal_ref: CARE 2018, CLIP 2018, OR 2.0 2018, ISIC 2018. Lecture Notes in Computer Science, vol 11041 (2018) 85-93
   doi: 10.1007/978-3-030-01201-4_11
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -2461,6 +3120,14 @@
   comment: CVPR 2018
   journal_ref: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018, pp. 6508-6516
   doi: ''
+  publication_claim:
+    venue: Pattern Recognition
+    year: 2018
+    status: bibliographic-reference
+    source_field: journal_ref
+    evidence: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018, pp. 6508-6516
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2476,6 +3143,7 @@
   comment: comparing with the 1st version, only corrected typos
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2493,6 +3161,14 @@
   comment: Camera ready version accepted at WACV 2018
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: WACV
+    year: 2018
+    status: author-claimed-accepted
+    source_field: comment
+    evidence: Camera ready version accepted at WACV 2018
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2510,6 +3186,7 @@
   comment: Published in 2017 IEEE International Conference On Signal and Image Processing Applications
   journal_ref: ''
   doi: 10.1109/ICSIPA.2017.8120635
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -2524,6 +3201,14 @@
   comment: CVPR 2018
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: CVPR
+    year: 2018
+    status: venue-mentioned
+    source_field: comment
+    evidence: CVPR 2018
+    verification: officially-verified
+    matched_by: normalized-title
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2537,6 +3222,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2551,6 +3237,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: candidate-only
   decision_reason: query hit but title does not explicitly define a TAS task
   verification_date: '2026-07-28'
@@ -2567,6 +3254,7 @@
   comment: ''
   journal_ref: ''
   doi: ''
+  publication_claim: {}
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2582,6 +3270,13 @@
   comment: Submitted to the ECCV workshop on "Brave new ideas for motion representations in videos" (http://bravenewmotion.github.io/)
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ECCV
+    year: null
+    status: submission-only
+    source_field: comment
+    evidence: Submitted to the ECCV workshop on "Brave new ideas for motion representations in videos" (http://bravenewmotion.github.io/)
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: Earlier TCN manuscript/version represented by the verified CVPR 2017 conference record.
   verification_date: '2026-07-28'
@@ -2598,6 +3293,15 @@
     inference clearer
   journal_ref: ''
   doi: ''
+  publication_claim:
+    venue: ECCV
+    year: 2016
+    status: venue-mentioned
+    source_field: comment
+    evidence: Updated from the ECCV 2016 version. We fixed an important mathematical error and made the section on segmental
+      inference clearer
+    verification: officially-verified
+    matched_by: arxiv-id
   decision: include-pending-verification
   decision_reason: title explicitly names temporal/action segmentation
   verification_date: '2026-07-28'
@@ -2613,6 +3317,13 @@
   comment: 6 pages, 8 figures, ICME 2014
   journal_ref: ''
   doi: 10.1109/ICME.2014.6890158
+  publication_claim:
+    venue: ICME
+    year: 2014
+    status: venue-mentioned
+    source_field: comment
+    evidence: 6 pages, 8 figures, ICME 2014
+    verification: unverified-author-metadata
   decision: candidate-only
   decision_reason: excluded neighboring spatial/localization task
   verification_date: '2026-07-28'

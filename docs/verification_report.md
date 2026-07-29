@@ -2,24 +2,28 @@
 
 | Item | Count |
 |---|---:|
-| Candidate records | 172 |
-| Verified formal core + extension | 91 |
-| Extended venue papers | 8 |
-| Preprints / pending verification | 78 |
-| Related-but-not-core / excluded from core count | 3 |
-| Duplicate records merged in last report | 93 |
-| PDFs downloaded and parsed | 166 |
-| PDF download failures in manifest | 5 |
-| Papers requiring manual review | 78 |
+| Candidate records | 174 |
+| Verified formal core + extension | 111 |
+| Extended venue papers | 17 |
+| Preprints / pending verification | 61 |
+| Related-but-not-core / excluded from core count | 2 |
+| Duplicate records merged in last report | 186 |
+| PDFs downloaded and parsed | 162 |
+| PDF download failures in manifest | 11 |
+| Papers requiring manual review | 61 |
 
 | arXiv API unique candidates audited | 166 |
 | arXiv direct TAS hits before deduplication | 134 |
 | arXiv ambiguous/excluded candidates retained in audit | 32 |
+| arXiv publication claims extracted from comment/journal_ref | 80 |
+| Publication claims matched to official records | 59 |
+| Unmatched claims across the full candidate audit | 21 |
+| Retained preprints with publication metadata requiring review | 12 |
 
 ## Venue and year statistics
 
-- Venues: AAAI: 2; ACM MM Workshop: 1; BMVC: 3; CVPR: 36; CVPR Workshop: 3; ECCV: 10; ICCV: 15; ICCV Workshop: 1; ICRA: 1; IJCAI: 2; IROS: 1; MICCAI: 1; NeurIPS: 5; WACV: 10
-- Years: 2014: 1; 2015: 1; 2016: 2; 2017: 2; 2018: 4; 2019: 5; 2020: 10; 2021: 10; 2022: 16; 2023: 8; 2024: 15; 2025: 9; 2026: 8
+- Venues: AAAI: 4; ACM MM Workshop: 1; BMVC: 3; CVPR: 39; CVPR Workshop: 3; CVWW: 1; DICTA: 1; ECCV: 11; ICCV: 16; ICCV Workshop: 1; ICME: 1; ICPR: 2; ICRA: 2; IJCAI: 3; IROS: 3; ISKE: 1; MICCAI: 1; NeurIPS: 5; WACV: 13
+- Years: 2014: 1; 2015: 1; 2016: 3; 2017: 3; 2018: 5; 2019: 6; 2020: 11; 2021: 11; 2022: 17; 2023: 14; 2024: 17; 2025: 12; 2026: 10
 
 ## Verification rules
 
@@ -30,6 +34,6 @@
 - 旧版 ACM MM、BMVC 和 WACV 搜索界面的全文召回可能不完整。
 - 标题不含 segmentation、但摘要定义了逐帧程序解析的工作仍可能漏检。
 - MICCAI 手术 phase/step 工作数量很大，本快照仅收录直接采用 TAS 式密集工作流建模的代表项。
-- 2026 ECCV/AAAI/IJCAI 等只有在截点前可由官方 proceedings 确认时才应加入；本报告不把录用传闻当作正式发表。
+- 2026 ECCV/AAAI/IJCAI 等 comment 中的录用信息会进入结构化核验队列；只有匹配到官方论文集、出版方页面或官方录用名单后才升级，不能把作者自述直接当作正式发表。
 
 Retry: `python scripts/update_repository.py --cutoff-date 2026-07-28 --only-unverified --retry-failures`。

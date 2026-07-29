@@ -153,6 +153,17 @@ def render() -> str:
     lines.extend(["## Preprints / Pending Verification", ""])
     for paper in sorted(preprints, key=lambda p: (-p["year"], p["title"])):
         lines.extend(paper_entry(paper))
+        claim = paper.get("publication_claim", {})
+        if claim:
+            claimed_venue = " ".join(
+                str(value) for value in [claim.get("venue"), claim.get("year")]
+                if value
+            )
+            lines.append(
+                f"  _Publication metadata:_ {claimed_venue}; "
+                f"`{claim.get('status', 'venue-mentioned')}`; "
+                f"`{claim.get('verification', 'unverified-author-metadata')}`."
+            )
         lines.append(f"  _Status:_ {paper['notes']}")
     if not preprints:
         lines.append("- None.")

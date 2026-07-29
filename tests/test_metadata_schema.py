@@ -6,6 +6,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from _common import REQUIRED_FIELDS, VENUE_TIERS  # noqa: E402
+from search_candidates import extract_publication_claim  # noqa: E402
 
 
 def test_required_fields_and_tiers():
@@ -35,3 +36,33 @@ def test_arxiv_audit_and_ego_metas_are_present():
     assert ego["venue_tier"] == "Preprint"
     assert ego["arxiv_url"].endswith("2606.02246")
     assert ego["needs_manual_review"] is True
+
+
+def test_arxiv_comment_publication_claims_are_structured():
+    claim = extract_publication_claim(
+        "16 pages, accepted to ECCV 2026", ""
+    )
+    assert claim["venue"] == "ECCV"
+    assert claim["year"] == 2026
+    assert claim["status"] == "author-claimed-accepted"
+
+    submission = extract_publication_claim(
+        "Submitted to Pattern Recognition", ""
+    )
+    assert submission["venue"] == "Pattern Recognition"
+    assert submission["status"] == "submission-only"
+
+
+def test_comment_claims_with_official_sources_are_promoted():
+    papers = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text(encoding="utf-8"))
+    expected = {
+        "HOI-aware Adaptive Network for Weakly-supervised Action Segmentation": "IJCAI",
+        "Stitch, Contrast, and Segment: Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos": "AAAI",
+        "Permutation-Aware Activity Segmentation via Unsupervised Frame-To-Segment Alignment": "WACV",
+        "Deep Kernel Video Approximation for Unsupervised Action Segmentation": "ICPR",
+    }
+    by_title = {paper["title"]: paper for paper in papers}
+    for title, venue in expected.items():
+        assert by_title[title]["venue"] == venue
+        assert by_title[title]["venue_tier"] != "Preprint"
+        assert by_title[title]["verification_sources"]

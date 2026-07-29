@@ -19,14 +19,14 @@
 - [Spectral Scalpel: Amplifying Adjacent Action Discrepancy via Frequency-Selective Filtering for Skeleton-Based Action Segmentation](https://openaccess.thecvf.com/content/CVPR2026/html/Ji_Spectral_Scalpel_Amplifying_Adjacent_Action_Discrepancy_via_Frequency-Selective_Filtering_for_CVPR_2026_paper.html) — CVPR 2026; `boundary-modeling`
 - [Unsupervised Skeleton-Based Action Segmentation via Hierarchical Spatiotemporal Vector Quantization](https://arxiv.org/abs/2604.15196) — Preprint 2026; `clustering`
 - [DuoCLR: Dual-Surrogate Contrastive Learning for Skeleton-based Human Action Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Tian_DuoCLR_Dual-Surrogate_Contrastive_Learning_for_Skeleton-based_Human_Action_Segmentation_ICCV_2025_paper.html) — ICCV 2025; `unknown`
-- [Multi-Modal Graph Convolutional Network with Sinusoidal Encoding for Robust Human Action Segmentation](https://arxiv.org/abs/2507.00752) — Preprint 2025; `unknown`
+- [Multi-Modal Graph Convolutional Network with Sinusoidal Encoding for Robust Human Action Segmentation](https://doi.org/10.1109/IROS60139.2025.11245867) — IROS 2025; `graphical-model, multimodal`
 - [Skeleton Motion Words for Unsupervised Skeleton-Based Temporal Action Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Gokay_Skeleton_Motion_Words_for_Unsupervised_Skeleton-Based_Temporal_Action_Segmentation_ICCV_2025_paper.html) — ICCV 2025; `unknown`
+- [Stitch, Contrast, and Segment: Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos](https://ojs.aaai.org/index.php/AAAI/article/view/32792) — AAAI 2025; `contrastive-learning, skeleton`
 - [Text-Derived Relational Graph-Enhanced Network for Skeleton-Based Action Segmentation](https://arxiv.org/abs/2503.15126) — Preprint 2025; `unknown`
+- [Action Segmentation Using 2D Skeleton Heatmaps and Multi-Modality Fusion](https://doi.org/10.1109/ICRA57147.2024.10610644) — ICRA 2024; `TCN`
 - [Language-Assisted Human Part Motion Learning for Skeleton-Based Temporal Action Segmentation](https://arxiv.org/abs/2410.06353) — Preprint 2024; `unknown`
 - [Language-Assisted Skeleton Action Understanding for Skeleton-Based Temporal Action Segmentation](https://eccv.ecva.net/virtual/2024/poster/1462) — ECCV 2024; `language-model, contrastive-learning`
-- [Stitch Contrast and Segment_Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos](https://arxiv.org/abs/2412.14988) — Preprint 2024; `unknown`
 - [A Decoupled Spatio-Temporal Framework for Skeleton-based Action Segmentation](https://arxiv.org/abs/2312.05830) — Preprint 2023; `unknown`
-- [Action Segmentation Using 2D Skeleton Heatmaps and Multi-Modality Fusion](https://arxiv.org/abs/2309.06462) — Preprint 2023; `TCN`
 - [LAC - Latent Action Composition for Skeleton-based Action Segmentation](https://openaccess.thecvf.com/content/ICCV2023/html/Yang_LAC_-_Latent_Action_Composition_for_Skeleton-based_Action_Segmentation_ICCV_2023_paper.html) — ICCV 2023; `unknown`
 - [An Efficient Framework for Few-shot Skeleton-based Temporal Action Segmentation](https://arxiv.org/abs/2207.09925) — Preprint 2022; `unknown`
 - [Skeleton-Based Action Segmentation with Multi-Stage Spatial-Temporal Graph Convolutional Neural Networks](https://arxiv.org/abs/2202.01727) — Preprint 2022; `TCN, multi-stage-TCN`

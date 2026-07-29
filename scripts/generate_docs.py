@@ -228,14 +228,18 @@ MICCAI and IROS records are kept separate.
 3. Live arXiv Atom API searches for exact TAS/action-segmentation/action-parsing phrases. Results are
    deduplicated by arXiv ID, filtered by first-submission cutoff, and written to
    `data/arxiv_candidates.yaml` with an inclusion or exclusion reason. Direct title matches enter
-   `Preprints / Pending Verification`; ambiguous hits stay in the candidate audit log.
+   `Preprints / Pending Verification`; ambiguous hits stay in the candidate audit log. The pipeline
+   also parses `arxiv:comment`, `arxiv:journal_ref`, and DOI metadata into a structured
+   `publication_claim` containing venue, year, evidence field, claim status, and verification state.
 4. Backward, forward and author snowballing from MS-TCN, ASFormer, DiffAct, FACT, ASOT and the TAS survey.
 5. Reverse searches from Breakfast, 50Salads, GTEA, Assembly101, COIN, CrossTask and surgical datasets.
 
 Discovery indexes and search engines are candidate generators only. A formal record requires a first-party
-proceedings or society page. arXiv-only records remain `Preprint` even when an author claims acceptance,
-until the claim is independently verifiable. Every candidate is judged from title, abstract, output form,
-datasets and metrics; keyword coincidence alone is insufficient.
+proceedings, publisher, society, or official accepted-paper/program page. An arXiv comment is treated as an
+author-supplied claim, not proof: independently confirmed records are upgraded, while unmatched claims remain
+`Preprint` and are displayed explicitly for follow-up. Officially accepted but not yet published records use
+`conference-accepted` and state that proceedings are pending. Every candidate is judged from title, abstract,
+output form, datasets and metrics; keyword coincidence alone is insufficient.
 
 ## Known retrieval limitations
 
@@ -292,6 +296,18 @@ def write_verification(papers: list[dict]) -> None:
         if item.get("decision") == "include-pending-verification"
     )
     arxiv_candidate_only = len(arxiv_candidates) - arxiv_included
+    publication_claims = [
+        item["publication_claim"] for item in arxiv_candidates
+        if item.get("publication_claim")
+    ]
+    verified_claims = sum(
+        1 for claim in publication_claims
+        if claim.get("verification") == "officially-verified"
+    )
+    unverified_claims = len(publication_claims) - verified_claims
+    retained_preprint_claims = sum(
+        1 for paper in preprints if paper.get("publication_claim")
+    )
     duplicates = 0
     dup_path = LOGS / "duplicate_report.csv"
     if dup_path.exists():
@@ -313,7 +329,11 @@ def write_verification(papers: list[dict]) -> None:
         f"| Papers requiring manual review | {manual} |", "",
         f"| arXiv API unique candidates audited | {len(arxiv_candidates)} |",
         f"| arXiv direct TAS hits before deduplication | {arxiv_included} |",
-        f"| arXiv ambiguous/excluded candidates retained in audit | {arxiv_candidate_only} |", "",
+        f"| arXiv ambiguous/excluded candidates retained in audit | {arxiv_candidate_only} |",
+        f"| arXiv publication claims extracted from comment/journal_ref | {len(publication_claims)} |",
+        f"| Publication claims matched to official records | {verified_claims} |",
+        f"| Unmatched claims across the full candidate audit | {unverified_claims} |",
+        f"| Retained preprints with publication metadata requiring review | {retained_preprint_claims} |", "",
         "## Venue and year statistics", "",
         f"- Venues: {'; '.join(f'{k}: {v}' for k, v in sorted(by_venue.items()))}",
         f"- Years: {'; '.join(f'{k}: {v}' for k, v in sorted(by_year.items()))}", "",
@@ -324,8 +344,8 @@ def write_verification(papers: list[dict]) -> None:
         "- 旧版 ACM MM、BMVC 和 WACV 搜索界面的全文召回可能不完整。",
         "- 标题不含 segmentation、但摘要定义了逐帧程序解析的工作仍可能漏检。",
         "- MICCAI 手术 phase/step 工作数量很大，本快照仅收录直接采用 TAS 式密集工作流建模的代表项。",
-        "- 2026 ECCV/AAAI/IJCAI 等只有在截点前可由官方 proceedings 确认时才应加入；"
-        "本报告不把录用传闻当作正式发表。",
+        "- 2026 ECCV/AAAI/IJCAI 等 comment 中的录用信息会进入结构化核验队列；"
+        "只有匹配到官方论文集、出版方页面或官方录用名单后才升级，不能把作者自述直接当作正式发表。",
         "",
         "Retry: `python scripts/update_repository.py --cutoff-date 2026-07-28 "
         "--only-unverified --retry-failures`。", "",

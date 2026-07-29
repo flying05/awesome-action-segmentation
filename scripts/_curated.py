@@ -20,6 +20,7 @@ def _paper(
     supervision: str = "",
     family: str = "",
     code: str = "",
+    doi: str = "",
 ) -> dict:
     record = default_record(
         title=title,
@@ -35,11 +36,147 @@ def _paper(
     if family:
         record["method_family"] = family.split(",")
     record["code_url"] = code
+    record["doi"] = doi
     record["verification_sources"] = [page]
     return record
 
 
 FORMAL = [
+    _paper(
+        "Segmental Spatiotemporal CNNs for Fine-Grained Action Segmentation",
+        "Colin Lea; Austin Reiter; Rene Vidal; Gregory D. Hager", 2016, "ECCV",
+        "https://link.springer.com/chapter/10.1007/978-3-319-46487-9_3",
+        "https://arxiv.org/pdf/1602.02995",
+        "fully-supervised", "structured-decoding",
+        doi="10.1007/978-3-319-46487-9_3",
+    ),
+    _paper(
+        "Action Parsing Using Context Features",
+        "Nagita Mehrseresht", 2017, "DICTA",
+        "https://doi.org/10.1109/DICTA.2017.8227399",
+        "https://arxiv.org/pdf/2205.10008",
+        "fully-supervised", "structured-decoding",
+        doi="10.1109/DICTA.2017.8227399",
+    ),
+    _paper(
+        "End-to-End Fine-Grained Action Segmentation and Recognition Using Conditional Random Field Models and Discriminative Sparse Coding",
+        "Effrosyni Mavroudi; Divya Bhaskara; Shahin Sefati; Harsh Goel; Alan L. Yuille; Rene Vidal; Gregory D. Hager",
+        2018, "WACV", "https://doi.org/10.1109/WACV.2018.00174",
+        "https://arxiv.org/pdf/1801.09571",
+        "fully-supervised", "structured-decoding",
+        doi="10.1109/WACV.2018.00174",
+    ),
+    _paper(
+        "Coupled Generative Adversarial Network for Continuous Fine-Grained Action Segmentation",
+        "Harshala Gammulle; Tharindu Fernando; Simon Denman; Sridha Sridharan; Clinton Fookes",
+        2019, "WACV", "https://doi.org/10.1109/WACV.2019.00027",
+        "https://arxiv.org/pdf/1909.09283",
+        "fully-supervised", "GAN,multimodal",
+        doi="10.1109/WACV.2019.00027",
+    ),
+    _paper(
+        "Intra- and Inter-Action Understanding via Temporal Action Parsing",
+        "Dian Shao; Yue Zhao; Bo Dai; Dahua Lin", 2020, "CVPR",
+        "https://openaccess.thecvf.com/content_CVPR_2020/html/Shao_Intra-_and_Inter-Action_Understanding_via_Temporal_Action_Parsing_CVPR_2020_paper.html",
+        "https://openaccess.thecvf.com/content_CVPR_2020/papers/Shao_Intra-_and_Inter-Action_Understanding_via_Temporal_Action_Parsing_CVPR_2020_paper.pdf",
+        "unsupervised", "clustering,boundary-modeling",
+    ),
+    _paper(
+        "Temporal Relational Modeling with Self-Supervision for Action Segmentation",
+        "Dong Wang; Di Hu; Xingjian Li; Dejing Dou", 2021, "AAAI",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/16377",
+        "https://ojs.aaai.org/index.php/AAAI/article/download/16377/16184",
+        "fully-supervised", "graphical-model,self-supervised",
+        "https://github.com/redwang/DTGRM",
+        doi="10.1609/aaai.v35i4.16377",
+    ),
+    _paper(
+        "Turning to a Teacher for Timestamp Supervised Temporal Action Segmentation",
+        "Yang Zhao; Yan Song", 2022, "ICME",
+        "https://doi.org/10.1109/ICME52920.2022.9859626",
+        "https://arxiv.org/pdf/2207.00712",
+        "timestamp-supervised", "teacher-student,boundary-modeling",
+        doi="10.1109/ICME52920.2022.9859626",
+    ),
+    _paper(
+        "Streaming Video Temporal Action Segmentation in Real Time",
+        "Wujun Wen; Yunheng Li; Zhuben Dong; Yu Xie; Jinrong Zhang; Zhou Zhao",
+        2023, "ISKE", "https://doi.org/10.1109/ISKE60036.2023.10481438",
+        "https://arxiv.org/pdf/2209.13808",
+        "fully-supervised", "TCN,causal-model",
+        doi="10.1109/ISKE60036.2023.10481438",
+    ),
+    _paper(
+        "TAEC: Unsupervised Action Segmentation with Temporal-Aware Embedding and Clustering",
+        "Wei Lin; Anna Kukleva; Horst Possegger; Hilde Kuehne; Horst Bischof",
+        2023, "CVWW", "https://ceur-ws.org/Vol-3349/",
+        "https://ceur-ws.org/Vol-3349/paper1.pdf",
+        "unsupervised", "clustering,representation-learning",
+    ),
+    _paper(
+        "HOI-aware Adaptive Network for Weakly-supervised Action Segmentation",
+        "Runzhong Zhang; Suchen Wang; Yueqi Duan; Yansong Tang; Yue Zhang; Yap-Peng Tan",
+        2023, "IJCAI", "https://www.ijcai.org/proceedings/2023/191",
+        "https://www.ijcai.org/proceedings/2023/0191.pdf",
+        "weakly-supervised", "hypernetwork,HOI",
+        doi="10.24963/ijcai.2023/191",
+    ),
+    _paper(
+        "Permutation-Aware Activity Segmentation via Unsupervised Frame-To-Segment Alignment",
+        "Quoc-Huy Tran; Ahmed Mehmood; Muhammad Ahmed; Muhammad Naufil; Anas Zafar; Andrey Konin; M. Zeeshan Zia",
+        2024, "WACV",
+        "https://openaccess.thecvf.com/content/WACV2024/html/Tran_Permutation-Aware_Activity_Segmentation_via_Unsupervised_Frame-To-Segment_Alignment_WACV_2024_paper.html",
+        "https://openaccess.thecvf.com/content/WACV2024/papers/Tran_Permutation-Aware_Activity_Segmentation_via_Unsupervised_Frame-To-Segment_Alignment_WACV_2024_paper.pdf",
+        "unsupervised", "Transformer,optimal-transport",
+        doi="10.1109/WACV57701.2024.00630",
+    ),
+    _paper(
+        "Action Segmentation Using 2D Skeleton Heatmaps and Multi-Modality Fusion",
+        "Syed Waleed Hyder; Muhammad Usama; Anas Zafar; Muhammad Naufil; Fawad Javed Fateh; Andrey Konin; M. Zeeshan Zia; Quoc-Huy Tran",
+        2024, "ICRA", "https://doi.org/10.1109/ICRA57147.2024.10610644",
+        "https://arxiv.org/pdf/2309.06462",
+        "fully-supervised", "TCN,multimodal",
+        doi="10.1109/ICRA57147.2024.10610644",
+    ),
+    _paper(
+        "Stitch, Contrast, and Segment: Learning a Human Action Segmentation Model Using Trimmed Skeleton Videos",
+        "Haitao Tian; Pierre Payeur", 2025, "AAAI",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/32792",
+        "https://ojs.aaai.org/index.php/AAAI/article/download/32792/34947",
+        "fully-supervised", "contrastive-learning,skeleton",
+        doi="10.1609/aaai.v39i7.32792",
+    ),
+    _paper(
+        "Multi-Modal Graph Convolutional Network with Sinusoidal Encoding for Robust Human Action Segmentation",
+        "Hao Xing; Kai Zhe Boey; Yuankai Wu; Darius Burschka; Gordon Cheng",
+        2025, "IROS", "https://doi.org/10.1109/IROS60139.2025.11245867",
+        "https://arxiv.org/pdf/2507.00752",
+        "fully-supervised", "graphical-model,multimodal",
+        doi="10.1109/IROS60139.2025.11245867",
+    ),
+    _paper(
+        "Towards Open-World Human Action Segmentation Using Graph Convolutional Networks",
+        "Hao Xing; Kai Zhe Boey; Gordon Cheng",
+        2025, "IROS", "https://doi.org/10.1109/IROS60139.2025.11247257",
+        "https://arxiv.org/pdf/2507.00756",
+        "fully-supervised", "graphical-model,open-world",
+        doi="10.1109/IROS60139.2025.11247257",
+    ),
+    _paper(
+        "Deep Kernel Video Approximation for Unsupervised Action Segmentation",
+        "Silvia L. Pintea; Jouke Dijkstra", 2026, "ICPR",
+        "https://icpr2026.org/acceptedPapers.html",
+        "https://silvialaurapintea.github.io/pub/icpr26.pdf",
+        "unsupervised", "kernel-method,MMD",
+    ),
+    _paper(
+        "Improving Temporal Action Segmentation via Constraint-Aware Decoding",
+        "Yeo Keat Ee; Debaditya Roy; Chen Li; Hao Zhang; Basura Fernando",
+        2026, "ICPR", "https://icpr2026.org/acceptedPapersTrack.html",
+        "https://arxiv.org/pdf/2605.10149",
+        "fully-supervised", "structured-decoding,boundary-modeling",
+        "https://github.com/LUNAProject22/CAD",
+    ),
     _paper(
         "Connectionist Temporal Modeling for Weakly Supervised Action Labeling",
         "De-An Huang; Fei-Fei Li; Juan Carlos Niebles", 2016, "ECCV",
@@ -177,9 +314,10 @@ FORMAL = [
         "Timestamp-Supervised Action Segmentation with Graph Convolutional Networks",
         "Hamza Khan; Sanjay Haresh; Awais Ahmed; Shakeeb Siddiqui; Andrey Konin; M. Zeeshan Zia; Quoc-Huy Tran",
         2022, "IROS",
-        "https://doi.org/10.1109/IROS47612.2022.9981176",
+        "https://doi.org/10.1109/IROS47612.2022.9981351",
         "https://arxiv.org/pdf/2206.15031",
         "timestamp-supervised", "graphical-model,TCN",
+        doi="10.1109/IROS47612.2022.9981351",
     ),
     _paper(
         "Efficient Temporal Action Segmentation via Boundary-aware Query Voting",
@@ -308,6 +446,12 @@ for record in FORMAL:
     elif "Workshop" in record["venue"]:
         record["venue_tier"] = "Extended-Vision"
         record["notes"] = "Official workshop paper; kept in the extended list, not the main-conference core count."
+    elif record["venue"] == "ICPR" and record["year"] == 2026:
+        record["publication_type"] = "conference-accepted"
+        record["notes"] = (
+            "Acceptance independently confirmed on the official ICPR 2026 "
+            "accepted-paper list; proceedings publication is still pending."
+        )
 
 
 def _preprint(

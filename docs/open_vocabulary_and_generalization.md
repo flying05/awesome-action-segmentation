@@ -16,7 +16,7 @@
 
 - [Exploring Vision-Language Models for Open-Vocabulary Zero-Shot Action Segmentation](https://arxiv.org/abs/2602.21406) — Preprint 2026; `unknown`
 - [Multi-Modal Few-Shot Temporal Action Segmentation](https://openaccess.thecvf.com/content/ICCV2025/html/Lu_Multi-Modal_Few-Shot_Temporal_Action_Segmentation_ICCV_2025_paper.html) — ICCV 2025; `Transformer, prototype-learning`
-- [Towards Open-World Human Action Segmentation Using Graph Convolutional Networks](https://arxiv.org/abs/2507.00756) — Preprint 2025; `clustering`
+- [Towards Open-World Human Action Segmentation Using Graph Convolutional Networks](https://doi.org/10.1109/IROS60139.2025.11247257) — IROS 2025; `clustering`
 - [An Efficient Framework for Few-shot Skeleton-based Temporal Action Segmentation](https://arxiv.org/abs/2207.09925) — Preprint 2022; `unknown`
 
 ## 未解决问题
